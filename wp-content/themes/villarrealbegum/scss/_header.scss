@@ -30,7 +30,6 @@ a.logo {
 	> span {
 		text-transform: uppercase;
 		display: inline-block;
-		
 		&:after {
 			content:"";
 			display: block;
@@ -461,10 +460,88 @@ nav.nav_wrapper.nav_desktop {
 			text-transform: uppercase;
 			font-size: 15px;
 			letter-spacing: 0.13em;
+			position: relative;
+			top:-1px;
 			@include deluxe_heavy;
 		}
 	}
 	
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 715px) {
+	
+	.header_left {
+		padding-top: 24px;
+		padding-left:31px;
+	}
+	
+	a.logo {
+		font-size: 21px;
+		> span {
+			 &:after {
+				 height:12px;
+				 margin-top: 4px;
+			 }
+		}
+	}
+	
+	.header_right {
+		flex-basis:100%;
+	}
+	
+	
+	.consult_wrapper {
+		flex-basis:100%;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		padding-left:31px;
+		margin-top: 24px;
+		padding-right: 28px;
+		> span {
+			font-size: 12px;
+			text-align: left;
+			margin-top: -1px;
+		}
+		a {
+			font-size: 18px;
+		}
+		a.phone_two {
+			margin-top:0;
+			text-align: right;
+		}
+		.mobile_es_wrapper {
+			display: none;
+		}
+	}
+	
+	.menu_wrapper {
+		position: absolute;
+		top:-9px;
+		right:0;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 399px) {
+	
+	
+	.consult_wrapper {
+		> span {
+			display: none;
+		}
+		a {
+			
+		}
+		a.phone_one {
+			span {
+				text-align: left;
+			}
+		}
+	}
 	
 	
 } /* Media Query */
