@@ -10,6 +10,11 @@ header {
 .header_inner {
 	max-width: 1765px;
 	margin:0 auto;
+	display: flex;
+}
+
+.header_left {
+	padding-top:65px;
 }
 
 
@@ -34,6 +39,64 @@ a.logo {
 		}
 		span {
 			color:$yellow;
+		}
+	}
+}
+
+.header_right {
+	flex-grow:1;
+	display: flex;
+}
+
+.nav_wrapper {
+	flex-grow:1;
+	margin-top:74px;
+	max-width: 1140px;
+	margin-left:auto;
+	margin-right:auto;
+	ul.menu {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		> li {
+				text-transform: uppercase;
+				font-size: 18px;
+				@include deluxe_extrabold;
+				> a {
+						color:#fff;
+						text-decoration: none;
+						
+				}
+			 > ul.sub-menu {
+				 display: none;
+			 }
+		}
+	}
+}
+
+.consult_wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top:29px;
+	> span {
+		color:#fff;
+		text-transform: uppercase;
+		font-size: 18px;
+		letter-spacing: 0.14em;
+		margin-bottom:13px;
+		@include deluxe_extrabold;
+	}
+	a {
+		font-size: 32px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color:#fff;
+		@include deluxe_extrabold;
+		span {
+			display: block;
+			color:$yellow;
+			margin-bottom: 7px;
 		}
 	}
 }

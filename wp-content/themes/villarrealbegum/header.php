@@ -70,13 +70,27 @@
 			
 			<div class="header_right">
 				
+				<nav class="nav_wrapper">
+					
+					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+					
+				</nav><!-- nav_wrapper -->
 				
+				<div class="consult_wrapper">
+					
+					<span class="consult_title">Free Consultation</span><!-- consult_title -->
+					
+					<a class="phone" href="tel:8445294867"><span>(844) Law-Guns</span></a>
+					
+					<a class="phone" href="tel:8445294867">(844) 529-4867</a>
+					
+				</div><!-- consult_wrapper -->
 				
 			</div><!-- header_right -->
 			
 		</div><!-- header_inner -->
 		
-		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		
 		
 	</header>
 				
