@@ -68,7 +68,7 @@
 				
 			</div><!-- header_left -->
 			
-			<div class="header_right">
+			<div class="header_middle">
 				
 				<nav class="nav_wrapper nav_desktop">
 					
@@ -76,13 +76,17 @@
 					
 				</nav><!-- nav_wrapper -->
 				
+				</div><!-- header_middle -->
+				
+					<div class="header_right">
+				
 				<div class="consult_wrapper">
 					
 					<span class="consult_title">Free Consultation</span><!-- consult_title -->
 					
-					<a class="phone" href="tel:8445294867"><span>(844) Law-Guns</span></a>
+					<a class="phone phone_one" href="tel:8445294867"><span>(844) Law-Guns</span></a>
 					
-					<a class="phone" href="tel:8445294867">(844) 529-4867</a>
+					<a class="phone phone_two" href="tel:8445294867">(844) 529-4867</a>
 					
 				</div><!-- consult_wrapper -->
 				
