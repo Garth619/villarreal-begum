@@ -1,15 +1,55 @@
-$themePath: '/wp-content/themes/starter/';
+$themePath: '/wp-content/themes/villarrealbegum/';
 
 
 
 
-/*
-@mixin quatro_reg {
-  font-family: quatro, sans-serif;
+
+
+
+// fonts
+
+
+
+@mixin deluxe_reg {
+  font-family: refrigerator-deluxe, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
-@include quatro_reg;
+@mixin deluxe_extrabold {
+  font-family: refrigerator-deluxe,sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
 
-*/
+@mixin deluxe_heavy {
+  font-family: refrigerator-deluxe,sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+// nunito
+
+
+@mixin nunito_reg {
+ 	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@mixin nunito_extrabold {
+ 	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+
+
+
+span {
+	font-size: 30px;
+	text-transform: uppercase;
+	@include nunito_extrabold;
+}

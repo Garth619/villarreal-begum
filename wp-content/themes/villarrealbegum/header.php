@@ -27,12 +27,18 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-
+<!--
+<link rel="stylesheet" href="https://use.typekit.net/hhs0ycw.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet">
+-->
 
 <style>
 
-
 <?php the_field( 'review_css','option'); ?>
+
+ @import url("https://use.typekit.net/hhs0ycw.css");
+ 
+ @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap');
 
 </style>
 
@@ -46,6 +52,8 @@
 
 <body <?php body_class(); ?>>
 	
+	
+	<span class="">Garrett</span>
 	
 	<header>
 		
