@@ -8,13 +8,14 @@ header {
 }
 
 .header_inner {
-	max-width: 1765px;
+	max-width: 1920px;
 	margin:0 auto;
 	display: flex;
 }
 
 .header_left {
 	padding-top:65px;
+	padding-left:85px;
 }
 
 
@@ -46,6 +47,7 @@ a.logo {
 .header_right {
 	flex-grow:1;
 	display: flex;
+	padding-right:69px;
 }
 
 .nav_wrapper {
@@ -58,7 +60,22 @@ a.logo {
 		display: flex;
 		justify-content: space-between;
 		list-style: none;
+		> li.current-menu-item {
+			> a {
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+		
 		> li.menu-item-has-children {
+			position: relative;
+			&:hover {
+				> ul.sub-menu {
+						opacity: 1;
+						visibility: visible;
+				}
+			}
 			 > a {
 				 position: relative;
 				 cursor: pointer;
@@ -72,8 +89,7 @@ a.logo {
 					 position: absolute;
 					 top:31px;
 					 right:-23px;
-					 
-				 }
+					}
 			 }
 		}
 		> li.current-menu-item {
@@ -82,9 +98,25 @@ a.logo {
 					
 				}
 		}
+		> li.current-menu-ancestor {
+			> a {
+				color:$yellow;
+				&:before {
+					opacity: 1;
+				}
+			}
+			ul.sub-menu {
+				li.current-menu-item {
+					a {
+						background: $yellow;
+					}
+				}
+			}
+		}
 		> li {
 				text-transform: uppercase;
 				font-size: 18px;
+				padding-bottom:35px;
 				@include deluxe_extrabold;
 				> a {
 						color:#fff;
@@ -103,7 +135,29 @@ a.logo {
 					}
 				}
 			 > ul.sub-menu {
-				 display: none;
+				 	background: $offwhiteone;
+				 	position: absolute;
+				 	top:70px;
+				 	left:0;
+				 	width:355px;
+				 	list-style: none;
+				 	opacity: 0;
+				 	transition: all 200ms ease-in-out;
+				 	visibility: hidden;
+				 	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+				 	li {
+					 	font-size: 16px;
+					 	letter-spacing: 0.06em;
+					 	@include deluxe_heavy;
+					 	a {
+						 	display: block;
+						 	color:#000;
+						 	padding:23px 66px;
+						 	text-decoration:none;
+						 	background:transparent;
+						 	transition: all 200ms ease-in-out;
+						 }
+				 	}
 			 }
 		}
 		> li#menu-item-623 {
@@ -129,8 +183,22 @@ a.logo {
 }
 
 
-nav.nav_desktop {
+
+
+
+
+nav.nav_wrapper.nav_desktop {
 	ul.menu {
+		> li.menu-item-has-children {
+				&:hover {
+					> a {
+							color:$yellow;
+							&:before {
+								opacity: 1;
+							}
+					}
+				}
+		}
 		> li {
 				> a {
 					&:hover {
@@ -138,6 +206,16 @@ nav.nav_desktop {
 						&:before {
 							opacity: 1;
 						}
+					}
+				}
+			}
+		}
+		ul.sub-menu {
+			li {
+				a {
+					display: none;
+					&:hover {
+						background: $yellow;
 					}
 				}
 			}
