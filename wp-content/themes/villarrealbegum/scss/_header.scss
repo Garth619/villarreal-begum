@@ -50,7 +50,7 @@ a.logo {
 
 .nav_wrapper {
 	flex-grow:1;
-	margin-top:74px;
+	margin-top:50px;
 	max-width: 1140px;
 	margin-left:auto;
 	margin-right:auto;
@@ -60,31 +60,26 @@ a.logo {
 		list-style: none;
 		> li.menu-item-has-children {
 			 > a {
+				 position: relative;
+				 cursor: pointer;
 				 &:after {
 					 content:"";
 					 display: inline-block;
-					 margin-left:10px;
-					 margin-top:3px;
-					 vertical-align: top;
 					 width:16px;
 					 height:10px;
 					 background: url(#{$themePath}images/arrow-down.png);
 					 background-size: 16px 10px;
+					 position: absolute;
+					 top:31px;
+					 right:-23px;
+					 
 				 }
 			 }
 		}
 		> li.current-menu-item {
 				> a {
 					color:$yellow;
-					&:before {
-						content:"";
-						display: block;
-						width:20px;
-						height:20px;
-						margin:-27px auto 7px;
-						background: url(#{$themePath}images/star.svg);
-						background-size:20px 20px;
-					}
+					
 				}
 		}
 		> li {
@@ -93,15 +88,61 @@ a.logo {
 				@include deluxe_extrabold;
 				> a {
 						color:#fff;
+						transition: all 200ms ease-in-out;
 						text-decoration: none;
-						
+						&:before {
+							content:"";
+							display: block;
+							width:20px;
+							height:20px;
+							margin:0px auto 7px;
+							background: url(#{$themePath}images/star.svg);
+							background-size:20px 20px;
+							opacity: 0;
+							transition: all 200ms ease-in-out;
+					}
 				}
 			 > ul.sub-menu {
 				 display: none;
 			 }
 		}
+		> li#menu-item-623 {
+			margin-top:15px;
+			font-size: 16px;
+			letter-spacing: 0.1em;
+			 a {
+				 display: block;
+				 border:3px solid $yellow;
+				 background: transparent;
+				 border-radius: 45px;
+				 padding:10px 11px 8px 13px;
+				 &:before {
+					 display: none;
+				 }
+				 &:hover {
+					 background: $yellow;
+					 color:#fff;
+				 }
+			 }
+		}
 	}
 }
+
+
+nav.nav_desktop {
+	ul.menu {
+		> li {
+				> a {
+					&:hover {
+						color:$yellow;
+						&:before {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
 
 .consult_wrapper {
 	display: flex;

@@ -70,7 +70,7 @@
 			
 			<div class="header_right">
 				
-				<nav class="nav_wrapper">
+				<nav class="nav_wrapper nav_desktop">
 					
 					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
 					
