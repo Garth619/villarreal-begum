@@ -45,11 +45,12 @@ $themePath: '/wp-content/themes/villarrealbegum/';
 }
 
 
+// colors
 
 
+$offwhiteone: #f1f0f0;
+$offwhitetwo: #d9dbdb;
+$offwhitethree: #c6c7c7;
 
-span {
-	font-size: 30px;
-	text-transform: uppercase;
-	@include nunito_extrabold;
-}
+$yellow: #efb832;
+$yellowdark: #e7a910;
