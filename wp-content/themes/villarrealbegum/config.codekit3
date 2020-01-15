@@ -335,6 +335,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/images/star.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/star.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/images/test_bg_desk.jpg": {
 		"ft": 16384,
 		"iS": 155011,
@@ -345,16 +355,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"/images/VectorSmartObject_034b26a0-38f1-43f6-9230-803eac67996b.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/images/VectorSmartObject_034b26a0-38f1-43f6-9230-803eac67996b.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
 		},
 	"/images/video_template.jpg": {
 		"ft": 16384,
