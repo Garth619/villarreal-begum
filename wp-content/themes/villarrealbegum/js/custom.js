@@ -364,5 +364,84 @@ var pgurl = window.location.href;
 
 
 
+// nav
+	
+	function navDesktop() {
+		
+		$('.nav_wrapper').addClass('nav_desktop');
+		
+		//$('.nav_inner li.menu-item-has-children > a').next('ul.sub-menu').removeClass('open');
+		
+		$('.nav_wrapper').removeClass('nav_tablet');
+		
+	}
+	
+	
+	function navTablet() {
+		
+		$('.nav_wrapper').removeClass('nav_desktop');
+		
+		$('.nav_wrapper').addClass('nav_tablet');
+		
+	}
+	
+/*
+	function tabletClick() {
+		
+		$(this).next('ul.sub-menu').toggleClass('open');
+		
+	}
+*/
+	
+	
+	// nav
+	
+	
+	if ($(window).width() > 1066) {
+			
+		navDesktop();
+		
+	}	
+	
+	
+	if ($(window).width() <= 1066) {
+			
+		navTablet();
+		
+		//$('.nav_inner li.menu-item-has-children > a').off().on('click', tabletClick);
+				
+	}
+	
+	
+	// resize window width and fire functions
+	
+	
+	$(window).resize(_.debounce(function() {
+		
+		if ($(window).width() > 1066) {
+			
+			navDesktop();
+			
+			// off
+			
+			//$('.nav_inner li.menu-item-has-children > a').off('click', tabletClick);			
+		
+		}	
+		
+		if ($(window).width() <= 1066) {
+			
+			navTablet();
+			
+			// off
+			
+			// $('.nav_inner li.menu-item-has-children > a').off().on('click', tabletClick);
+					
+		}
+		
+	}, 100)); 
+
+
+
+
   
 }); // document ready

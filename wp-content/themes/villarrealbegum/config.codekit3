@@ -112,6 +112,26 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/arrow_down.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/arrow_down.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/arrow_down_yellow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/arrow_down_yellow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/images/arrow_left.png": {
 		"ft": 32768,
 		"iS": 1197,
@@ -123,6 +143,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/arrow_left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/arrow_left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/images/arrow_right.png": {
 		"ft": 32768,
 		"iS": 1194,
@@ -133,6 +163,26 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/images/arrow_right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/arrow_right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/arrow_up.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/arrow_up.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/images/attorney_bio_img.jpg": {
 		"ft": 16384,
