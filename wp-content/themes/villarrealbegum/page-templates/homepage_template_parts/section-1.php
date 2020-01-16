@@ -44,6 +44,12 @@
 					
 				</div><!-- attorney_names -->
 				
+				<div class="attorney_badge">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/header_law_guns.png"/>
+					
+				</div><!-- attorney_badge -->
+				
 			</div><!-- atts_wrapper -->
 			
 		</div><!--  sec_one_right -->
