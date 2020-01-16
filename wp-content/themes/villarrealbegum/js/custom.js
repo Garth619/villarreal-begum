@@ -385,13 +385,13 @@ var pgurl = window.location.href;
 		
 	}
 	
-/*
+
 	function tabletClick() {
 		
 		$(this).next('ul.sub-menu').toggleClass('open');
 		
 	}
-*/
+
 	
 	
 	// nav
@@ -408,7 +408,7 @@ var pgurl = window.location.href;
 			
 		navTablet();
 		
-		//$('.nav_inner li.menu-item-has-children > a').off().on('click', tabletClick);
+		$('.nav_wrapper li.menu-item-has-children > a').off().on('click', tabletClick);
 				
 	}
 	
@@ -424,7 +424,7 @@ var pgurl = window.location.href;
 			
 			// off
 			
-			//$('.nav_inner li.menu-item-has-children > a').off('click', tabletClick);			
+			$('.nav_wrapper li.menu-item-has-children > a').off('click', tabletClick);			
 		
 		}	
 		
@@ -434,7 +434,7 @@ var pgurl = window.location.href;
 			
 			// off
 			
-			// $('.nav_inner li.menu-item-has-children > a').off().on('click', tabletClick);
+		 $('.nav_wrapper li.menu-item-has-children > a').off().on('click', tabletClick);
 					
 		}
 		
