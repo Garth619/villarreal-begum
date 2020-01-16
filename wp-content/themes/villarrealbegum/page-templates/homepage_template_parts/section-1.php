@@ -1,5 +1,7 @@
 <section id="section_one">
 	
+	<div class="sec_one_inner">
+	
 	<div class="sec_one_content">
 		
 		<div class="sec_one_left">
@@ -16,7 +18,7 @@
 			
 			<div class="atts_wrapper">
 				
-				<div class="attorneys">
+				<div id="para_three" class="attorneys">
 					
 					<picture class="att_one">
 					
@@ -32,7 +34,7 @@
 					
 				</div><!-- attorneys -->
 				
-				<div class="attorney_names">
+				<div id="para_two" class="attorney_names">
 					
 					<div class="attorney_names_inner">
 					
@@ -44,11 +46,7 @@
 					
 				</div><!-- attorney_names -->
 				
-				<div class="attorney_badge">
-					
-					<img src="<?php bloginfo('template_directory');?>/images/header_law_guns.png"/>
-					
-				</div><!-- attorney_badge -->
+				
 				
 			</div><!-- atts_wrapper -->
 			
@@ -56,17 +54,21 @@
 		
 	</div><!-- sec_one_content -->
 	
-	<div class="parallax">
-			
-		<img id="para_one" src="" alt="Parralax Img One"/>
-		
-		<img id="para_two" src="" alt="Parralax Img One"/>
-				
-		<img id="para_three" src="" alt="Parralax Img One"/>
-				
-	</div><!-- parallax -->
-	
 	<img class="hero_img" src="<?php bloginfo('template_directory');?>/images/header_bg_desk.jpg"/>
+	
+	</div><!-- sec_one_inner -->
+	
+	<div class="sec_one_badge_wrapper">
+		
+		<div class="sec_one_badge_spacer"></div><!-- sec_one_badge_spacer -->
+		
+		<div id="para_one" class="attorney_badge">
+					
+			<img src="<?php bloginfo('template_directory');?>/images/header_law_guns.png"/>
+					
+		</div><!-- attorney_badge -->
+		
+	</div><!-- sec_one_badge_wrapper -->
 	
 </section><!-- section_one -->
 

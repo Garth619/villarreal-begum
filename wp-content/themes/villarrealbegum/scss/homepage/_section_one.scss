@@ -8,6 +8,11 @@
 }
 
 
+.sec_one_inner {
+	overflow: hidden;
+}
+
+
 img.hero_img {
 	width:100%;
 	height:100%;
@@ -74,7 +79,6 @@ img.hero_img {
 .sec_one_right {
 	width:929px;
 	//margin-right:23px;
-	background: pink;
 }
 
 
@@ -87,8 +91,6 @@ img.hero_img {
 	display: flex;
 	margin-left:28px;
 	width:800px;
-	background: red;
-	
 }
 
 
@@ -134,20 +136,26 @@ picture.att_two {
 	}
 }
 
+.sec_one_badge_wrapper {
+	display: flex;
+	max-width: 1645px;
+	margin:0 auto;
+	justify-content: space-between;
+	background: purple;
+}
+
+
+.sec_one_badge_spacer {
+	margin-left:26px;
+	width:590px;
+	background: green;
+}
+
+
 .attorney_badge {
-	position: absolute;
-	bottom:-90px;
-	left:0;
-	width:100%;
-	&:after {
-		content:"";
-		display: block;
-		width:100%;
-		height:100px;
-		background: #fff;
-		position: absolute;
-		bottom: -10px;
-	}
+	width:929px;
+	z-index:2;
+	margin-top:-283px;
 	img {
 		display: block;
 		margin-left:auto;
@@ -156,3 +164,4 @@ picture.att_two {
 		z-index:1;
 	}
 }
+
