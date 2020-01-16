@@ -20,7 +20,7 @@ img.hero_img {
 .sec_one_content {
 	position: relative;
 	z-index:1;
-	max-width: 1590px;
+	max-width: 1645px;
 	margin:0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -29,7 +29,7 @@ img.hero_img {
 
 
 .sec_one_left {
-	padding:222px 0 0;
+	padding:224px 0 0;
 	> span {
 			display: block;
 			color:#fff;
@@ -59,31 +59,69 @@ img.hero_img {
 		border:3px solid $yellow;
 		display: inline-block;
 		border-radius: 45px;
-		margin-top:30px;
+		margin-top:28px;
 		padding:17px 45px;
 		@include deluxe_extrabold;
 	}
 }
 
 .sec_one_right {
-	
+	width:929px;
+	margin-right:23px;
+	background: pink;
 }
 
 
+.atts_wrapper {
+	position: relative;
+	height:778px;
+}
+
 .attorneys {
 	display: flex;
+	margin-left:28px;
+	width:800px;
+	background: red;
 }
 
 picture.att_one {
 	img {
 		display: block;
 		padding-top:170px;
+		margin-right:-60px;
 	}
 }
 
 picture.att_two {
 	img {
 		display: block;
-		padding-top:165px;
+		padding-top:170px;
+	}
+}
+
+
+.attorney_names {
+	position: absolute;
+	top:475px;
+	left:0;
+	width:100%;
+}
+
+
+
+.attorney_names_inner {
+	display: flex;
+	justify-content: space-between;
+	a.attorney_name {
+		color:$yellow;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 20px;
+		letter-spacing: 0.1em;
+		display: inline-block;
+		background: rgba(0,0,0,0.7);
+		border-radius: 45px;
+		padding:10px 22px;
+		@include deluxe_extrabold;
 	}
 }

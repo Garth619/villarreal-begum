@@ -30,9 +30,19 @@
 					
 					</picture>
 					
-					
-					
 				</div><!-- attorneys -->
+				
+				<div class="attorney_names">
+					
+					<div class="attorney_names_inner">
+					
+						<a class="attorney_name attorney_name_one" href="">Javier Villarreal</a><!-- attorney_name -->
+					
+						<a class="attorney_name attorney_name_two" href="">Alex Begum</a><!-- attorney_name -->
+					
+					</div><!-- attorney_names_inner -->
+					
+				</div><!-- attorney_names -->
 				
 			</div><!-- atts_wrapper -->
 			
