@@ -365,6 +365,18 @@ var pgurl = window.location.href;
 
 
 // nav
+
+	$('.menu_wrapper').on('click', function(e) {
+		
+		$('.nav_wrapper').slideDown();
+	  
+	});
+	
+	$('.mobile_close, .mobile_back').on('click', function(e) {
+		
+		$('.nav_wrapper').slideUp();
+	  
+	});
 	
 	function navDesktop() {
 		
@@ -388,13 +400,11 @@ var pgurl = window.location.href;
 
 	function tabletClick() {
 		
-		$(this).next('ul.sub-menu').toggleClass('open');
+		$(this).next('ul.sub-menu').slideToggle(300);
+		
+		$(this).parent().toggleClass('open');
 		
 	}
-
-	
-	
-	// nav
 	
 	
 	if ($(window).width() > 1066) {

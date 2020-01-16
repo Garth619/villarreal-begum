@@ -72,7 +72,9 @@
 				
 				<nav class="nav_wrapper nav_desktop">
 					
-					<div class="close"></div><!-- close -->
+					<div class="mobile_back">Back</div><!-- mobile_back -->
+					
+					<div class="mobile_close"></div><!-- mobile_close -->
 					
 					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
 					
