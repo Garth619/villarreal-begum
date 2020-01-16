@@ -4,6 +4,7 @@
 	width:100%;
 	height:778px;
 	position: relative;
+	overflow: hidden;
 }
 
 
@@ -19,7 +20,7 @@ img.hero_img {
 .sec_one_content {
 	position: relative;
 	z-index:1;
-	max-width: 1550px;
+	max-width: 1590px;
 	margin:0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -66,4 +67,23 @@ img.hero_img {
 
 .sec_one_right {
 	
+}
+
+
+.attorneys {
+	display: flex;
+}
+
+picture.att_one {
+	img {
+		display: block;
+		padding-top:170px;
+	}
+}
+
+picture.att_two {
+	img {
+		display: block;
+		padding-top:165px;
+	}
 }

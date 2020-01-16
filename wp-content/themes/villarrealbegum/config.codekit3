@@ -184,6 +184,28 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/images/att_one_desktop.png": {
+		"ft": 32768,
+		"iS": 307911,
+		"oA": 0,
+		"oAP": "/images/att_one_desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/att_two_desktop.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/images/att_two_desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/attorney_bio_img.jpg": {
 		"ft": 16384,
 		"iS": 46978,

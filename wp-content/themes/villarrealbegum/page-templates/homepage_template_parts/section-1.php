@@ -16,7 +16,23 @@
 			
 			<div class="atts_wrapper">
 				
-				
+				<div class="attorneys">
+					
+					<picture class="att_one">
+					
+						<img src="<?php bloginfo('template_directory');?>/images/att_one_desktop.png"/>
+					
+					</picture>
+					
+					<picture class="att_two">
+					
+						<img src="<?php bloginfo('template_directory');?>/images/att_two_desktop.png"/>
+					
+					</picture>
+					
+					
+					
+				</div><!-- attorneys -->
 				
 			</div><!-- atts_wrapper -->
 			
