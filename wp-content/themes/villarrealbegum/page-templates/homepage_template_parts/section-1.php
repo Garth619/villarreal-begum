@@ -22,13 +22,13 @@
 					
 					<picture class="att_one">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/att_one_desktop.png"/>
+						<img src="<?php bloginfo('template_directory');?>/images/header_javier_desk.png"/>
 					
 					</picture>
 					
 					<picture class="att_two">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/att_two_desktop.png"/>
+						<img src="<?php bloginfo('template_directory');?>/images/header_alex_desk.png"/>
 					
 					</picture>
 					

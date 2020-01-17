@@ -461,7 +461,7 @@ var pgurl = window.location.href;
 
 function paraWidth() {
     
-  if ($(window).width() > 1290) {
+  if ($(window).width() >= 1066) {
         
       window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       ||
