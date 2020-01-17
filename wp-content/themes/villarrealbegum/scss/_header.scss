@@ -146,7 +146,7 @@ a.logo {
 					 	@include deluxe_heavy;
 					 	a {
 						 	display: block;
-						 	color:#000;
+						 	color:$black;
 						 	padding:23px 66px;
 						 	text-decoration:none;
 						 	background:transparent;
@@ -440,7 +440,7 @@ nav.nav_wrapper.nav_desktop {
 			> li.current-menu-ancestor {
 					background: $yellow;
 					> a {
-						color:#000
+						color:$black
 					}
 					ul.sub-menu {
 						display: block;
@@ -460,7 +460,7 @@ nav.nav_wrapper.nav_desktop {
 					padding-bottom:60px;
 				}
 				> a {
-					color:#000;
+					color:$black;
 					padding:17px 0;
 					display: inline-block;
 					vertical-align: top;
