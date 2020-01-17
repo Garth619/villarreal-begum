@@ -10,7 +10,7 @@
 			
 			<span class="sec_one_largeheader"><span>if we don’t win,</span> we don’t get paid.</span><!-- sec_one_largeheader -->
 			
-			<a class="consult_button" href="#consultation">Free Consultation</a><!-- consult_button -->
+			<a class="consult_button desktop" href="#consultation">Free Consultation</a><!-- consult_button -->
 			
 		</div><!-- sec_one_left -->
 		
@@ -46,13 +46,13 @@
 					
 				</div><!-- attorney_names -->
 				
-				
-				
 			</div><!-- atts_wrapper -->
 			
 		</div><!--  sec_one_right -->
 		
 	</div><!-- sec_one_content -->
+	
+	<a class="consult_button mobile" href="#consultation">Free Consultation</a><!-- consult_button -->
 	
 	<img class="hero_img" src="<?php bloginfo('template_directory');?>/images/header_bg_desk.jpg"/>
 	

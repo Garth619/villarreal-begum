@@ -518,7 +518,7 @@ function paraWidth() {
       pos(0, 300, relativeY, 0) + 'px, 0)');
       
     prefix(paraFour.style, "Transform", "translate3d(0px," +
-      pos(0, 300, relativeY, 0) + 'px, 0)');
+      pos(0, 500, relativeY, 0) + 'px, 0)');
 
 
     ticking = false;
