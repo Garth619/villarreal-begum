@@ -23,6 +23,7 @@
 }
 
 .sec_two_slide {
+	border:1px solid red;
 	flex-basis: 25%;
 	position: relative;
 	svg {
@@ -123,3 +124,177 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1760px) {
+	
+	
+
+.sec_two_slide {
+	.sec_two_slide_inner {
+		span.sec_two_slide_title {
+			&:after {
+				width:295px;
+			}
+		}
+	}
+} 
+	
+.sec_two_slide.one {
+	svg#cactus {
+		width:140px;
+		height:138px;
+	}
+	.sec_two_slide_inner {
+		margin-left: 90px;
+		span.sec_two_description {
+			
+		}
+	}
+}
+
+
+.sec_two_slide.two {
+	svg#tower {
+		width: 50px;
+		height:214px;
+		left: 40px;
+	}
+	.sec_two_slide_inner {
+		margin-left: 60px;
+		span.sec_two_description {
+			
+		}
+	}
+}
+
+
+.sec_two_slide.three {
+	svg#bull {
+		width: 164px;
+		height:141px;
+	}
+	.sec_two_slide_inner {
+		margin-left: 72px;
+		span.sec_two_description {
+			
+		}
+	}
+}
+
+
+.sec_two_slide.four {
+	svg#horseshoe {
+		width: 116px;
+		height:116px;
+	}
+	.sec_two_slide_inner {
+		margin-left: 56px;
+		span.sec_two_description {
+			
+		}
+	}
+}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1550px) {
+	
+	#section_two {
+		margin-top: -69px;
+	}
+	    
+} /* Media Query */
+
+@media screen and (max-width: 1530px) {
+	
+	
+	.sec_two_slide {
+		
+	.sec_two_slide_inner {
+		margin: 151px 0 0 0;
+		span.sec_two_slide_title {
+			font-size: 36px;
+			margin-left:-10px;
+			&:after {
+				width:220px;
+				height:13px;
+				margin-top: -11px;
+				margin-left:-10px;
+			}
+		}
+		span.sec_two_description {
+			font-size: 15px;
+			line-height: 23px;
+			margin-top: 34px;
+		}
+	}
+} 
+	
+.sec_two_slide.one {
+	svg#cactus {
+		top: 83px;
+		width: 131px;
+		height:129px;
+	}
+	.sec_two_slide_inner {
+		
+		span.sec_two_description {
+			max-width: 227px;
+		}
+	}
+}
+
+
+.sec_two_slide.two {
+	svg#tower {
+		top: 55px;
+    height: 206px;
+    width: 48px;
+	}
+	.sec_two_slide_inner {
+		span.sec_two_description {
+			max-width: 218px;
+		}
+	}
+}
+
+
+.sec_two_slide.three {
+	svg#bull {
+		top: 73px;
+		width:151px;
+		height:130px;
+	}
+	.sec_two_slide_inner {
+		
+		span.sec_two_description {
+			
+		}
+	}
+}
+
+
+.sec_two_slide.four {
+	svg#horseshoe {
+		width:110px;
+		height:110px;
+		top: 88px;
+    left: 8px;
+	}
+	.sec_two_slide_inner {
+		
+		span.sec_two_description {
+			
+		}
+	}
+}
+
+	
+	
+	
+} /* Media Query */
+
+
