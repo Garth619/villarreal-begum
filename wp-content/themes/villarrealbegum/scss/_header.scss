@@ -270,6 +270,19 @@ nav.nav_wrapper.nav_desktop {
 }
 
 
+@media screen and (min-width: 1067px) {
+	
+	
+	.nav_wrapper {
+		display: block !important;
+	}
+	
+	
+} /* Media Query */
+
+
+
+
 @media screen and (max-width: 1660px) {
 	
 	
