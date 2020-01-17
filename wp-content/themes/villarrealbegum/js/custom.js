@@ -482,6 +482,8 @@ function paraWidth() {
  
   var paraTwo = $('#para_two');
   var paraThree = $('#para_three');
+  
+  var paraFour = $('#para_four');
 
 
   
@@ -513,6 +515,9 @@ function paraWidth() {
       pos(0, 800, relativeY, 0) + 'px, 0)');
 
     prefix(paraThree.style, "Transform", "translate3d(0px," +
+      pos(0, 300, relativeY, 0) + 'px, 0)');
+      
+    prefix(paraFour.style, "Transform", "translate3d(0px," +
       pos(0, 300, relativeY, 0) + 'px, 0)');
 
 

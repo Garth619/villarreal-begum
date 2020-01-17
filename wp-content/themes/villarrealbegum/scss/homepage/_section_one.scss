@@ -2,7 +2,7 @@
 
 #section_one {
 	width:100%;
-	height:778px;
+	
 	position: relative;
 	
 }
@@ -10,6 +10,9 @@
 
 .sec_one_inner {
 	overflow: hidden;
+	height:778px;
+	padding:0 69px 0 85px;
+	position: relative;
 }
 
 
@@ -129,7 +132,7 @@ picture.att_two {
 		font-size: 20px;
 		letter-spacing: 0.1em;
 		display: inline-block;
-		background: rgba(0,0,0,0.7);
+		background: rgba(0,0,0,0.52);
 		border-radius: 45px;
 		padding:10px 22px;
 		@include deluxe_extrabold;
@@ -148,7 +151,7 @@ picture.att_two {
 .sec_one_badge_spacer {
 	margin-left:26px;
 	width:590px;
-	background: green;
+	//background: green;
 }
 
 
@@ -164,4 +167,172 @@ picture.att_two {
 		z-index:1;
 	}
 }
+
+
+
+@media screen and (max-width: 1700px) {
+	
+	
+	.sec_one_left {
+		span.sec_one_subheader {
+			font-size: 18px;
+		}
+		span.sec_one_largeheader {
+			font-size: 90px;
+			line-height: 86px;
+			max-width: 480px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1660px) {
+	
+	
+	
+	.sec_one_right {
+    width: 859px;
+	}
+	
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 1550px) {
+	
+	
+	
+	picture.att_one {
+		img {
+			 padding-top: 250px;
+   		 width: 440px;
+  	}
+	} 
+	
+	picture.att_two {
+		img {
+			 padding-top: 235px;
+   		 width: 330px;
+  	}
+	}
+	
+	
+	.attorney_badge {
+		margin-top: -251px;
+		width: 789px;
+		img {
+			width: 332px;
+		}
+	}
+	
+	.sec_one_right {
+		width: 789px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	.sec_one_inner {
+		height:705px;
+	}
+	
+	
+	.atts_wrapper {
+		height: 705px;
+	}
+	
+	
+	picture.att_one {
+		img {
+			 padding-top: 230px;
+   		 width: 403px;
+   		 margin-right: -89px;
+  	}
+	} 
+	
+	picture.att_two {
+		img {
+			 padding-top: 215px;
+   		 width: 300px;
+  	}
+	}
+	
+	
+	.sec_one_right {
+		width: 657px;
+	}
+	
+	
+	.attorney_badge {
+		width: 657px;
+		margin-top: -195px;
+		img {
+			width:245px;
+			position: relative;
+			right:-15px;
+		}
+	}
+	
+	.attorney_names {
+		top: 527px;
+	}
+	
+	.attorney_names_inner {
+		a.attorney_name {
+			font-size: 14px;
+			padding: 10px 17px;
+		}
+		a.attorney_name_one {
+			margin-left:27px;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1360px) {
+	
+	
+	.sec_one_left {
+		width:467px;
+	}
+	
+	.sec_one_right {
+		position: absolute;
+		top:0;
+		left: 430px;
+	}
+	
+	
+	picture.att_one {
+		img {
+			padding-top:0;
+		}
+	}
+	
+	
+	picture.att_two {
+		img {
+			padding-top:0;
+		}
+	}
+	
+	
+	
+} /* Media Query */
 

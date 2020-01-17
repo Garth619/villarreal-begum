@@ -4,7 +4,7 @@
 	
 	<div class="sec_one_content">
 		
-		<div class="sec_one_left">
+		<div id="para_four" class="sec_one_left">
 			
 			<span class="sec_one_subheader">texas personal injury lawyers</span><!-- sec_one_subheader -->
 			
