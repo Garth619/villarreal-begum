@@ -303,6 +303,31 @@ $('.sec_three_slider').slick({
  });
  
 */
+
+
+
+$('.sec_two_slider').slick({
+  infinite: true,
+  mobileFirst:true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	//prevArrow:".arrow_left",
+	//nextArrow:".arrow_right",
+	responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+     }
+   },
+   {
+      breakpoint: 1100,
+      settings: "unslick"
+   }
+	]
+ });
  
  
  

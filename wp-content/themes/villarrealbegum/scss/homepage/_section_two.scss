@@ -278,7 +278,7 @@
 	.sec_two_slide_inner {
 		margin-left: 41px;
 		span.sec_two_description {
-			
+			max-width: 216px;
 		}
 	}
 }
@@ -286,15 +286,15 @@
 
 .sec_two_slide.four {
 	svg#horseshoe {
-		width:110px;
-		height:110px;
+		width:107px;
+		height:107px;
 		top: 88px;
     left: 0px;
 	}
 	.sec_two_slide_inner {
 		margin-left: 46px;
 		span.sec_two_description {
-			
+			max-width: 215px;
 		}
 	}
 }
@@ -317,3 +317,168 @@
 	
 } /* Media Query */
 
+
+
+@media screen and (max-width: 1320px) {
+	
+	
+	#section_two {
+		margin-top: -40px;
+	}
+	
+	.sec_two_slide.one {
+		svg#cactus {
+			left: 17px;
+		}
+	 }
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1160px) {
+	
+	.sec_two_slider {
+		display: block;
+	}
+	
+	.sec_two_slide {
+		svg {
+			width:131px;
+			height:129px;
+			top: 49px; // slick is resetting after loop.....
+		}
+		.sec_two_slide_inner {
+			margin: 117px 0 0 0;
+			span.sec_two_slide_title {
+				font-size: 30px;
+			}
+			span.sec_two_description {
+				font-size: 14px;
+				line-height: 23px;
+			}
+		}
+	} 
+	
+	
+	.sec_two_slide.one {
+		svg#cactus {
+			top: 49px;
+		}
+	}
+	
+	.sec_two_slide.two {
+		svg#tower {
+			top: 23px;
+		}
+	}
+	
+	
+	.sec_two_slide.three {
+		svg#bull {
+			top: 42px;
+			left: -25px;
+			width: 138px;
+			height: 118px;
+		}
+	}
+	
+	
+	.sec_two_slide.four {
+		svg#horseshoe {
+			top: 54px;
+			left: 0px;
+			width: 100px;
+			height: auto;
+		}
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.sec_two_slider {
+    max-width: 765px;
+  }
+  
+  
+  .sec_two_slide.three {
+		svg#bull {
+			top: 42px;
+			left: 0px;
+			width: 138px;
+			height: 118px;
+		}
+	}
+
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 830px) {
+	
+	
+	
+	.sec_two_slider {
+    max-width: 670px;
+	}
+	
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 767px) {
+	
+	#section_two {
+    margin-top: 0;
+	}
+	
+	.sec_two_slide {
+		svg {
+			
+		}
+		.sec_two_slide_inner {
+			margin: 74px 0 0 0;
+			span.sec_two_slide_title {
+				font-size: 34px;
+				&:after {
+					width:270px;
+				}
+			}
+			span.sec_two_description {
+				margin-top: 13px;
+			}
+		}
+	} 
+	
+	
+	.sec_two_slide.one {
+		svg#cactus {
+    	top: 33px;
+		}
+		.sec_two_slide_inner {
+			margin-left: 71px;
+			span.sec_two_description {
+				max-width: 251px;
+			}
+		}
+	}
+	
+	.sec_two_slider {
+		max-width: 400px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	
+} /* Media Query */
