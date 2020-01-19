@@ -52,6 +52,32 @@ h1,h2,h3,h4 {
     opacity: 1; }
 
 
+
+.content {
+	font-size: 20px;
+	line-height: 32px;
+	@include nunito_reg;
+	p {
+		padding-bottom:30px;
+	}
+	strong {
+		font-size: 22px;
+		display: block;
+		line-height: 36px;
+		margin-bottom:-37px;
+		&:before {
+			content:"";
+			margin: 19px 0 28px;
+			display: block;
+			width:128px;
+			height:15px;
+			background: $yellowdark;
+		}
+		@include nunito_extrabold;
+	}
+}
+
+
 @media screen and (max-width: 767px) {
 	
 	
