@@ -316,7 +316,7 @@ $('.sec_two_slider').slick({
 	//nextArrow:".arrow_right",
 	responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 740,
       settings: {
       slidesToShow: 2,
       slidesToScroll: 2,

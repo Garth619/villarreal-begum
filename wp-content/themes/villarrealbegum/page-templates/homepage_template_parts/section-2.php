@@ -68,4 +68,10 @@
 		
 	</div><!-- sec_two_inner -->
 	
+	<div class="sec_two_progress_wrapper">
+						
+		
+						
+	</div><!-- sec_two_progress_wrapper -->
+	
 </section><!-- section_two -->
