@@ -99,6 +99,27 @@ h1,h2,h3,h4 {
 } /* Media Query */
 
 
+@media screen and (max-width: 1150px) {
+	
+	
+	.content {
+		font-size: 16px;
+		line-height: 28px;
+		strong {
+			font-size: 18px;
+			line-height: 32px;
+			margin-bottom: -33px;
+			&:before {
+				margin: 29px 0 18px;
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 767px) {
 	
 	
