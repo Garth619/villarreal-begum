@@ -27,6 +27,8 @@ img.sec_six_bg {
 
 .sec_six_left {
 	padding:137px 0 0 45px;
+	flex-basis:540px;
+	flex-shrink:0;
 	span.sec_six_title {
 		display: block;
 		color:#fff;
@@ -56,4 +58,63 @@ a.reviews_button {
 		background: $yellow;
 		color:$black;
 	}
+}
+
+.sec_six_right {
+	flex-grow:1;
+	padding-left:80px;
+	background: pink;
+}
+
+
+.sec_six_slider {
+	
+}
+
+
+.sec_six_slide {
+	width:521px;
+	height:1000px;
+	background: $yellow;
+	position: relative;
+}
+
+.star_box {
+	width:74px;
+	height:89px;
+	background: $black;
+	padding-top:1px;
+	margin-left:40px;
+	img {
+		width:39px;
+		height:39px;
+		display: block;
+		margin:26px auto 0;
+	}
+}
+
+
+span.sec_six_slide_title {
+	display: block;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 40px;
+	margin:45px 0 0 75px;
+	@include deluxe_extrabold;
+}
+
+.black_bar {
+	margin-top:23px;
+	width:150px;
+	height:14px;
+	background: $black;
+}
+
+.sec_six_description {
+	font-size: 19px;
+	line-height: 32px;
+	display: block;
+	max-width:360px;
+	margin:27px 0 0 75px;
+	@include nunito_reg;
 }
