@@ -16,6 +16,17 @@
 				
 				<span class="sec_three_left_title">Practice Areas</span><!-- sec_three_left_title -->
 				
+				<ul>
+					<li><a href="">auto accident</a></li>
+					<li><a href="">drunk driving accident</a></li>
+					<li><a href="">18 wheeler accident</a></li>
+					<li><a href="">motorcycle accident</a></li>
+					<li><a href="">slip and fall accident</a></li>
+					<li><a href="">wrongful death</a></li>
+					<li><a href="">nursing home abuse</a></li>
+					<li><a href="">view all</a></li>
+				</ul>
+				
 			</div><!-- sec_three_left -->
 			
 			<div class="sec_three_right content">

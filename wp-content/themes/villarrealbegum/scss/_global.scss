@@ -78,6 +78,27 @@ h1,h2,h3,h4 {
 }
 
 
+
+@media screen and (max-width: 1450px) {
+	
+	
+	.content {
+		font-size: 18px;
+		line-height: 30px;
+		strong {
+			font-size: 20px;
+			line-height: 34px;
+			&:before {
+				margin: 33px 0 18px;
+				height:13px;
+			}
+		}
+	}
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 767px) {
 	
 	
