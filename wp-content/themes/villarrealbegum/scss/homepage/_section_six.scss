@@ -447,3 +447,42 @@ img.fivestar {
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 1150px) {
+	
+	
+	#section_six {
+		background:#1f222a;
+	}
+	
+	.sec_six_inner {
+		padding:0 45px;
+		max-width: 960px;
+	}
+	
+	.sec_six_right {
+		margin-right:0;
+	}
+	
+	img.sec_six_bg {
+		display: none;
+	}
+	
+	
+.sec_six_left {
+	span.sec_six_title {
+		font-size: 60px;
+		line-height: 56px;
+		max-width: 335px;
+	}
+}
+
+.sec_six_bottom_inner {
+ 	padding: 0px;
+ 	max-width: 960px;
+ }
+	
+	
+	
+} /* Media Query */
