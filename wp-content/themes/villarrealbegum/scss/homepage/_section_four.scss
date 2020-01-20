@@ -34,7 +34,7 @@
 			background-position: 0 67px;
 			background-size:1px 17px;
 		}
-	}
+	} //https://codepen.io/johndjameson/pen/zKAKQP
 /*
 	span.sec_four_largeheader {
 		font-size: 82px;
@@ -65,3 +65,88 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	.sec_four_inner {
+		padding: 98px 0 95px;
+		span.sec_four_subheader {
+			font-size: 20px;
+			margin-bottom: 32px;
+		}
+		span.sec_four_largeheader {
+			font-size: 70px;
+			line-height: 80px;
+			span {
+				background-position: 0 59px;
+				background-size:1px 13px;
+			}
+		}
+		a.meet_button {
+			font-size: 18px;
+			letter-spacing: 0.1em;
+			padding: 15px 44px;
+			margin-top: 35px;
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1150px) {
+	
+	
+	
+	.sec_four_inner {
+		padding: 90px 0;
+		span.sec_four_subheader {
+			margin-bottom: 29px;
+		}
+		span.sec_four_largeheader {
+			font-size: 50px;
+			line-height: 66px;
+			span {
+				background-position: 0 43px;
+				background-size:1px 13px;
+			}
+		}
+		a.meet_button {
+			margin-top: 30px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	.sec_four_inner {
+		padding: 55px 0;
+		max-width:360px;
+		span.sec_four_subheader {
+			margin-bottom: 27px;
+		}
+		span.sec_four_largeheader {
+			font-size: 42px;
+			line-height: 52px;
+			span {
+				background-position: 0 35px;
+			}
+		}
+		a.meet_button {
+			margin-top: 25px;
+		}
+	}
+
+	
+	
+	
+} /* Media Query */

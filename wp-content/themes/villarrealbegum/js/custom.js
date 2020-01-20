@@ -476,12 +476,8 @@ var pgurl = window.location.href;
 	}, 100)); 
 
 	
-	
-	// parallax
-	
-	
-	
-	// parallax
+
+// parallax
 
 
 function paraWidth() {
@@ -594,8 +590,52 @@ if($('#section_one').length > 0 ){
  
 	
 	
+	// resize span tags on section four mobile
 	
-
+	
+	function desktopText() {
+		
+		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in treating all</span> <span>of our clients like family</span></span>" );
+		
+		}
+	
+	
+	function mobileText() {
+		
+		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in</span> <span>treating all of our</span> <span>clients like mobile</span>" );
+		
+	}
+	
+	
+	if ($(window).width() > 767) {
+		
+		desktopText();
+		
+	}
+	
+	
+	if ($(window).width() <= 767) {
+		
+		mobileText();
+		
+	}
+	
+	
+	$(window).resize(_.debounce(function() {
+		
+		if ($(window).width() > 767) {
+			
+				desktopText();
+		
+		}	
+		
+		if ($(window).width() <= 767) {
+			
+			mobileText();
+					
+		}
+		
+	}, 100)); 
 
   
 }); // document ready
