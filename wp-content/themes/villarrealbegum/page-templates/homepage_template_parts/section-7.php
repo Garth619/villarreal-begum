@@ -18,11 +18,15 @@
 		
 		<div class="sec_seven_right">
 			
-			<div class="sec_seven_right_inner">
+			<div class="sec_seven_box">
+			
+			<div class="sec_seven_box_inner">
 				
+				<span class="sec_seven_quote"><span>we believe in</span> <span>treating all</span> <span>of our clients</span> <span>like family</span></span>
 				
-				
-			</div><!-- sec_seven_right_inner -->
+			</div><!-- sec_seven_box_inner -->
+			
+			</div><!-- sec_seven_box -->
 			
 		</div><!-- sec_seven_right -->
 		
