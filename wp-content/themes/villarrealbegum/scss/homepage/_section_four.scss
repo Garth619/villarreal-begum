@@ -22,11 +22,30 @@
 		margin-bottom:45px;
 		@include deluxe_heavy;
 	}
-	span.sec_four_largehader {
+	span.sec_four_largeheader {
 		font-size: 82px;
 		line-height: 91px;
+		display: block;
+		@include deluxe_extrabold;
+		span {
+			display: inline-block;
+			padding:0 20px;
+			background: url(#{$themePath}images/linebg.svg) repeat-x;
+			background-position: 0 67px;
+			background-size:1px 17px;
+		}
+	}
+/*
+	span.sec_four_largeheader {
+		font-size: 82px;
+		line-height: 91px;
+		display: inline;
+		background: url(#{$themePath}images/linebg.svg) repeat-x;
+		background-position: 0 67px;
+		background-size:1px 17px;
 		@include deluxe_extrabold;
 	}
+*/
 	a.meet_button {
 		text-transform: uppercase;
 		color:$black;
@@ -36,7 +55,7 @@
 		border:3px solid $yellow;
 		border-radius: 45px;
 		display: inline-block;
-		margin-top:45px;
+		margin-top:42px;
 		padding:19px 44px;
 		transition: all 200ms ease-in-out;
 		background: transparent;

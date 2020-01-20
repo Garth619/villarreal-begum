@@ -4,7 +4,7 @@
 		
 		<span class="sec_four_subheader">Villarreal & Begum</span><!-- sec_four_subheader -->
 		
-		<span class="sec_four_largehader">we believe in treating all of our clients like family</span><!-- sec_four_largehader -->
+		<span class="sec_four_largeheader"><span>we believe in treating all</span> <span>of our clients like family</span></span><!-- sec_four_largehader -->
 		
 		<a class="meet_button" href="">Meet the Attorneys</a>
 		
