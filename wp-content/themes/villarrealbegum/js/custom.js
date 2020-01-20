@@ -342,10 +342,10 @@ $('.sec_two_slider').slick({
 	//nextArrow:".arrow_right",
 	responsive: [
     {
-      breakpoint: 1220,
+      breakpoint: 1880,
       settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
      }
    }
 	]
