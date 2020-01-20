@@ -183,6 +183,8 @@ span.sec_seven_quote {
 	
 	.sec_seven_inner {
 		display: block;
+		padding-left:30px;
+		padding-right:30px;
 	}
 	
 	.sec_seven_right {
@@ -191,8 +193,11 @@ span.sec_seven_quote {
 	
 	
 	.sec_seven_left {
-		padding-left:30px;
-		padding-right:30px;
+		padding-left:0px;
+		padding-right:0px;
+		max-width:800px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 	
 	
