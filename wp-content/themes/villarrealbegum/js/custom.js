@@ -331,6 +331,28 @@ $('.sec_two_slider').slick({
  
  
  
+ 
+ 
+ $('.sec_six_slider').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+	arrows:false,
+	//prevArrow:".arrow_left",
+	//nextArrow:".arrow_right",
+	responsive: [
+    {
+      breakpoint: 1220,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+     }
+   }
+	]
+ });
+ 
+ 
+ 
 // macy http://macyjs.com/
 
 /*

@@ -3,6 +3,7 @@
 	position: relative;
 	width:100%;
 	height:969px;
+	padding:0 100px;
 }
 
 
@@ -27,14 +28,14 @@ img.sec_six_bg {
 
 .sec_six_left {
 	padding:137px 0 0 45px;
-	flex-basis:540px;
-	flex-shrink:0;
+	width:540px;
 	span.sec_six_title {
 		display: block;
 		color:#fff;
 		max-width: 495px;
 		font-size: 101px;
 		line-height: 88px;
+		
 		text-transform: uppercase;
 		@include deluxe_extrabold;
 	}
@@ -61,23 +62,38 @@ a.reviews_button {
 }
 
 .sec_six_right {
-	flex-grow:1;
+	width:calc(100% - 540px);
 	padding-left:80px;
-	background: pink;
 }
 
 
 .sec_six_slider {
+	width:100%;
+	margin:-70px 0 0 0;
+	.slick-slide {
+	    margin: 0 20px;
+	    &:nth-of-type(2n + 1) {
+				margin-top:160px;
+			}
+	  }
+	.slick-list {
+	  margin: 0 -20px;
+	}
+	.slick-current {
+	
+	}
 	
 }
 
 
 .sec_six_slide {
-	width:521px;
-	height:1000px;
+	height:719px;
 	background: $yellow;
 	position: relative;
+	
 }
+
+
 
 .star_box {
 	width:74px;
@@ -99,7 +115,8 @@ span.sec_six_slide_title {
 	text-transform: uppercase;
 	font-size: 36px;
 	line-height: 40px;
-	margin:45px 0 0 75px;
+	margin:29px 0 0 75px;
+	max-width: 357px;
 	@include deluxe_extrabold;
 }
 
@@ -115,6 +132,39 @@ span.sec_six_slide_title {
 	line-height: 32px;
 	display: block;
 	max-width:360px;
-	margin:27px 0 0 75px;
+	margin:29px 0 0 75px;
 	@include nunito_reg;
+}
+
+
+img.profile_pic {
+	border-radius: 50%;
+	max-width: 100%;
+	height:auto;
+	width:62px;
+	height:62px;
+	display: block;
+	margin:18px 0 0 78px;
+}
+
+
+.sec_six_name_meta {
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 0.06em;
+	margin:27px 0 0 78px;
+	@include deluxe_extrabold;
+	span {
+		display: inline-block;
+	}
+	span.name {
+		&:after {
+			content:"i";
+			margin:0 10px;
+			@include deluxe_extrabold;
+		}
+	}
+	span.type {
+		
+	}
 }
