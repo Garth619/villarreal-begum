@@ -1,0 +1,32 @@
+
+
+#section_five {
+	padding:95px 30px 125px;
+}
+
+
+.sec_five_inner {
+	max-width: 835px;
+	margin:0 auto;
+}
+
+
+@media screen and (max-width: 1250px) {
+	
+	#section_five {
+		padding: 82px 30px 130px;
+	}
+	
+	.sec_five_inner {
+		max-width: 800px;
+		
+	}
+	
+	
+} /* Media Query */
+
+
+
+
+
+
