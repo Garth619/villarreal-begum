@@ -6,6 +6,14 @@
 			
 			<span class="sec_six_title">What Our Clients Have to Say</span><!-- sec_six_title -->
 			
+			<div class="star_wrapper mobile">
+				
+				<img class="fivestar" src="<?php bloginfo('template_directory');?>/images/fivestar-3.svg"/>
+				
+				<span class="star_rating">4.7 Google Rating</span><!-- star_rating -->
+				
+			</div><!-- star_wrapper -->
+			
 			<a class="reviews_button desktop" href="">View All Testimonials</a><!-- reviews_button -->
 			
 		</div><!-- sec_six_left -->
@@ -188,7 +196,7 @@
 		
 		<div class="sec_six_bottom_inner">
 			
-			<div class="star_wrapper">
+			<div class="star_wrapper desktop">
 				
 				<img class="fivestar" src="<?php bloginfo('template_directory');?>/images/fivestar-3.svg"/>
 				
@@ -196,11 +204,11 @@
 				
 			</div><!-- star_wrapper -->
 			
-			
-			
 		</div><!-- sec_six_bottom_inner -->
 		
 	</div><!-- sec_six_bottom -->
+	
+	<a class="reviews_button mobile" href="">View All Testimonials</a><!-- reviews_button -->
 	
 	<img class="sec_six_bg" src="<?php bloginfo('template_directory');?>/images/test_bg_desk.jpg"/>
 	

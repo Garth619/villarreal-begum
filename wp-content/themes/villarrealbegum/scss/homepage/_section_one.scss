@@ -75,6 +75,7 @@ img.hero_img {
 		@include deluxe_extrabold;
 		&:hover {
 			background: $yellow;
+			color:$black;
 		}
 	}
 }

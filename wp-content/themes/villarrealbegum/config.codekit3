@@ -342,6 +342,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/linebg-lite.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/linebg-lite.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/images/linebg.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -697,6 +707,14 @@
 		"oAP": "/page-templates/homepage_template_parts/section-7.php",
 		"oF": 0
 		},
+	"/page-templates/homepage_template_parts/section-8.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/homepage_template_parts/section-8.php",
+		"oF": 0
+		},
 	"/page-templates/template-about.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1039,6 +1057,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/homepage/_section_eight.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/homepage/_section_eight.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
