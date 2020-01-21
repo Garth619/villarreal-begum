@@ -19,8 +19,24 @@
 	
 	.sec_five_inner {
 		max-width: 800px;
-		
 	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1150px) {
+	
+	#section_five {
+    padding: 82px 105px 130px;
+	}
+	
+/*
+	.sec_five_inner {
+		max-width: 565px;
+	}
+*/
+	
 	
 	
 } /* Media Query */
