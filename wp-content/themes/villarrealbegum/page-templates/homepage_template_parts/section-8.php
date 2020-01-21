@@ -12,7 +12,19 @@
 		
 			<div class="sec_eight_right">
 				
-				<div class="sec_eight_slider"></div><!-- sec_eight_slider -->
+				<div class="sec_eight_slider">
+					
+					<div class="sec_eight_slide">
+						
+						<span class="sec_eight_title">$3M</span><!-- sec_eight_title -->
+						
+						<span class="sec_eight_subtitle">Commercial Vehicle Crash</span><!-- sec_eight_subtitle -->
+						
+						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
+						
+					</div><!-- sec_eight_slide -->
+					
+				</div><!-- sec_eight_slider -->
 				
 				<div class="sec_eight_results_list"></div><!-- sec_eight_results_list -->
 				
