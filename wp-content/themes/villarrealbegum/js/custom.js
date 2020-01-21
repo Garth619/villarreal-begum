@@ -672,7 +672,24 @@ if($('#section_one').length > 0 ){
 	
 	// case results
 	
+
+	  
+		$('.sec_eight_results_list ul li').on('click', function(e) {
+			
+			var dataFilter = $(this).data('results');
+	  	
+	  	$('.sec_eight_slide').fadeOut(300);
 	
+			$('.'+dataFilter).delay(600).fadeIn(400);
+			
+		});
+	
+	
+	
+	
+	
+	
+/*
 	$('.sec_eight_results_list ul li').on('click', function() {
   	
   	$('.current').removeClass('current');
@@ -680,6 +697,7 @@ if($('#section_one').length > 0 ){
 		$(this).addClass('current');
 	
 	}).has('a[href*="' + location.pathname + '"]').addClass('current');
+*/
 	
 
   

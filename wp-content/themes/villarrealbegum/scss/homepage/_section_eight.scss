@@ -73,12 +73,16 @@ img.sec_eight_hero {
 
 .sec_eight_slider {
 	flex-grow:1;
-	
+	position: relative;
 }
 
 .sec_eight_slide {
 	text-align: center;
 	padding:115px 0 0 0;
+	position: absolute;
+	top:0;
+	left:0;
+	display: none;
 	span {
 		display: block;
 	}
@@ -106,16 +110,17 @@ img.sec_eight_hero {
 	}
 }
 
-.sec_eight_results_list {
-	
-}
 
+.sec_eight_slide.current {
+	display: block;
+}
 
 // vertical magic line https://codepen.io/a2best/pen/OxvNmX
 
 
 $width: 250px;
-$height: 114px;
+$height: 134px;
+$offset: 20px;
 $amount: 5;
 
 
@@ -125,12 +130,49 @@ $amount: 5;
 	height:892px;
 	border-left:2px solid #717379;
   ul {
-		margin-top:100px;
+		margin-top:140px;
 		position: relative;
+		padding-left:137px;
 		li {
 	  	height: $height;
-	  	border-bottom:1px solid pink;
+	  	//border-bottom:1px solid pink;
 			display: block;
+			cursor: pointer;
+			&:nth-of-type(1) {
+				&:hover {
+					~ #line {
+							margin-top: $offset;
+					}
+				}
+			}
+			&:nth-of-type(2) {
+				&:hover {
+					~ #line {
+							margin-top: $height + $offset;
+					}
+				}
+			}
+			&:nth-of-type(3) {
+				&:hover {
+					~ #line {
+							margin-top: (($amount)-3)*$height+$offset;
+					}
+				}
+			}
+			&:nth-of-type(4) {
+				&:hover {
+					~ #line {
+							margin-top: (($amount)-2)*$height+$offset;
+					}
+				}
+			}
+			&:nth-of-type(5) {
+				&:hover {
+					~ #line {
+							margin-top: (($amount)-1)*$height+$offset;
+					}
+				}
+			}
 			a {
 				text-decoration: none;
 				span {
@@ -152,36 +194,17 @@ $amount: 5;
 			}
 		}
 	}
-	.one.current ~ #line,
-	.one:hover ~ #line {
-  	margin-top: 0px;
-	}
-	.two.current ~ #line,
-	.two:hover ~ #line {
-  	margin-top: $height;
-	}
-	.three.current ~ #line,
-	.three:hover ~ #line {
-  	margin-top: (($amount)-3)*$height;
-	}
-	.four.current ~ #line,
-	.four:hover ~ #line {
-  	margin-top: (($amount)-2)*$height;
-	}
-	.five.current ~ #line,
-	.five:hover ~ #line {
-  	margin-top: (($amount)-1)*$height;
-	}
 }
 
 
 #line {
   position: absolute;
   left:0;
+  margin-top:$offset;
  //display: none;
-  height: $height;
-  width: .3rem;
-  background: tomato;
+  height: 10px;
+  width: 79px;
+  background: $yellow;;
   border: none;
   transform: translate(0, $amount*$height*-1);
   transition: .3s ease-in-out;
