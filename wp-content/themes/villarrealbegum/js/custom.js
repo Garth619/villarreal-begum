@@ -677,16 +677,14 @@ if($('#section_one').length > 0 ){
 		$('.sec_eight_results_list ul li').on('click', function(e) {
 			
 			var dataFilter = $(this).data('results');
-			
-			$(this).addClass('current');
-	  	
-	  	//$('.sec_eight_slide').hide();
 	  	
 	  	$('.sec_eight_slide').removeClass('fadein');
 	  	
+	  	$('.sec_eight_results_list ul li').removeClass('current');
+	  	
+	  	$(this).addClass('current');
+	  	
 	  	$('.'+dataFilter).addClass('fadein');
-	
-			//$('.'+dataFilter).delay(600).show();
 			
 		});
 	

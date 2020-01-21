@@ -16,15 +16,21 @@
 					
 					<div class="sec_eight_slide fadein results-1">
 						
-						<span class="sec_eight_title">$3.5M</span><!-- sec_eight_title -->
+						<div class="sec_eight_slide_inner">
 						
-						<span class="sec_eight_subtitle">Product Defect Claim</span><!-- sec_eight_subtitle -->
+							<span class="sec_eight_title">$3.5M</span><!-- sec_eight_title -->
 						
-						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
+							<span class="sec_eight_subtitle">Product Defect Claim</span><!-- sec_eight_subtitle -->
+						
+							<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
+						
+						</div><!-- sec_eight_slide_inner -->
 						
 					</div><!-- sec_eight_slide -->
 					
 					<div class="sec_eight_slide results-2">
+						
+						<div class="sec_eight_slide_inner">
 						
 						<span class="sec_eight_title">$3M</span><!-- sec_eight_title -->
 						
@@ -32,9 +38,13 @@
 						
 						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
 						
+						</div>
+						
 					</div><!-- sec_eight_slide -->
 					
 					<div class="sec_eight_slide results-3">
+						
+						<div class="sec_eight_slide_inner">
 						
 						<span class="sec_eight_title">$1.8M</span><!-- sec_eight_title -->
 						
@@ -42,9 +52,13 @@
 						
 						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
 						
+						</div>
+						
 					</div><!-- sec_eight_slide -->
 					
 					<div class="sec_eight_slide results-4">
+						
+						<div class="sec_eight_slide_inner">
 						
 						<span class="sec_eight_title">$1.5M</span><!-- sec_eight_title -->
 						
@@ -52,15 +66,21 @@
 						
 						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
 						
+						</div>
+						
 					</div><!-- sec_eight_slide -->
 					
 					<div class="sec_eight_slide results-5">
+						
+						<div class="sec_eight_slide_inner">
 						
 						<span class="sec_eight_title">$1M</span><!-- sec_eight_title -->
 						
 						<span class="sec_eight_subtitle">18 Wheeler Crash</span><!-- sec_eight_subtitle -->
 						
 						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
+						
+						</div>
 						
 					</div><!-- sec_eight_slide -->
 					
@@ -69,31 +89,31 @@
 				<div class="sec_eight_results_list">
 					
 					<ul>
-						<li data-results="results-1">
+						<li class="one" data-results="results-1">
 							<a>
 								<span class="result_list_amount">$3.5M</span><!-- result_list_amount -->
 								<span class="result_list_description">product defect claim</span><!-- result_list_description -->
 							</a>
 						</li>
-						<li data-results="results-2">
+						<li class="two" data-results="results-2">
 							<a>
 								<span class="result_list_amount">$3M</span><!-- result_list_amount -->
 								<span class="result_list_description">commercial vehicle crash</span><!-- result_list_description -->
 							</a>
 						</li>
-						<li data-results="results-3">
+						<li class="three" data-results="results-3">
 							<a>
 								<span class="result_list_amount">$1.8M</span><!-- result_list_amount -->
 								<span class="result_list_description">commercial vehicle crash</span><!-- result_list_description -->
 							</a>
 						</li>
-						<li data-results="results-4">
+						<li class="four" data-results="results-4">
 							<a>
 								<span class="result_list_amount">$1.5M</span><!-- result_list_amount -->
 								<span class="result_list_description">18 wheeler crash</span><!-- result_list_description -->
 							</a>
 						</li>
-						<li data-results="results-5">
+						<li class="five" data-results="results-5">
 							<a>
 								<span class="result_list_amount">$1M</span><!-- result_list_amount -->
 								<span class="result_list_description">18 wheeler crash</span><!-- result_list_description -->
