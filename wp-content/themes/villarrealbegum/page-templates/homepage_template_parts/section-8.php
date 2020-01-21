@@ -14,7 +14,7 @@
 				
 				<div class="sec_eight_slider">
 					
-					<div class="sec_eight_slide current results-1">
+					<div class="sec_eight_slide fadein results-1">
 						
 						<span class="sec_eight_title">$3.5M</span><!-- sec_eight_title -->
 						
