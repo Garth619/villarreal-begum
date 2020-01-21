@@ -26,7 +26,43 @@
 					
 				</div><!-- sec_eight_slider -->
 				
-				<div class="sec_eight_results_list"></div><!-- sec_eight_results_list -->
+				<div class="sec_eight_results_list">
+					
+					<ul>
+						<li class="one">
+							<a href="#">
+								<span class="result_list_amount">$3.5M</span><!-- result_list_amount -->
+								<span class="result_list_description">product defect claim</span><!-- result_list_description -->
+							</a>
+						</li>
+						<li class="two">
+							<a href="#">
+								<span class="result_list_amount">$3.5M</span><!-- result_list_amount -->
+								<span class="result_list_description">product defect claim</span><!-- result_list_description -->
+							</a>
+						</li>
+						<li class="three">
+							<a href="#">
+								<span class="result_list_amount">$3.5M</span><!-- result_list_amount -->
+								<span class="result_list_description">product defect claim</span><!-- result_list_description -->
+							</a>
+						</li>
+						<li class="four">
+							<a href="#">
+								<span class="result_list_amount">$3.5M</span><!-- result_list_amount -->
+								<span class="result_list_description">product defect claim</span><!-- result_list_description -->
+							</a>
+						</li>
+						<li class="five">
+							<a href="#">
+								<span class="result_list_amount">$3.5M</span><!-- result_list_amount -->
+								<span class="result_list_description">product defect claim</span><!-- result_list_description -->
+							</a>
+						</li>
+						 <div id="line"></div>  
+					</ul>
+					
+				</div><!-- sec_eight_results_list -->
 				
 			</div><!-- sec_eight_right -->
 		

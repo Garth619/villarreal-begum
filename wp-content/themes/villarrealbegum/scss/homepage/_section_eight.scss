@@ -109,4 +109,65 @@ img.sec_eight_hero {
 .sec_eight_results_list {
 	flex-basis:535px;
 	flex-shrink:0;
+	height:892px;
+	border-left:2px solid #717379;
+}
+
+
+// vertical magic line https://codepen.io/a2best/pen/OxvNmX
+
+$width: 250px;
+$height: 100px;
+$amount: 5;
+
+
+.sec_eight_results_list {
+  height: 100vh;
+  ul {
+  	padding: 10px;
+		width:400px;
+		li {
+	  	line-height: $height;
+			display: inline;
+			text-align: center;
+			a {
+				display: inline-block;
+				margin: 0;
+				width: $width;
+				text-decoration: none;
+				color: #333;
+			}
+		}
+	}
+	.one.current ~ #line,
+	.one:hover ~ #line {
+  	margin-top: 0px;
+	}
+	.two.current ~ #line,
+	.two:hover ~ #line {
+  	margin-top: $height;
+	}
+	.three.current ~ #line,
+	.three:hover ~ #line {
+  	margin-top: (($amount)-3)*$height;
+	}
+	.four.current ~ #line,
+	.four:hover ~ #line {
+  	margin-top: (($amount)-2)*$height;
+	}
+	.five.current ~ #line,
+	.five:hover ~ #line {
+  	margin-top: (($amount)-1)*$height;
+	}
+}
+
+
+#line {
+  position: absolute;
+  height: $height;
+  width: .3rem;
+  background: tomato;
+  border: none;
+  transform: translate($width, $amount*$height*-1);
+  transition: .3s ease-in-out;
 }

@@ -666,6 +666,21 @@ if($('#section_one').length > 0 ){
 		}
 		
 	}, 100)); 
+	
+	
+	
+	
+	// case results
+	
+	
+	$('.sec_eight_results_list ul li').on('click', function() {
+  	
+  	$('.current').removeClass('current');
+		
+		$(this).addClass('current');
+	
+	}).has('a[href*="' + location.pathname + '"]').addClass('current');
+	
 
   
 }); // document ready
