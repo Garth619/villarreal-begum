@@ -107,35 +107,48 @@ img.sec_eight_hero {
 }
 
 .sec_eight_results_list {
-	flex-basis:535px;
-	flex-shrink:0;
-	height:892px;
-	border-left:2px solid #717379;
+	
 }
 
 
 // vertical magic line https://codepen.io/a2best/pen/OxvNmX
 
+
 $width: 250px;
-$height: 100px;
+$height: 114px;
 $amount: 5;
 
 
 .sec_eight_results_list {
-  height: 100vh;
+  flex-basis:535px;
+	flex-shrink:0;
+	height:892px;
+	border-left:2px solid #717379;
   ul {
-  	padding: 10px;
-		width:400px;
+		margin-top:100px;
+		position: relative;
 		li {
-	  	line-height: $height;
-			display: inline;
-			text-align: center;
+	  	height: $height;
+	  	border-bottom:1px solid pink;
+			display: block;
 			a {
-				display: inline-block;
-				margin: 0;
-				width: $width;
 				text-decoration: none;
-				color: #333;
+				span {
+					display: block;
+				}
+				span.result_list_amount {
+					color:$yellow;
+					font-size: 50px;
+					@include deluxe_reg;
+				}
+				span.result_list_description {
+					color:#fff;
+					text-transform: uppercase;
+					font-size: 14px;
+					letter-spacing: 0.1em;
+					margin-top:11px;
+					@include nunito_extrabold;
+				}
 			}
 		}
 	}
@@ -164,10 +177,12 @@ $amount: 5;
 
 #line {
   position: absolute;
+  left:0;
+ //display: none;
   height: $height;
   width: .3rem;
   background: tomato;
   border: none;
-  transform: translate($width, $amount*$height*-1);
+  transform: translate(0, $amount*$height*-1);
   transition: .3s ease-in-out;
 }
