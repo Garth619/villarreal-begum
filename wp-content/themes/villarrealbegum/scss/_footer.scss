@@ -6,3 +6,124 @@ footer {
 	height:3000px;
 	background: $yellow;
 }
+
+.footer_inner {
+	max-width: 1600px;
+	margin:0 auto;
+	height:500px;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+
+.footer_left {
+	flex-basis:770px;
+	flex-shrink:0;
+	margin-top:135px;
+}
+
+.footer_right {
+	padding-right:25px;
+}
+
+
+span.footer_title {
+	font-size: 110px;
+	line-height: 101px;
+	display:block;
+	max-width:760px;
+	text-transform: uppercase;
+	position: absolute;
+	top:135px;
+	left:0;
+	@include deluxe_extrabold;
+	span {
+		color:#fff;
+	}
+}
+
+
+.footer_locations {
+	margin:370px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	.single_location {
+		position: relative;
+		&:nth-of-type(2) {
+			svg {
+				width:53px;
+				height:53px;
+			}
+		}
+		&:nth-of-type(3) {
+			svg {
+				width:54px;
+				height:54px;
+			}
+		}
+		svg {
+			position: absolute;
+			top:0;
+			left:0;
+		}
+		span {
+			display: block;
+		}
+		span.office_title {
+			text-transform: uppercase;
+			font-size: 24px;
+			margin-top:78px;
+			@include deluxe_extrabold;
+			&:after {
+				content:"";
+				display: block;
+				width:79px;
+				height:10px;
+				background: $black;
+				margin:20px 0 0 0;
+			}
+		}
+		span.address {
+			font-size: 20px;
+			line-height:30px;
+			margin-top:25px;
+			@include nunito_reg;
+		}
+		a.footer_phone {
+			color:$black;
+			display: inline-block;
+			text-decoration: none;
+			font-size: 22px;
+			margin-top:24px;
+			@include nunito_extrabold;
+		}
+		a.map_button {
+			width:105px;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			text-transform: uppercase;
+			border:3px solid #fff;
+			border-radius: 45px;
+			font-size: 24px;
+			letter-spacing: 0.1em;
+			color:#fff;
+			margin-top:22px;
+			padding:13px 0;
+			transition: all 200ms ease-in-out;
+			@include deluxe_extrabold;
+			&:hover {
+				border:3px solid $black;
+				background: $black;
+				color:$yellow;
+			}
+		}
+		span.appointment {
+			text-transform: uppercase;
+			font-size: 18px;
+			letter-spacing: 0.06em;
+			margin-top:35px;
+			@include deluxe_extrabold;
+		}
+	}
+}
