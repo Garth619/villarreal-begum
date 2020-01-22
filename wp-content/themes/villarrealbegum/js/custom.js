@@ -672,7 +672,7 @@ if($('#section_one').length > 0 ){
 	
 	// case results
 	
-
+	
 	  
 		$('.sec_eight_results_list ul li').on('click', function(e) {
 			
@@ -687,6 +687,56 @@ if($('#section_one').length > 0 ){
 	  	$('.'+dataFilter).addClass('fadein');
 			
 		});
+		
+		
+		
+		function desktopresultsText() {
+		
+		$( "span.cr_title" ).replaceWith( "<span class='cr_title'><span>Case</span> <span>results</span></span>" );
+		
+		}
+	
+	
+	function mobileresultsText() {
+		
+		$( "span.cr_title" ).replaceWith( "<span class='cr_title'><span>Case results</span></span>" );
+		
+	}
+	
+	
+	if ($(window).width() > 1150) {
+		
+		desktopresultsText();
+		
+	}
+	
+	
+	if ($(window).width() <= 1150) {
+		
+		mobileresultsText();
+		
+	}
+	
+	
+	$(window).resize(_.debounce(function() {
+		
+		if ($(window).width() > 1150) {
+			
+				desktopresultsText();
+		
+		}	
+		
+		if ($(window).width() <= 1150) {
+			
+			mobileresultsText();
+					
+		}
+		
+	}, 100)); 
+		
+		
+		
+		
 	
 	
 	

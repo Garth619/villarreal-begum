@@ -152,6 +152,10 @@ img.sec_eight_hero {
 }
 
 
+a.view_all_results.mobile {
+	display: none;
+}
+
 
 @media screen and (min-width: 1451px) {
 
@@ -499,6 +503,157 @@ $amount: 5;
     right: -130px;
 	}
 	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1160px) {
+	
+	
+	#section_eight {
+		background:#1f222a;
+		height:716px;
+		text-align: center;
+	}
+	
+	img.sec_eight_hero {
+		display: none;
+	}
+	
+	
+	.sec_eight_slider {
+		display: none;
+	}
+	
+	.sec_eight_inner {
+		display: block;
+	}
+	
+	.sec_eight_left {
+		flex-basis:auto;
+		padding-left:0;
+		span.cr_title {
+			max-width:100%;
+			font-size: 80px;
+			line-height: 90px;
+			text-align: center;
+		}
+		a.view_all_results {
+			display: none;
+		}
+	}
+	
+	.sec_eight_right {
+		position: static;
+		display: block;
+		width:100%;
+	}
+	
+	#line {
+		display: none;
+	}
+	
+	
+	.sec_eight_results_list {
+		flex-basis:auto;
+		height:auto;
+		margin:0 auto;
+		border-left: none;
+		max-width: 660px;
+		ul {
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: space-between;
+			padding:0;
+			margin-top: 85px;
+			li {
+				flex-basis:47%;
+				cursor: default;
+				height:auto;
+				text-align: center;
+				margin-bottom: 65px;
+				&:nth-of-type(5) {
+					display: none;
+				}
+				a {
+					span.result_list_amount {
+						font-size: 50px;
+					}
+					span.result_list_description {
+						margin-top: 14px;
+					}
+				}
+			}
+		}
+	}
+	
+	a.view_all_results.mobile {
+		display: inline-block;
+		color:$yellow;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 18px;
+		letter-spacing: 0.1em;
+		display: inline-block;
+		border:3px solid $yellow;
+		border-radius: 45px;
+		margin:34px auto 0;
+		width:230px;
+		text-align: center;
+		padding: 15px 0px;
+		transition: all 200ms ease-in-out;
+		@include deluxe_extrabold;
+		&:hover {
+			background: $yellow;
+			color:$black;
+		}
+	}
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	#section_eight {
+		height: auto;
+		padding-bottom: 97px;
+	}
+	
+	.sec_eight_left {
+		padding-top: 73px;
+		span.cr_title {
+			font-size: 60px;
+			line-height: 70px;
+			span {
+				background-position: 0 49px;
+			}
+		}
+	}
+	
+	.sec_eight_results_list {
+		ul {
+			display: block;
+			margin-top: 67px;
+			li {
+				margin-bottom: 39px;
+				&:nth-of-type(4) {
+					display: none;
+				}
+				a {
+					span.result_list_amount {
+						
+					}
+				}
+			}
+		}
+	}
+	
+	a.view_all_results.mobile {
+		margin: 17px auto 0;
+	}
 	
 	
 } /* Media Query */
