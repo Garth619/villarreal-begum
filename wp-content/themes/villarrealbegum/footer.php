@@ -54,11 +54,41 @@
 			
 		</div><!-- footer_left -->
 		
-		<div class="footer_right"></div><!-- footer_right -->
+		<div class="footer_right">
+			
+			<div class="form_wrapper">
+				
+				<span class="required">*Field Required</span><!-- required -->
+				
+				<?php gravity_form(1, false, false, false, '', true, 12); ?>
+				
+			</div><!-- form_wrapper -->
+			
+			
+		</div><!-- footer_right -->
 		
 	</div><!-- footer_inner -->
 	
-	<?php // gravity_form(1, false, false, false, '', true, 12); ?>
+	<div class="copyright">
+		
+		<div class="copryright_inner">
+			
+			<ul>
+				<li>Copyright &copy; <?php echo date("Y"); ?> - villarreal and begum law firm</li>
+				<li><a href="">disclaimer</a></li>
+				<li><a href="">sitemap</a></li>
+				<li><a href="">google+</a></li>
+			</ul>
+			
+			<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/ilawyer-logo.svg"/>
+				
+			</a>
+			
+		</div><!-- copryright_inner -->
+		
+	</div><!-- footer_copyright -->
 		
 </footer>
 
