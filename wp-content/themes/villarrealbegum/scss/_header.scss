@@ -670,6 +670,12 @@ body.page-template-default {
 	}
 	
 	
+	body.page-template-default {
+		header{
+			padding-bottom: 27px;
+		}
+	}
+	
 } /* Media Query */
 
 @media screen and (max-width: 715px) {

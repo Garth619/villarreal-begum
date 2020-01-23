@@ -428,7 +428,8 @@ span.footer_title {
 	.footer_inner {
 		flex-direction: column;
 		padding:47px 105px 0;
-		max-width: 783px;
+		//max-width: 783px;
+		max-width: 945px;
     margin: 0 auto 60px;
 	}
 	
@@ -444,6 +445,7 @@ span.footer_title {
 	
 	.footer_locations {
 		margin: 0 0 0 0;
+		max-width: 100%;
 		.single_location {
 			span.office_title {
 				margin-top: 61px;

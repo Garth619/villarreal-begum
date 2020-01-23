@@ -177,6 +177,7 @@ a.internal_banner_consult_button.mobile {
 
 .outer_container {
 	background: #fff;
+	padding:0 85px 280px;
 	min-height: 600px;
 }
 
@@ -196,6 +197,10 @@ a.internal_banner_consult_button.mobile {
 .sidebar_box {
 	background:$offwhiteone;
 	padding:55px 0 68px;
+	margin-bottom:65px;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 	h3 {
 		padding:0 60px;
 		display: block;
@@ -296,7 +301,7 @@ a.internal_banner_consult_button.mobile {
 
 
 .outer_container {
-	padding:0 0 280px 0;
+	
 }
 
 
@@ -384,6 +389,11 @@ a.internal_banner_consult_button.mobile {
 	   width: 675px;
 	   margin-right: 27px;
   }
+  
+  
+  .inner_content {
+	  padding-right:0;
+  }
      
 	
 	
@@ -437,7 +447,37 @@ a.internal_banner_consult_button.mobile {
   }
   
   
+	.inner_content {
+		padding-left:85px;
+	  padding-right:0;
+  }
 	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1220px) {
+	
+	
+	.two_col {
+		flex-direction: column;
+	}
+	
+	.sidebar_wrapper {
+		margin-top: 70px;
+		order:2;
+		flex-basis: auto;
+    width: 515px;
+	}
+	
+	.inner_content {
+		order:1;
+		padding-left:0;
+	}
+	
+	.outer_container {
+		padding: 0 85px 180px;
+	}
 	
 	
 } /* Media Query */
@@ -452,6 +492,78 @@ a.internal_banner_consult_button.mobile {
 		display: none;
 	}
 	
+	
+	.outer_container {
+		margin-top:174px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.outer_container {
+		margin-top: 106px;
+		padding: 0 105px 110px;
+	}
+	
+	.inner_content {
+    padding-top:75px;
+  }
+  
+  .sidebar_wrapper {
+    margin-top: 45px;
+  }
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	.outer_container {
+		margin-top: 121px;
+		padding:0 30px 40px;
+	}
+	
+	.inner_content {
+		padding-top: 60px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 615px) {
+	
+	
+	.sidebar_wrapper {
+		width:100%;
+		margin-top: 18px;
+	}
+	
+	
+	.sidebar_box {
+		padding: 40px 0 50px;
+		h3 {
+			padding: 0 30px;
+		}
+		ul {
+			li {
+				a {
+					padding: 21px 128px 21px 30px;
+					&:after {
+						right: 30px;
+					}
+				}
+			}
+		}
+	}
 	
 	
 } /* Media Query */
