@@ -199,7 +199,7 @@ register_nav_menus(array(
 /* Widgets
 -------------------------------------------------------------- */
 
-/*
+
 if (function_exists('register_sidebars')) {
 
 
@@ -234,18 +234,8 @@ if (function_exists('register_sidebars')) {
         'after_title' => '</h3>'
     ));
     
-    register_sidebar(array(
-        'name' => 'Default Sidebar',
-        'id' => 'default_sidebar',
-        'description' => '',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3 class="widgettitle">',
-        'after_title' => '</h3>'
-    ));
-
  }
-*/
+
 
 /* Add Theme Support Page Thumbnails
 -------------------------------------------------------------- */
