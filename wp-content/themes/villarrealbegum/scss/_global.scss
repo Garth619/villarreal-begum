@@ -68,6 +68,11 @@ h1,h2,h3,h4 {
 	p {
 		padding-bottom:30px;
 	}
+	p.paragraph_quote {
+		padding-top:4px;
+		padding-bottom: 0;
+		margin-bottom:-9px;
+	}
 	strong {
 		font-size: 22px;
 		display: block;
@@ -75,7 +80,7 @@ h1,h2,h3,h4 {
 		//margin-bottom:-37px;
 		&:before {
 			content:"";
-			margin: 19px 0 28px;
+			margin: 19px 0 25px;
 			display: block;
 			width:128px;
 			height:15px;

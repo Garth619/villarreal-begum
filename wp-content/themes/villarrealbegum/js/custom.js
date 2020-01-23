@@ -751,6 +751,8 @@ if($('.internal_banner').length > 0 ){
 	
 	$('.sidebar_box h3').wrapInner('<span></span>');
 	
+	$('.sidebar_box ul > li.current-menu-ancestor > a ').addClass('active');
+	
 	
 	$('.sidebar_box ul > li.menu-item-has-children > a ').on('click', function(e) {
 		
@@ -759,6 +761,12 @@ if($('.internal_banner').length > 0 ){
 		$(this).toggleClass('active');
 	  
 	});
+	
+	
+	// content
+	
+	
+	$('.content p > strong').parent().addClass('paragraph_quote');
 	
 		
 	

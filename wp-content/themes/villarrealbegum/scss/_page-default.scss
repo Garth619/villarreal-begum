@@ -185,7 +185,6 @@ a.internal_banner_consult_button.mobile {
 	display: flex;
 	max-width:1465px;
 	margin:0 auto;
-	height:3000px;
 }
 
 .sidebar_wrapper {
@@ -262,12 +261,36 @@ a.internal_banner_consult_button.mobile {
 				display: none;
 			}
 		}
+		li.current-menu-ancestor {
+			> ul {
+					display: block;
+					li.current-menu-item {
+						a {
+					color:$yellowdark;
+				}
+					}
+					
+			}
+		}
+		li.current-menu-item {
+			> a {
+				color:$yellowdark;
+			}
+		}
 	}
 }
 
 .inner_content {
 	flex-grow:1;
-	background: blue;
+	padding:87px 73px 0 125px
 }
 
+
+.page_header {
+	text-transform: uppercase;
+	font-size: 50px;
+	line-height: 50px;
+	margin-bottom:52px;
+	@include deluxe_extrabold;
+}
 
