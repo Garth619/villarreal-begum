@@ -299,3 +299,147 @@ a.internal_banner_consult_button.mobile {
 	padding:0 0 280px 0;
 }
 
+
+
+@media screen and (max-width: 1660px) {
+	
+	body.page-template-default {
+		.nav_wrapper {
+    	margin-top: 15px;
+		}
+	}
+	
+	
+	.internal_banner_inner {
+    height: 518px;
+  }
+  
+  .internal_banner_left {
+    padding: 227px 0 0 85px;
+    margin-left:0;
+  }
+  
+  .internal_banner_attorney_names {
+    top: 369px;
+  }
+  
+  picture.internal_banner_att_one {
+		img {
+			padding-top: 183px;
+		}
+  }
+  
+  picture.internal_banner_att_two {
+		img {
+			padding-top: 176px;
+		}
+  }
+  
+      
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1460px) {
+	
+	
+	
+	.internal_banner_attorneys {
+    width: 670px;
+  }
+	
+	
+	.internal_banner_atts_wrapper {
+		height: 518px;
+		background: pink;
+	}
+	
+	.internal_banner_right {
+    width: 675px;
+    margin-right: 27px;
+  }
+	
+	
+	picture.internal_banner_att_one {
+		img {
+			padding-top: 183px;
+			width: 297px;
+		}
+  }
+  
+  picture.internal_banner_att_two {
+		img {
+			padding-top: 176px;
+			width: 225px;
+		}
+  }
+  
+  
+  .internal_banner_badge_wrapper {
+	  background: pink;
+  }
+  
+  
+  .internal_banner_attorney_badge {
+	   width: 675px;
+	   margin-right: 27px;
+  }
+     
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1325px) {
+	
+	.internal_banner_right {
+    width: 530px;
+  }
+	
+	.internal_banner_attorneys {
+    width: 100%;
+	}
+	
+	picture.internal_banner_att_one {
+		img {
+			padding-top: 203px;
+			width: 272px;
+			margin-left: 0px;
+		}
+  }
+	
+	
+	picture.internal_banner_att_two {
+		img {
+			padding-top: 199px;
+			width: 200px;
+		}
+  }
+  
+  
+  .internal_banner_attorney_names_inner {
+	  a.internal_banner_attorney_name {
+		  font-size: 14px;
+		  padding: 10px 16px;
+	  }
+  }
+  
+  
+  .internal_banner_badge_wrapper {
+	  background: pink;
+  }
+  
+  
+  .internal_banner_attorney_badge {
+	   width: 530px;
+	   
+  }
+  
+  
+	
+	
+	
+} /* Media Query */
+
