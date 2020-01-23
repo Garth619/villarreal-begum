@@ -55,24 +55,12 @@
 
 </div><!-- blog_feed -->
 
-<div class="pagination">
 
-	<?php wpbeginner_numeric_posts_nav(); ?>
-
-</div><!-- pagination -->
+<?php wpbeginner_numeric_posts_nav(); ?>
 
 
-<!--
-<?php if (  $wp_query->max_num_pages > 1 ) : ?>
-	
-	<div id="nav-below" class="navigation">
-		
-		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts' ) ); ?></div>
-			
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>') ); ?></div>
-	
-	</div>
 
-<?php endif; ?>
--->
+
+
+
 
