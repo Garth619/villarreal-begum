@@ -69,6 +69,8 @@
 		
 	</div><!-- footer_inner -->
 	
+	<a class="mobile_locations" href="">View All Locations</a><!-- mobile_locations -->
+	
 	<div class="copyright">
 		
 		<div class="copryright_inner">
