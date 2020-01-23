@@ -507,7 +507,7 @@ var pgurl = window.location.href;
 
 	
 
-// parallax
+// parallax homepage
 
 
 function paraWidth() {
@@ -617,6 +617,17 @@ if($('#section_one').length > 0 ){
 	paraWidth();
 
 }
+
+
+// internal_banner 
+
+if($('.internal_banner').length > 0 ){
+
+	paraWidth();
+
+}
+
+
  
 	
 	
@@ -736,10 +747,20 @@ if($('#section_one').length > 0 ){
 		
 		
 		
+	// sidebar
+	
+	$('.sidebar_box h3').wrapInner('<span></span>');
+	
+	
+	$('.sidebar_box ul > li.menu-item-has-children > a ').on('click', function(e) {
 		
+		$(this).next('ul').slideToggle(300);
+		
+		$(this).toggleClass('active');
+	  
+	});
 	
-	
-	
+		
 	
 	
 	

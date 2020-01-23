@@ -73,6 +73,23 @@
 	</div><!-- internal_banner__badge_wrapper -->
 		
 </div><!-- internal_banner -->
+
+
+<div class="outer_container">
+	
+	<div class="container two_col">
+		
+			<?php get_sidebar(); ?>
+			
+			<div class="inner_content content">
+				
+				
+				
+			</div><!-- inner_content -->
+		
+	</div><!-- container -->
+	
+</div><!-- outer_container -->
 	
 </div><!-- internal_main -->
 
@@ -82,7 +99,7 @@
 		
 	
 	
-	<?php //get_sidebar(); ?>
+
 	
 
 
