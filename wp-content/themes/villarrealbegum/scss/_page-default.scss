@@ -74,15 +74,14 @@ img.internal_hero {
 
 
 .internal_banner_right {
-	width:745px;
-	margin-right: 55px;
+	width: 775px;
+	margin-right: 67px;
 	background:pink;
 }
 
 .internal_banner_atts_wrapper {
 	position: relative;
 	height:778px;
-	background:red;
 }
 
 .internal_banner_attorneys {
@@ -98,6 +97,7 @@ picture.internal_banner_att_one {
 		display: block;
 		padding-top: 133px;
     margin-right: 27px;
+    margin-left: 57px;
 	}
 }
 
@@ -105,6 +105,33 @@ picture.internal_banner_att_two {
 	img {
 		width:260px;
 		display: block;
-		padding-top:112px;
+		padding-top:115px;
 	}
 }
+
+
+.internal_banner_attorney_names {
+	position: absolute;
+	top: 299px;
+	left:0;
+	width:100%;
+}
+
+
+.internal_banner_attorney_names_inner {
+	display: flex;
+	justify-content: space-between;
+	a.internal_banner_attorney_name {
+		color:$yellow;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 16px;
+		letter-spacing: 0.1em;
+		display: inline-block;
+		background: rgba(0,0,0,0.52);
+		border-radius: 45px;
+		padding:12px 22px;
+		@include deluxe_extrabold;
+	}
+}
+
