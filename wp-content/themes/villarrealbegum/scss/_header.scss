@@ -406,6 +406,44 @@ body.page-template-default {
 	}
 	
 	
+
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1190px) {
+	
+	
+	body.page-template-default {
+		header {
+			background:#1f222a;
+			padding-bottom:0px;
+			position: fixed;
+			top:0;
+			left:0;
+			width:100%;
+		}
+		.header_left {
+    	padding-top: 34px;
+		}
+		.consult_wrapper {
+			> span {
+				display: block;
+			}
+		}
+		.nav_wrapper {
+			ul.menu {
+				li {
+					padding-bottom: 25px;
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
 } /* Media Query */
 
 
@@ -695,6 +733,16 @@ body.page-template-default {
 			> li {
 				
 			}
+		}
+	}
+	
+	
+	body.page-template-default {
+		header {
+			padding-bottom: 20px;
+		}
+		.header_left {
+			padding-top: 22px;
 		}
 	}
 	

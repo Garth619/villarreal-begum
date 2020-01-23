@@ -352,7 +352,6 @@ a.internal_banner_consult_button.mobile {
 	
 	.internal_banner_atts_wrapper {
 		height: 518px;
-		background: pink;
 	}
 	
 	.internal_banner_right {
@@ -377,7 +376,7 @@ a.internal_banner_consult_button.mobile {
   
   
   .internal_banner_badge_wrapper {
-	  background: pink;
+	  
   }
   
   
@@ -428,7 +427,7 @@ a.internal_banner_consult_button.mobile {
   
   
   .internal_banner_badge_wrapper {
-	  background: pink;
+	  //background: pink;
   }
   
   
@@ -438,6 +437,20 @@ a.internal_banner_consult_button.mobile {
   }
   
   
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1190px) {
+	
+	
+	
+	.internal_banner {
+		display: none;
+	}
 	
 	
 	
