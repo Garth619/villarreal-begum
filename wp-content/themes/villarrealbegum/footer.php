@@ -73,7 +73,7 @@
 	
 	<div class="copyright">
 		
-		<div class="copryright_inner">
+		<div class="copyright_inner">
 			
 			<ul>
 				<li>Copyright &copy; <?php echo date("Y"); ?> - villarreal and begum law firm</li>
@@ -88,7 +88,7 @@
 				
 			</a>
 			
-		</div><!-- copryright_inner -->
+		</div><!-- copyright_inner -->
 		
 	</div><!-- footer_copyright -->
 		
