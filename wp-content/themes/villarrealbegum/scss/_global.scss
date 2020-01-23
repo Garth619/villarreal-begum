@@ -71,7 +71,7 @@ h1,h2,h3,h4 {
 	p.paragraph_quote {
 		padding-top:4px;
 		padding-bottom: 0;
-		margin-bottom:-9px;
+		margin-bottom:23px;
 	}
 	strong {
 		font-size: 22px;
@@ -88,6 +88,47 @@ h1,h2,h3,h4 {
 		}
 		@include nunito_extrabold;
 	}
+	ul {
+		list-style: none;
+		padding-bottom:30px;
+		li {
+			position: relative;
+			padding-left:35px;
+			margin-bottom: 9px;
+			&:before {
+				content:"";
+				display: block;
+				width:7px;
+				height:7px;
+				background: $yellowdark;
+				border-radius: 50%;
+				position: absolute;
+				top:12px;
+				left:0;
+			}
+		}
+	}
+	ol {
+			list-style: none;
+			counter-reset: item;
+			padding-bottom:30px;
+			> li {
+				counter-increment: item;
+				position: relative;
+				padding-left:35px;
+				line-height: 32px;
+				margin-bottom: 6px;
+	 		}
+	 		> li:before {
+	 				content: counter(item)".";
+	 				color: $yellowdark;
+	 				position: absolute;
+	 				top:0;
+	 				left:0;
+	 				font-size: 18px;
+	 				@include nunito_extrabold;
+	 			}
+		}
 }
 
 

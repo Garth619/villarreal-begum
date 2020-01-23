@@ -108,10 +108,12 @@
 
 				<ul>
 					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ornare lacus vel tincidunt. Aenean consectetur tellus sit amet tempus egestas.</li>
-					<li>Nam varius dignissim lobortis. Mauris imperdiet ipsum sed rhoncus dapibus..</li
+					<li>Nam varius dignissim lobortis. Mauris imperdiet ipsum sed rhoncus dapibus..</li>
 					<li>Mauris ultricies lectus nec tellus aliquet, quis maximus dolor euismod. Duis tristique orci vel auctor dapibus. 
-Pellentesque vitae quam sed lorem blandit interdum a vel nisi..</li
+Pellentesque vitae quam sed lorem blandit interdum a vel nisi.</li>
 				</ul>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ornare lacus vel tincidunt. Aenean consectetur tellus sit amet tempus egestas. Nam varius dignissim lobortis. Mauris imperdiet ipsum sed rhoncus dapibus. Aenean consectetur tellus sit amet tempus egestas. Nam varius dignissim lobortis.</p>
 				
 			</div><!-- inner_content -->
 		
