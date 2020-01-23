@@ -270,6 +270,23 @@ nav.nav_wrapper.nav_desktop {
 }
 
 
+
+body.page-template-default {
+	.header_left {
+		padding-top: 41px;
+	}
+	.consult_wrapper {
+		margin-top: 24px;
+		> span {
+				display: none;
+		}
+	}
+	.nav_wrapper {
+		margin-top: 29px;
+	}
+}
+
+
 @media screen and (min-width: 1067px) {
 	
 	
