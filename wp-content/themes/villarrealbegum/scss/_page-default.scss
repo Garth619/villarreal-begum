@@ -11,7 +11,7 @@
 .internal_banner_inner {
 	overflow: hidden;
 	height:458px;
-	padding:0 69px 0 85px;
+	//padding:0 69px 0 85px;
 	position: relative;
 }
 
@@ -21,7 +21,7 @@
 	max-width: 1522px;
 	margin:0 auto;
 	display: flex;
-	//background: pink;
+	background: blue;
 	justify-content: space-between;
 }
 
@@ -134,4 +134,45 @@ picture.internal_banner_att_two {
 		@include deluxe_extrabold;
 	}
 }
+
+
+
+.internal_banner_badge_wrapper {
+	display: flex;
+	max-width: 1522px;
+	margin:0 auto;
+	//height:300px;
+	background: pink;
+	justify-content: space-between;
+}
+
+
+.internal_banner_badge_spacer {
+	margin-left: 26px;
+	width:590px;
+}
+
+
+.internal_banner_attorney_badge {
+	width: 775px;
+	z-index:2;
+	//background: red;
+	margin-right: 67px;
+	margin-top: -183px;
+	img {
+		width:245px;
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		position: relative;
+		z-index:1;
+		right:-39px;
+	}
+}
+
+
+a.internal_banner_consult_button.mobile {
+	display: none;
+}
+
 
