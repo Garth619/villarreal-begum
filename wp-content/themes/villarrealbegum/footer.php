@@ -54,7 +54,7 @@
 			
 		</div><!-- footer_left -->
 		
-		<div class="footer_right">
+		<div id="consultation" class="footer_right">
 			
 			<div class="form_wrapper">
 				

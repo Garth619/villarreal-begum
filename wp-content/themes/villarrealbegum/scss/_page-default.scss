@@ -4,9 +4,63 @@
 }
 
 .internal_banner {
-	height:458px;
 	width:100%;
 	position: relative;
+}
+
+.internal_banner_inner {
+	overflow: hidden;
+	height:458px;
+	padding:0 69px 0 85px;
+	position: relative;
+}
+
+.internal_banner_content {
+	position: relative;
+	z-index:2;
+	max-width: 1522px;
+	margin:0 auto;
+	display: flex;
+	//background: pink;
+	justify-content: space-between;
+}
+
+.internal_banner_left {
+	padding: 183px 0 0;
+	margin-left:26px;
+	> span {
+			display: block;
+			color:#fff;
+			text-transform: uppercase;
+			@include deluxe_extrabold;
+	}
+	span.internal_banner_largeheader {
+		font-size: 76px;
+		line-height: 70px;
+		max-width: 540px;
+		span {
+			color:$yellow;
+		}
+	}
+	a.internal_banner_consult_button {
+		color:#fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 0.1em;
+		border:3px solid $yellow;
+		display: inline-block;
+		border-radius: 45px;
+		margin-top: 18px;
+		padding: 11px 27px;
+		background: transparent;
+		transition: all 200ms ease-in-out;
+		@include deluxe_extrabold;
+		&:hover {
+			background: $yellow;
+			color:$black;
+		}
+	}
 }
 
 img.internal_hero {
@@ -16,4 +70,41 @@ img.internal_hero {
 	top:0;
 	left:0;
 	object-fit:cover;
+}
+
+
+.internal_banner_right {
+	width:745px;
+	margin-right: 55px;
+	background:pink;
+}
+
+.internal_banner_atts_wrapper {
+	position: relative;
+	height:778px;
+	background:red;
+}
+
+.internal_banner_attorneys {
+	display: flex;
+	margin-left:28px;
+	width:800px;
+}
+
+
+picture.internal_banner_att_one {
+	img {
+		width:347px;
+		display: block;
+		padding-top: 133px;
+    margin-right: 27px;
+	}
+}
+
+picture.internal_banner_att_two {
+	img {
+		width:260px;
+		display: block;
+		padding-top:112px;
+	}
 }
