@@ -769,7 +769,10 @@ if($('.internal_banner').length > 0 ){
 	$('.content p > strong').parent().addClass('paragraph_quote');
 	
 		
+	// pa cat titles 
 	
+	
+	$('.pa_directory_wrapper ul.menu > li > a').wrapInner('<span></span>');
 	
 	
 /*
