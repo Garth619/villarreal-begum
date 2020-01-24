@@ -271,7 +271,7 @@ nav.nav_wrapper.nav_desktop {
 
 
 
-body.page-template-default, body.blog {
+body.page-template-default, body.blog, body.archive, body.single {
 	.header_left {
 		padding-top: 41px;
 	}
@@ -414,7 +414,7 @@ body.page-template-default, body.blog {
 @media screen and (max-width: 1190px) {
 	
 	
-	body.page-template-default, body.blog {
+	body.page-template-default, body.blog, body.archive, body.single {
 		header {
 			background:#1f222a;
 			padding-bottom:0px;
@@ -670,7 +670,7 @@ body.page-template-default, body.blog {
 	}
 	
 	
-	body.page-template-default, body.blog {
+	body.page-template-default, body.blog, body.archive, body.single {
 		header{
 			padding-bottom: 27px;
 		}
@@ -743,7 +743,7 @@ body.page-template-default, body.blog {
 	}
 	
 	
-	body.page-template-default, body.blog {
+	body.page-template-default, body.blog, body.archive, body.single {
 		header {
 			padding-bottom: 20px;
 		}

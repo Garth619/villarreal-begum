@@ -1,6 +1,6 @@
 
 
-body.blog {
+body.blog, body.archive, body.single {
 	.inner_content {
     padding: 87px 121px 0 164px;
 	}
@@ -70,6 +70,13 @@ body.blog {
 				}
 			}
 		}
+	}
+}
+
+
+body.single {
+	h2.page_header {
+		color:$black;
 	}
 }
 
@@ -148,7 +155,7 @@ a.read_more_button {
 	
 	
 	
-	body.blog {
+	body.blog, body.archive, body.single {
 		.inner_content {
 			padding-right:0;
 		}
@@ -161,7 +168,7 @@ a.read_more_button {
 @media screen and (max-width: 1325px) {
 	
 	
-	body.blog {
+	body.blog, body.archive, body.single {
 		.inner_content {
 			padding-left:85px;
 		}
@@ -175,7 +182,7 @@ a.read_more_button {
 @media screen and (max-width: 1220px) {
 	
 	
-	body.blog {
+	body.blog, body.archive, body.single {
 		.inner_content {
 			padding-left:0px;
 		}
