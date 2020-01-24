@@ -175,6 +175,10 @@ a.internal_banner_consult_button.mobile {
 }
 
 
+.single_col_container {
+	padding:0 105px 280px;
+}
+
 .outer_container {
 	background: #fff;
 	padding:0 85px 280px;
@@ -297,6 +301,10 @@ a.internal_banner_consult_button.mobile {
 }
 
 
+.single_col_container {
+	
+}
+
 
 
 .outer_container {
@@ -307,11 +315,7 @@ a.internal_banner_consult_button.mobile {
 
 @media screen and (max-width: 1660px) {
 	
-	body.page-template-default, body.blog, body.archive, body.single {
-		.nav_wrapper {
-    	margin-top: 15px;
-		}
-	}
+	
 	
 	
 	.internal_banner_inner {
@@ -474,6 +478,10 @@ a.internal_banner_consult_button.mobile {
 		padding-left:0;
 	}
 	
+	.single_col_container {
+		padding: 0 105px 180px;
+	}
+	
 	.outer_container {
 		padding: 0 85px 180px;
 	}
@@ -491,6 +499,9 @@ a.internal_banner_consult_button.mobile {
 		display: none;
 	}
 	
+	.single_col_container {
+		margin-top:174px;
+	}
 	
 	.outer_container {
 		margin-top:174px;
@@ -503,6 +514,11 @@ a.internal_banner_consult_button.mobile {
 
 @media screen and (max-width: 1066px) {
 	
+	
+	.single_col_container {
+		margin-top: 106px;
+		padding-bottom:110px;
+	}
 	
 	.outer_container {
 		margin-top: 106px;
@@ -524,6 +540,10 @@ a.internal_banner_consult_button.mobile {
 @media screen and (max-width: 767px) {
 	
 	
+	.single_col_container {
+		margin-top: 106px;
+		padding:0 30px 40px;
+	}
 	
 	.outer_container {
 		margin-top: 106px;
@@ -544,6 +564,10 @@ a.internal_banner_consult_button.mobile {
 
 @media screen and (max-width: 715px) {
 	
+	
+	.single_col_container {
+		margin-top: 121px;
+	}
 	
 	.outer_container {
 		margin-top: 121px;

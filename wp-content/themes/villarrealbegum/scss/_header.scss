@@ -269,8 +269,39 @@ nav.nav_wrapper.nav_desktop {
 	display: none;
 }
 
+body:not(.page-template-template-home) {
+	.header_left {
+		padding-top: 35px;
+	}
+	.consult_wrapper {
+		margin-top: 24px;
+		> span {
+				display: none;
+		}
+	}
+	.nav_wrapper {
+		margin-top: 29px;
+			ul.menu {
+				> li {
+						padding-bottom: 31px;
+				}
+			}
+		}
+	}
 
 
+body:not(.page-template-template-home):not(.page-template-default):not(.blog):not(.archive):not(.single) {
+	header {
+		background: #1f222a;
+	}
+}
+
+
+
+
+
+
+/*
 body.page-template-default, body.blog, body.archive, body.single {
 	.header_left {
 		padding-top: 41px;
@@ -285,6 +316,10 @@ body.page-template-default, body.blog, body.archive, body.single {
 		margin-top: 29px;
 	}
 }
+*/
+
+
+
 
 
 @media screen and (min-width: 1067px) {
@@ -351,6 +386,14 @@ body.page-template-default, body.blog, body.archive, body.single {
 		margin-top: 20px;
 	}
 	
+	
+	body:not(.page-template-template-home) {
+		.nav_wrapper {
+    	margin-top: 15px;
+		}
+	}
+
+	
 } /* Media Query */
 
 
@@ -414,7 +457,7 @@ body.page-template-default, body.blog, body.archive, body.single {
 @media screen and (max-width: 1190px) {
 	
 	
-	body.page-template-default, body.blog, body.archive, body.single {
+	body:not(.page-template-template-home) {
 		header {
 			background:#1f222a;
 			padding-bottom:0px;
@@ -670,9 +713,17 @@ body.page-template-default, body.blog, body.archive, body.single {
 	}
 	
 	
-	body.page-template-default, body.blog, body.archive, body.single {
+	body:not(.page-template-template-home) {
 		header{
 			padding-bottom: 27px;
+		}
+		.nav_wrapper {
+			margin-top:0;
+			ul.menu {
+				li {
+					padding-bottom:0;
+				}
+			}
 		}
 	}
 	
@@ -743,7 +794,7 @@ body.page-template-default, body.blog, body.archive, body.single {
 	}
 	
 	
-	body.page-template-default, body.blog, body.archive, body.single {
+	body:not(.page-template-template-home) {
 		header {
 			padding-bottom: 20px;
 		}
@@ -769,6 +820,15 @@ body.page-template-default, body.blog, body.archive, body.single {
 		a.phone_one {
 			span {
 				text-align: left;
+			}
+		}
+	}
+	
+	
+	body:not(.page-template-template-home) {
+		.consult_wrapper {
+			span.consult_title {
+				display: none;
 			}
 		}
 	}

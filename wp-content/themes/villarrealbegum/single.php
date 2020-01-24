@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-
-
 	<div id="internal_main">
 	
 	<div class="internal_banner">
@@ -76,7 +74,6 @@
 		
 </div><!-- internal_banner -->
 
-
 <div class="outer_container">
 	
 	<div class="container two_col">
@@ -95,8 +92,6 @@
 	
 </div><!-- internal_main -->			
 	
-
-
 <?php get_footer(); ?>
 
 

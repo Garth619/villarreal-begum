@@ -388,7 +388,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 // not found go back button
 
 
-/*
+
 function goBack() {
  	window.history.back();
 }
@@ -398,7 +398,7 @@ $('span.go_back').on('click', function(e) {
 	 goBack();
   
 });
-*/
+
 
 
 // current sidebar

@@ -14,6 +14,8 @@
 		
 	<h2 class="page_header post_title"><?php the_title();?></h2>
 	
+	<img class="featured_image" src="<?php bloginfo('template_directory');?>/images/blog_img.jpg"/>
+	
 	<div class="post_content">
 	
 		<?php the_content();?>
