@@ -404,7 +404,7 @@ $('span.go_back').on('click', function(e) {
 // current sidebar
 
 
-/*
+
 
 var pgurl = window.location.href;
 	
@@ -415,7 +415,7 @@ var pgurl = window.location.href;
     $(this).addClass("active");
 	
 	})
-*/
+
 
 
 
