@@ -70,3 +70,38 @@ span.review_title {
 		}
 	}
 }
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.testi_wrapper {
+    margin: 95px auto 0;
+  }
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	.testi_wrapper {
+    margin: 65px auto 0;
+    max-width: 470px;
+  }
+  
+  .single_review {
+	  padding-bottom: 43px;
+    margin-bottom: 59px;
+	  &:last-of-type {
+		  margin-bottom:55px;
+	  }
+  }
+  
+  span.review_title {
+	  font-size: 32px;
+    line-height: 36px;
+  }
+	
+	
+} /* Media Query */
