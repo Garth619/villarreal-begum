@@ -1,10 +1,10 @@
 === iThemes Security (formerly Better WP Security) ===
-Contributors: ithemes, chrisjean, gerroald, mattdanner, timothyblynjacobs
+Contributors: ithemes, chrisjean, mattdanner, timothyblynjacobs
 Tags: security, security plugin, malware, hack, secure, block, SSL, admin, htaccess, lockdown, login, protect, protection, anti virus, attack, injection, login security, maintenance, permissions, prevention, authentication, administration, password, brute force, ban, permissions, bots, user agents, xml rpc, security log
 Requires at least: 4.7
-Tested up to: 4.9.8
-Stable tag: 7.1.0
-Requires PHP: 5.2
+Tested up to: 5.3.0
+Stable tag: 7.6.1
+Requires PHP: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -188,6 +188,79 @@ Free support may be available with the help of the community in the <a href="htt
 5. Free malware scan powered by Sucuri SiteCheck.
 
 == Changelog ==
+
+= 7.6.1 =
+* Bug Fix: Properly notate that iThemes Security requires PHP 5.5 or greater.
+
+= 7.6.0 =
+* Breaking Change: iThemes Security requires PHP 5.5 or later.
+* New Feature: iThemes Security now includes Security Check Pro to automatically and correctly determine your visitors IP addresses. Enable this scan by running Security Check and opting in to Security Check Pro or activate the Security Check Pro module in Advanced Modules. H/t Jeremy Voisin
+* Enhancement: Run Security Check Pro IP Detection automatically once a day.
+* Enhancement: Manually re-run Security Check Pro IP Detection from the Global Settings page.
+
+= 7.5.0 =
+* Breaking Change: iThemes Security requires PHP 5.4 or later.
+* Enhancement: New Lockout Template screen.
+* Enhancement: Add confirmation button to Login Interstitial Async Actions when on a different device.
+* Enhancement: Add filter to "Lookup IP" link.
+* Developer Note: There were significant changes to the internals of the iThemes Security Lockout API in this release. If you are using the ITSEC_Lockout class directly, all the API functions will continue to work, but will emit deprecation notices when legacy behavior is being used. Please update any integrations.
+* Bug Fix: Brute Force module reporting invalid logins using an email address incorrectly.
+* Bug Fix: Improve lockout compatibility with caching plugins.
+* Bug Fix: Fix admin notice not being dismissed due to a REST API route that was more narrowly defined than necessary.
+* Bug Fix: Admin Notices list did not refresh after dismissing a notice.
+* Bug Fix: Strong Passwords zxcvbn Library was not evaluating penalty strings correctly.
+* Bug Fix: Fix PHP warning if there are multiple detected proxy headers.
+
+= 7.4.1 =
+* Enhancement: New iThemes Sync Verb support for File Change.
+* Tweak: Add additional information about the login attempt when calling the Network Brute Force API.
+* Bug Fix: Hide Backend Bypass.
+* Bug Fix: Strict Standards error during Sync request.
+* Bug Fix: wp_die() if a login interstitial session fails to be created instead of throwing a fatal error.
+
+= 7.4.0 =
+* New: iThemes Security Admin Notices are now conveniently located in the new Security Messages Menu. Check your notices in the Security menu on the WordPress Admin Bar.
+* Enhancement: Add Security Message when a Notification Center email fails to send.
+* Enhancement: Replace Trace IP with IP Tracker Online.
+* Tweak: Remove 'DELETE' method from "System Tweaks -> Filter Request Methods"
+
+= 7.3.3 =
+* Bug Fix: Hide backend bypass.
+
+= 7.3.2 =
+* Tweak: Allow the log description column to word break for URLs or other strings with no spaces.
+* Bug Fix: Hide Backend bypass on certain Apache configurations.
+* Bug Fix: Properly return error that occurs during a backup.
+* Bug Fix: Regex warning on PHP 7.3 in the File Change module.
+* Bug Fix: Resolve warning when a user is set to "No Role".
+
+= 7.3.1 =
+* Enhancement: When ITSEC_DISABLE_MODULES is set, prevent hide backend from running.
+* Bug Fix: Tabnapping: Apply noopener to links instead of using blankshield script when available to prevent new pop-up blocker behavior from killing the links.
+
+= 7.3.0 =
+* Enhancement: Add Per-Content SSL toggle to the upcoming Block Editor interface.
+* Enhancement: Add filter to the recipients list for email notifications: "itsec_notification_{$notification}_email_recipients" and "itsec_notification_email_recipients".
+* Enhancement: Add define "ITSEC_DISABLE_TEMP_WHITELIST" to disable the Temporary IP Whitelisting for logged-in administrators.
+* Enhancement: Improve redirecting after processing a login interstitial from a front-end login form.
+* Enhancement: Add loopback IP detection to Security Check.
+* Enhancement: Detect Server IPs in Security Check.
+* Tweak: Add additional safety checks when writing to system config files. This will log a "Critical Issue" when the writing of an empty or partial config file is detected and prevented.
+* Tweak: Improve File Change locking to help prevent failing scans on sites with inconsistent cron scheduling.
+* Tweak: Improve "System Tweaks – Suspicious Query Strings – SQLI" to reduce false positives.
+* Tweak: Improve "System Tweaks – Disable PHP" to block PHP files in apache configurations that serve files with a trailing dot.
+* Tweak: Remove "Seznam Bot" from HackRepair List as it isn't present in the latest version.
+* Bug Fix: Include Hide Backend token when emailing a password reset URL.
+* Bug Fix: Notification Center - Only send notifications to users with an exact role match of selected roles instead of a fuzzy match based on selected capabilities.
+* Bug Fix: Error when trying to edit reusable blocks with per-post SSL enabled.
+* Bug Fix: Resolve warnings on PHP 5.2.
+
+= 7.2.0 =
+* Enhancement: Allow for selecting the particular Proxy header a server is configured to use. Improve the language to indicate the importance of configuring this setting. H/t Filippo Cavallarin CEO at wearesegment.com
+* Enhancement: Block access to git and svn repositories when System Tweaks -> Protect System Files is enabled.
+* Tweak: Update jQuery Validation library to 1.17.0
+* Bug Fix: Improve detection of blocking the File Change Scan from being scheduled if one is already being run.
+* Bug Fix: Prevent infinite recursion error when trying to access directories outside of the allowed file tree.
 
 = 7.1.0 =
 * New Feature: Allow for globally setting recipients for admin-targeted notifications. All new notifications will default to the recipients in this list. Notifications can be set to use the default list or switch to a custom list.
@@ -496,5 +569,5 @@ Free support may be available with the help of the community in the <a href="htt
 
 == Upgrade Notice ==
 
-= 7.1.0 =
-Version 7.1.0 contains important bug fixes and improvements. It is recommended for all users.
+= 7.6.1 =
+Version 7.6.1 contains new features and bug fixes. It is recommended for all users.

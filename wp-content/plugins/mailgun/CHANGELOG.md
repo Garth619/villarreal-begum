@@ -1,6 +1,27 @@
 Changelog
 =========
 
+1.7.1 (2019-02-07)
+- Reinstall settings page for multisites.
+
+1.7 (2019-01-21)
+- Remove settings page for multisites.
+- Simplify admin notifications.
+- Test plugin with PHP 7.2.
+- Test plugin up to WordPress 5.0.3.
+
+1.6.1 (2018-10-08)
+- Restore Settings page form for all install types.
+
+1.6 (2018-9-21)
+- Refactor admin notifications
+- Enable Settings page for all WordPress install types
+- Enable Test Configuration for all WordPress install types
+- Test plugin up to WordPress 4.9.8.
+
+1.5.14 (2018-09-11)
+- Force SSL-secured SMTP connections to use port 465 (SMTPS) to connect, 587 for plain and TLS
+- Support region endpoint switching for SMTP
 
 1.5.13.1 (2018-08-15)
 - Fix line breaks in Test Configuration email

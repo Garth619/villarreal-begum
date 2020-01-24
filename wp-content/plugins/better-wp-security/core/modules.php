@@ -251,7 +251,8 @@ final class ITSEC_Modules {
 	/**
 	 * Update a single setting in a module.
 	 *
-	 * The new value will be validated, updated- in-memory, and persisted.
+	 * The new value will be validated and updated in memory. The change isn't persisted until
+	 * the end of the request or a manual call to {@see ITSEC_Storage::save()}.
 	 *
 	 * @param string $slug The module slug.
 	 * @param string $name The setting name to updated.
@@ -468,7 +469,9 @@ final class ITSEC_Modules {
 			$was_active = $self->_active_modules[ $module_id ];
 		}
 
-		self::load_module_file( 'activate.php', $module_id );
+		if ( is_wp_error( $error = self::load_module_file( 'activate.php', $module_id ) ) ) {
+			return $error;
+		}
 
 		$self->_active_modules[ $module_id ] = true;
 		self::set_active_modules( $self->_active_modules );
@@ -556,7 +559,7 @@ final class ITSEC_Modules {
 	 *                                 module slugs, ':all' to load the files from all modules, or ':active' to load the
 	 *                                 files from active modules.
 	 *
-	 * @return bool True if a module matching the $modules parameter is found, false otherwise.
+	 * @return bool|WP_Error True if a module matching the $modules parameter is found, false otherwise.
 	 */
 	public static function load_module_file( $file, $modules = ':all' ) {
 		$self = self::get_instance();
@@ -580,7 +583,11 @@ final class ITSEC_Modules {
 
 		foreach ( $modules as $module ) {
 			if ( ! empty( $self->_module_paths[$module] ) && file_exists( "{$self->_module_paths[$module]}/{$file}" ) ) {
-				include_once( "{$self->_module_paths[$module]}/{$file}" );
+				$returned = include_once( "{$self->_module_paths[$module]}/{$file}" );
+
+				if ( is_wp_error( $returned ) ) {
+					return $returned;
+				}
 			}
 		}
 

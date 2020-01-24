@@ -5,7 +5,11 @@ final class ITSEC_Settings_Page {
 	private static $instance;
 
 	private $self_url = '';
+
+	/** @var ITSEC_Module_Settings_Page[] */
 	private $modules = array();
+
+	/** @var ITSEC_Settings_Page_Sidebar_Widget[] */
 	private $widgets = array();
 	private $translations = array();
 
@@ -494,6 +498,16 @@ final class ITSEC_Settings_Page {
 							<div id="itsec-sidebar-widget-<?php echo $id; ?>" class="postbox itsec-sidebar-widget">
 								<h3 class="hndle ui-sortable-handle"><span><?php echo esc_html( $widget->title ); ?></span></h3>
 								<div class="inside">
+									<?php if ( $messages = ITSEC_Lib_Remote_Messages::get_messages_for_placement( array( 'widget' => $id ) ) ) : ?>
+										<div class="itsec-widgets-service-status">
+											<?php foreach ( $messages as $message ): ?>
+												<div class="notice notice-alt notice-<?php echo esc_attr( $message['type'] ); ?> below-h2">
+													<p><?php echo $message['message']; ?></p>
+												</div>
+											<?php endforeach; ?>
+										</div>
+									<?php endif; ?>
+
 									<?php $this->get_widget_settings( $id, $form, true ); ?>
 								</div>
 							</div>

@@ -6,13 +6,19 @@
 		
 		<div class="not_found_wrapper">
 			
-			<img src="<?php bloginfo('template_directory');?>/images/header_law_guns.png"/>
+			<?php $texas_badge = get_field( 'texas_badge','option'); ?>
+			
+			<?php if ( $texas_badge ) { ?>
+			
+				<img src="<?php echo $texas_badge['url']; ?>" alt="<?php echo $texas_badge['alt']; ?>" />
+			
+			<?php } ?>
 			
 			<h1 class="not_found"><span>404 Error</span></h1>
 			
-			<span class="page_not_found">Page Not Found</span><!-- page_not_found -->
+			<span class="page_not_found"><?php the_field( 'not_found_subtitle','option'); ?></span><!-- page_not_found -->
 		
-			<p>The page you were looking for appears to have been moved, deleted or does not exist. You could <span class="go_back">go back</span> to where you were or head straight to our <a href="<?php bloginfo();?>">home page</a>.</p>
+			<p><?php the_field( 'not_found_verbiage','option'); ?></p>
 			
 			<span class="go_back go_back_button">back</span><!-- go_back_button -->
 			

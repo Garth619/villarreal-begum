@@ -169,6 +169,17 @@ final class ITSEC_Mail {
 		return $module;
 	}
 
+	public function add_small_code( $content ) {
+		$this->add_html( $this->get_small_code( $content ) );
+	}
+
+	public function get_small_code( $content ) {
+		$module = $this->get_template( 'small-code.html' );
+		$module = $this->replace( $module, 'content', $content );
+
+		return $module;
+	}
+
 	public function add_section_heading( $content, $icon_type = false ) {
 		$this->add_html( $this->get_section_heading( $content, $icon_type ) );
 	}
@@ -219,15 +230,36 @@ final class ITSEC_Mail {
 		$this->add_html( $lockouts, 'file-change-summary' );
 	}
 
-	public function add_button( $link_text, $href ) {
-		$this->add_html( $this->get_button( $link_text, $href ) );
+	public function add_button( $link_text, $href, $style = 'default' ) {
+		$this->add_html( $this->get_button( $link_text, $href, $style ) );
 	}
 
-	public function get_button( $link_text, $href ) {
+	public function get_button( $link_text, $href, $style = 'default' ) {
 
 		$module = $this->get_template( 'module-button.html' );
-		$module = $this->replace( $module, 'href', $href );
-		$module = $this->replace( $module, 'link_text', $link_text );
+		$module = $this->replace_all( $module, array(
+			'href'      => $href,
+			'link_text' => $link_text,
+			'bk_color'  => 'blue' === $style ? '#0085E0' : '#FFCD08',
+			'txt_color' => 'blue' === $style ? '#FFFFFF' : '#2E280E',
+		) );
+
+		return $module;
+	}
+
+	public function add_large_button( $link_text, $href, $style = 'default' ) {
+		$this->add_html( $this->get_large_button( $link_text, $href, $style ) );
+	}
+
+	public function get_large_button( $link_text, $href, $style = 'default' ) {
+
+		$module = $this->get_template( 'large-button.html' );
+		$module = $this->replace_all( $module, array(
+			'href'      => $href,
+			'link_text' => $link_text,
+			'bk_color'  => 'blue' === $style ? '#0085E0' : '#FFCD08',
+			'txt_color' => 'blue' === $style ? '#FFFFFF' : '#2E280E',
+		) );
 
 		return $module;
 	}
@@ -240,6 +272,9 @@ final class ITSEC_Mail {
 			if ( 'user' === $lockout['type'] ) {
 				/* translators: 1: Username */
 				$lockout['description'] = sprintf( wp_kses( __( '<b>User:</b> %1$s', 'better-wp-security' ), array( 'b' => array() ) ), $lockout['id'] );
+			} elseif ( 'username' === $lockout['type'] ) {
+				/* translators: 1: Username */
+				$lockout['description'] = sprintf( wp_kses( __( '<b>Username:</b> %1$s', 'better-wp-security' ), array( 'b' => array() ) ), $lockout['id'] );
 			} else {
 				/* translators: 1: Hostname */
 				$lockout['description'] = sprintf( wp_kses( __( '<b>Host:</b> %1$s', 'better-wp-security' ), array( 'b' => array() ) ), $lockout['id'] );
@@ -267,18 +302,19 @@ final class ITSEC_Mail {
 	 *
 	 * @param string[] $headers
 	 * @param array[]  $entries
+	 * @param bool     $large
 	 */
-	public function add_table( $headers, $entries ) {
-		$this->add_html( $this->get_table( $headers, $entries ) );
+	public function add_table( $headers, $entries, $large = false ) {
+		$this->add_html( $this->get_table( $headers, $entries, $large ) );
 	}
 
-	public function get_table( $headers, $entries ) {
+	public function get_table( $headers, $entries, $large = false ) {
 
 		$template = $this->get_template( 'table.html' );
-		$html     = $this->build_table_header( $headers );
+		$html     = $this->build_table_header( $headers, $large );
 
 		foreach ( $entries as $entry ) {
-			$html .= $this->build_table_row( $entry, count( $headers ) );
+			$html .= $this->build_table_row( $entry, count( $headers ), $large );
 		}
 
 		return $this->replace( $template, 'html', $html );
@@ -288,15 +324,24 @@ final class ITSEC_Mail {
 	 * Build the table header.
 	 *
 	 * @param array $headers
+	 * @param bool  $large
 	 *
 	 * @return string
 	 */
-	private function build_table_header( $headers ) {
+	private function build_table_header( $headers, $large = false ) {
 
 		$html = '<tr>';
 
 		foreach ( $headers as $header ) {
-			$html .= '<th style="text-align: left;font-weight: bold;padding:5px 10px;border:1px solid #cdcece;color: #666f72;">';
+			$style = 'text-align: left;font-weight: bold;border:1px solid #cdcece;color: #666f72;';
+
+			if ( $large ) {
+				$style .= 'padding:15px 20px;font-size: 16px;';
+			} else {
+				$style .= 'padding:5px 10px;';
+			}
+
+			$html .= '<th style="' . $style . '">';
 			$html .= $header;
 			$html .= '</th>';
 		}
@@ -311,21 +356,28 @@ final class ITSEC_Mail {
 	 *
 	 * @param array|string $columns
 	 * @param int          $count
+	 * @param bool         $large
 	 *
 	 * @return string
 	 */
-	private function build_table_row( $columns, $count ) {
+	private function build_table_row( $columns, $count, $large = false ) {
 		$html = '<tr>';
 
 		if ( is_array( $columns ) ) {
 			foreach ( $columns as $i => $column ) {
-				$style = 'border:1px solid #cdcece;padding:10px;';
+				$style = 'border:1px solid #cdcece;';
 
 				if ( 0 === $i ) {
 					$style .= 'font-style:italic;';
 					$el    = 'th';
 				} else {
 					$el = 'td';
+				}
+
+				if ( $large ) {
+					$style .= 'padding: 15px 20px;';
+				} else {
+					$style .= 'padding:10px;';
 				}
 
 				$html .= "<{$el} style=\"{$style}\">";
@@ -370,6 +422,32 @@ final class ITSEC_Mail {
 	}
 
 	/**
+	 * Add an image to the email.
+	 *
+	 * @param string $src_or_name URL of the image or the name of the mail image.
+	 * @param int    $width       Max width of the image in pixels.
+	 */
+	public function add_image( $src_or_name, $width ) {
+		$this->add_html( $this->get_image( $src_or_name, $width ) );
+	}
+
+	public function get_image( $src_or_name, $width ) {
+		if ( false === strpos( $src_or_name, '.' ) ) {
+			$src = $this->get_image_url( $src_or_name );
+		} else {
+			$src = $src_or_name;
+		}
+
+		$module = $this->get_template( 'image.html' );
+		$module = $this->replace_all( $module, array(
+			'src'   => $src,
+			'width' => $width,
+		) );
+
+		return $module;
+	}
+
+	/**
 	 * Add a section of HTML to the email.
 	 *
 	 * @param string      $html
@@ -398,6 +476,14 @@ final class ITSEC_Mail {
 		$this->deferred      = '';
 
 		$this->add_html( $deferred, $group );
+	}
+
+	public function insert_before( $identifier, $html ) {
+		$this->groups = ITSEC_Lib::array_insert_before( $identifier, $this->groups, count( $this->groups ), $html );
+	}
+
+	public function insert_after( $identifier, $html ) {
+		$this->groups = ITSEC_Lib::array_insert_after( $identifier, $this->groups, count( $this->groups ), $html );
 	}
 
 	/**

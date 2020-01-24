@@ -112,7 +112,7 @@ abstract class ITSEC_Validator {
 		}
 	}
 
-	final protected function sanitize_setting( $type, $var, $name, $prevent_save_on_error = true, $trim_value = true ) {
+	final protected function sanitize_setting( $type, $var, $name, $prevent_save_on_error = true, $trim_value = true, $custom_error = '' ) {
 		$id = $this->get_id();
 
 		if ( ! isset( $this->settings[$var] ) ) {
@@ -184,6 +184,12 @@ abstract class ITSEC_Validator {
 				$this->settings[$var] = $test_val;
 			} else {
 				$error = sprintf( __( 'The %1$s value must be a positive integer.', 'better-wp-security' ), $name );
+			}
+		} else if ( 'number' === $type ) {
+			if ( is_numeric($this->settings[ $var ] ) ) {
+				$this->settings[ $var ] = (float) $this->settings[ $var ];
+			} else {
+				$error = sprintf( __( 'The %1$s value must be a number.', 'better-wp-security' ), $name );
 			}
 		} else if ( 'email' === $type ) {
 			$this->settings[$var] = sanitize_text_field( $this->settings[$var] );
@@ -320,7 +326,7 @@ abstract class ITSEC_Validator {
 			}
 		} elseif ( 'canonical-roles' === $type ) {
 			$roles = array( 'administrator', 'editor', 'author', 'contributor', 'subscriber' );
-			
+
 			if ( is_array( $this->settings[$var] ) ) {
 				$invalid_entries = array();
 
@@ -464,6 +470,10 @@ abstract class ITSEC_Validator {
 		}
 
 		if ( false !== $error ) {
+			if ( $custom_error ) {
+				$error = $custom_error;
+			}
+
 			$this->add_error( $this->generate_error( $id, $var, $type, $error ) );
 			$this->vars_to_skip_validate_matching_types[] = $var;
 
