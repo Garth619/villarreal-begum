@@ -12,7 +12,7 @@
 		
 	</div><!-- sidebar_box -->
 	
-	<div class="sidebar_box">
+	<div class="sidebar_box archives_box">
 		
 		<?php dynamic_sidebar( 'archive_sidebar' ); ?>
 		

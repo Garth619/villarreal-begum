@@ -521,12 +521,28 @@ a.internal_banner_consult_button.mobile {
 	
 	
 	.outer_container {
-		margin-top: 121px;
+		margin-top: 106px;
 		padding:0 30px 40px;
 	}
 	
 	.inner_content {
-		padding-top: 60px;
+		padding-top: 67px;
+	}
+	
+	.sidebar_box {
+		margin-bottom:45px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 715px) {
+	
+	
+	.outer_container {
+		margin-top: 121px;
+		padding:0 30px 40px;
 	}
 	
 	
