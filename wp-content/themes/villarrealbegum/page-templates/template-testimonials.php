@@ -13,95 +13,43 @@ get_header(); ?>
 	
 		<div class="testi_wrapper">
 			
-			<div class="single_review">
+			<?php if(get_field('reviews')): ?>
+			 
+				<?php while(has_sub_field('reviews')): ?>
+			 
+						<div class="single_review">
 				
-				<div class="review_star_wrapper">
+							<div class="review_star_wrapper">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
+								<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
+								<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
+								<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
+								<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
+								<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
 					
-				</div><!-- review_star_wrapper -->
+							</div><!-- review_star_wrapper -->
 				
-				<span class="review_title">Customer service at this law firm is excellent.</span><!-- review_title -->
+							<span class="review_title"><?php the_sub_field( 'review_quote' ); ?></span><!-- review_title -->
 				
-				<div class="review_content">
+							<div class="review_content">
 					
-					<p>I would definitely refer this law firm to any one of my family members and friends.  Marie Rodriguez answered all my questions with no hesitation, she didn’t take days to call me back and she was friendly, proffesional and courteous. She made me feel like family and that she cared. This firm is a five star.</p>
+								<?php the_sub_field( 'review_description' ); ?>
 					
-					<div class="review_meta">
+								<div class="review_meta">
 						
-						<span class="review_name">Claudia Chave</span>
+								<span class="review_name"><?php the_sub_field( 'review_name' ); ?></span>
 						
-						<span class="review_client">Client</span>
+								<span class="review_client"><?php the_sub_field( 'review_client' ); ?></span>
 						
-					</div><!-- review_meta -->
+							</div><!-- review_meta -->
 					
-				</div><!-- review_content -->
+						</div><!-- review_content -->
 				
-			</div><!-- single_review -->
-			
-			<div class="single_review">
-				
-				<div class="review_star_wrapper">
-					
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					
-				</div><!-- review_star_wrapper -->
-				
-				<span class="review_title">Customer service at this law firm is excellent.</span><!-- review_title -->
-				
-				<div class="review_content">
-					
-					<p>I would definitely refer this law firm to any one of my family members and friends.  Marie Rodriguez answered all my questions with no hesitation, she didn’t take days to call me back and she was friendly, proffesional and courteous. She made me feel like family and that she cared. This firm is a five star.</p>
-										
-					<div class="review_meta">
-						
-						<span class="review_name">Claudia Chave</span>
-						
-						<span class="review_client">Client</span>
-						
-					</div><!-- review_meta -->
-					
-				</div><!-- review_content -->
-				
-			</div><!-- single_review -->
-			
-			<div class="single_review">
-				
-				<div class="review_star_wrapper">
-					
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					<img src="<?php bloginfo('template_directory');?>/images/star.svg"/>
-					
-				</div><!-- review_star_wrapper -->
-				
-				<span class="review_title">Customer service at this law firm is excellent.</span><!-- review_title -->
-				
-				<div class="review_content">
-					
-					<p>I would definitely refer this law firm to any one of my family members and friends.  Marie Rodriguez answered all my questions with no hesitation, she didn’t take days to call me back and she was friendly, proffesional and courteous. She made me feel like family and that she cared. This firm is a five star.</p>
-					
-					<div class="review_meta">
-						
-						<span class="review_name">Claudia Chave</span>
-						
-						<span class="review_client">Client</span>
-						
-					</div><!-- review_meta -->
-					
-				</div><!-- review_content -->
-				
-			</div><!-- single_review -->
+					</div><!-- single_review -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 			
 		</div><!-- testi_wrapper -->
 		
