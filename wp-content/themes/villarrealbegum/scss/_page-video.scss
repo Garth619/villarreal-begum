@@ -2,7 +2,8 @@
 
 .video_center_wrapper {
 	text-align: center;
-	margin-top:145px;
+	margin:145px auto -293px;
+	max-width: 1505px;
 }
 
 span.video_cat_title {
@@ -27,8 +28,7 @@ span.video_cat_title {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	max-width: 1505px;
-	margin:77px auto 0;
+	margin:77px auto 150px;
 	&:after {
 		content:"";
 		flex-basis:29%;
@@ -38,11 +38,10 @@ span.video_cat_title {
 
 	.single_video {
 		flex-basis:29%;
-		height:300px;
+		height:220px;
 		margin-bottom:82px;
 		position: relative;
 		cursor: pointer;
-		background: pink;
 		&:hover {
 			.play_wrapper {
 				.play_button {
@@ -53,6 +52,13 @@ span.video_cat_title {
 				}
 			}
 		}
+		.mywistia {
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
 		.play_wrapper {
 			position: absolute;
 			top:0;
@@ -62,6 +68,7 @@ span.video_cat_title {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			pointer-events: none;
 			.play_button {
 				width:84px;
 				height:84px;
@@ -90,4 +97,121 @@ span.video_cat_title {
 	}
 	
 	
+@media screen and (max-width: 1330px) {
+		
+
+.video_center_wrapper {
+	max-width: 1025px;
+}
+		
+.video_wrapper {
+	margin: 77px auto 100px;
+	&:after {
+		flex-basis:47%;
+	}
+}
+
+.single_video {
+	flex-basis:47%;
+}
+
+		
+		
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.video_center_wrapper {
+		 margin: 90px auto -130px;
+	}
+	
+	.video_wrapper {
+		margin: 77px auto 60px;
+	}
+	   
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 990px) {
+	
+	
+	.video_center_wrapper {
+    max-width: 635px;
+	}
+	
+	.video_wrapper {
+		display: block;
+	}
+	
+	.single_video {
+		height: 340px;
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 767px) {
+	
+	
+	.video_center_wrapper {
+		margin: 60px auto -55px;
+	}
+	
+	
+	.single_video {
+		margin-bottom: 45px;
+	}
+	
+	span.video_cat_title {
+		font-size: 31px;
+		line-height: 34px;
+		span {
+			
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 600px) {
+	
+	
+	
+	.single_video {
+    height: 250px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 500px) {
+	
+	
+	.single_video {
+    height: 200px;
+	}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 380px) {
+	
+	
+	span.video_cat_title {
+    span {
+    	padding: 0 7px;
+    }
+   }
+	
+	
+	
+} /* Media Query */
 	
