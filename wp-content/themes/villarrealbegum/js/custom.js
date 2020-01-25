@@ -636,7 +636,7 @@ if($('.internal_banner').length > 0 ){
 	
 	function desktopText() {
 		
-		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in treating all</span> <span>of our clients like family</span></span>" );
+		$( "span.sec_four_largeheader, span." ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in treating all</span> <span>of our clients like family</span></span>" );
 		
 		}
 	
@@ -681,7 +681,7 @@ if($('.internal_banner').length > 0 ){
 	
 	
 	
-	// case results
+	// case results homepage title
 	
 	
 	  
@@ -765,8 +765,12 @@ if($('.internal_banner').length > 0 ){
 	
 	// content
 	
+	$('.content p > strong').each(function(){
+    
+    $(this).parent().addClass('paragraph_quote');
+  
+  });
 	
-	$('.content p > strong').parent().addClass('paragraph_quote');
 	
 		
 	// pa cat titles 
