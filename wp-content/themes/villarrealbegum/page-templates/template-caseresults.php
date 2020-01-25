@@ -13,65 +13,26 @@ get_header(); ?>
 	
 		<div class="case_results_wrapper">
 			
-			<div class="single_results">
-				
-				<img class="trophie" src="<?php bloginfo('template_directory');?>/images/results_icon.svg"/>
-				
-				<span class="amount">$3.5m</span><!-- amount -->
-				
-				<span class="type">Product Defect Claim</span><!-- type -->
-				
-			</div><!-- single_results -->
 			
-			<div class="single_results">
+			<?php if(get_field('case_results_new')): ?>
+			 
+				<?php while(has_sub_field('case_results_new')): ?>
+			 
+					
+					<div class="single_results">
 				
-				<img class="trophie" src="<?php bloginfo('template_directory');?>/images/results_icon.svg"/>
+						<img class="trophie" src="<?php bloginfo('template_directory');?>/images/results_icon.svg"/>
 				
-				<span class="amount">$3.5m</span><!-- amount -->
+						<span class="amount"><?php the_sub_field( 'amount_new' ); ?></span><!-- amount -->
 				
-				<span class="type">Product Defect Claim</span><!-- type -->
+						<span class="type"><?php the_sub_field( 'type_new' ); ?></span><!-- type -->
 				
-			</div><!-- single_results -->
-			
-			<div class="single_results">
+					</div><!-- single_results -->
 				
-				<img class="trophie" src="<?php bloginfo('template_directory');?>/images/results_icon.svg"/>
 				
-				<span class="amount">$3.5m</span><!-- amount -->
-				
-				<span class="type">Product Defect Claim</span><!-- type -->
-				
-			</div><!-- single_results -->
-			
-			<div class="single_results">
-				
-				<img class="trophie" src="<?php bloginfo('template_directory');?>/images/results_icon.svg"/>
-				
-				<span class="amount">$3.5m</span><!-- amount -->
-				
-				<span class="type">Product Defect Claim</span><!-- type -->
-				
-			</div><!-- single_results -->
-			
-			<div class="single_results">
-				
-				<img class="trophie" src="<?php bloginfo('template_directory');?>/images/results_icon.svg"/>
-				
-				<span class="amount">$3.5m</span><!-- amount -->
-				
-				<span class="type">Product Defect Claim</span><!-- type -->
-				
-			</div><!-- single_results -->
-			
-			<div class="single_results">
-				
-				<img class="trophie" src="<?php bloginfo('template_directory');?>/images/results_icon.svg"/>
-				
-				<span class="amount">$3.5m</span><!-- amount -->
-				
-				<span class="type">Product Defect Claim</span><!-- type -->
-				
-			</div><!-- single_results -->
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 			
 		</div><!-- case_results_wrapper -->
 		

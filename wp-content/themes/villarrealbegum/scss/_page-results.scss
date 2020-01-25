@@ -23,7 +23,6 @@ h1.deluxe_line_header {
 .case_results_wrapper {
 	max-width: 1380px;
 	margin:126px auto -20px;
-	background: pink;
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
@@ -40,7 +39,7 @@ h1.deluxe_line_header {
 	height:433px;
 	text-align: center;
 	margin-bottom: 51px;
-	padding:80px 0 0 0;
+	padding:80px 30px 0;
 	span {
 		display: block;
 	}
@@ -64,6 +63,7 @@ h1.deluxe_line_header {
 		font-size: 16px;
 		letter-spacing: 0.1em;
 		margin-top:35px;
+		line-height: 19px;
 		@include nunito_extrabold;
 	}
 }
@@ -85,11 +85,47 @@ img.trophie {
 } /* Media Query */
 
 
+
+@media screen and (max-width: 1150px) {
+	
+	.case_results_wrapper {
+		&:after {
+			flex-basis: 46.5%;
+		}
+	}
+	
+	.single_results {
+		flex-basis: 46.5%;
+	}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1066px) {
 	
 	
+	h1.deluxe_line_header {
+		margin: 90px 0 0;
+	}
+	
+	.case_results_wrapper {
+		margin: 96px auto -20px;
+	}
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 915px) {
 	
 	
+	
+	.case_results_wrapper {
+		display: block;
+		max-width: 410px;
+	}
 	
 	
 } /* Media Query */
@@ -100,7 +136,7 @@ img.trophie {
 	
 	
 	h1.deluxe_line_header {
-    margin: 50px 0 0;
+    margin: 55px 0 0;
     font-size: 56px;
     span {
 	  	background-position: 0 39px;
@@ -108,6 +144,10 @@ img.trophie {
     }
 	}
 	
+	
+	.case_results_wrapper {
+   	margin: 65px auto -55px;
+   }
 		
 	
 } /* Media Query */
