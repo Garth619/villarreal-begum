@@ -361,6 +361,25 @@ $('.sec_two_slider').slick({
  
  
  
+ 
+ $('.att_bio_slider').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+	arrows:false,
+	responsive: [
+    {
+      breakpoint: 740,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+     }
+   }
+	]
+ });
+ 
+ 
+ 
 // macy http://macyjs.com/
 
 /*

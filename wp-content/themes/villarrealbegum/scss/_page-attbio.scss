@@ -86,3 +86,33 @@ span.att_bio_position {
 		}
 	}
 }
+
+
+.att_bio_slider_wrapper {
+	max-width: 1515px;
+	margin:200px auto 90px;
+}
+
+
+.att_bio_slide {
+	height:164px;
+	.att_bio_slide_inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:100%;
+		.att_bio_slide_img_wrapper {
+			width: 100%;
+			margin: auto;
+			img {
+				max-width:100%;
+				height:auto;
+				margin:auto;
+				display: block;
+			}
+		}
+	}
+}
+
+
+	

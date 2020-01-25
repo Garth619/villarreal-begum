@@ -228,6 +228,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/five.png": {
+		"ft": 32768,
+		"iS": 23092,
+		"oA": 0,
+		"oAP": "/images/five.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/fivestar-01.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -297,6 +308,17 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/images/four.png": {
+		"ft": 32768,
+		"iS": 22261,
+		"oA": 0,
+		"oAP": "/images/four.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/images/header_alex_desk.png": {
 		"ft": 32768,
@@ -371,6 +393,17 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/images/one.png": {
+		"ft": 32768,
+		"iS": 10257,
+		"oA": 0,
+		"oAP": "/images/one.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/images/results_bg_desk.jpg": {
 		"ft": 16384,
@@ -484,6 +517,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/images/three.png": {
+		"ft": 32768,
+		"iS": 4596,
+		"oA": 0,
+		"oAP": "/images/three.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/two.png": {
+		"ft": 32768,
+		"iS": 32311,
+		"oA": 0,
+		"oAP": "/images/two.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/images/video_template.jpg": {

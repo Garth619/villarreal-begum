@@ -52,6 +52,68 @@ get_header(); ?>
 		</div><!-- att_bio_right -->
 		
 	</div><!-- att_bio_wrapper -->
+	
+	<div class="att_bio_slider_wrapper">
+	
+	<div class="att_bio_slider">
+		
+		<div class="att_bio_slide">
+			
+			<div class="att_bio_slide_inner">
+				
+				<div class="att_bio_slide_img_wrapper">
+				
+					<img src="<?php bloginfo('template_directory');?>/images/one.png"/>
+				
+				</div><!-- att_bio_slide_img_wrapper -->
+				
+			</div><!-- att_bio_slide_inner -->
+			
+		</div><!-- att_bio_slide -->
+		
+		<div class="att_bio_slide">
+			
+			<div class="att_bio_slide_inner">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/two.png"/>
+				
+			</div><!-- att_bio_slide_inner -->
+			
+		</div><!-- att_bio_slide -->
+		
+		<div class="att_bio_slide">
+			
+			<div class="att_bio_slide_inner">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/three.png"/>
+				
+			</div><!-- att_bio_slide_inner -->
+			
+		</div><!-- att_bio_slide -->
+		
+		<div class="att_bio_slide">
+			
+			<div class="att_bio_slide_inner">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/four.png"/>
+				
+			</div><!-- att_bio_slide_inner -->
+			
+		</div><!-- att_bio_slide -->
+		
+		<div class="att_bio_slide">
+			
+			<div class="att_bio_slide_inner">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/five.png"/>
+				
+			</div><!-- att_bio_slide_inner -->
+			
+		</div><!-- att_bio_slide -->
+		
+	</div><!-- att_bio_slider -->
+	
+	</div><!-- att_bio_slider_wrapper -->
 		
 </div><!-- att_container -->
 	
