@@ -636,7 +636,7 @@ if($('.internal_banner').length > 0 ){
 	
 	function desktopText() {
 		
-		$( "span.sec_four_largeheader, span." ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in treating all</span> <span>of our clients like family</span></span>" );
+		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in treating all</span> <span>of our clients like family</span></span>" );
 		
 		}
 	

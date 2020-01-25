@@ -10,24 +10,23 @@ get_header(); ?>
 		
 		<div class="about_top content">
 			
-			<img class="about_badge" src="<?php bloginfo('template_directory');?>/images/header_law_guns.png"/>
+			<?php $about_firm_image = get_field( 'about_firm_image' ); ?>
+			
+			<?php if ( $about_firm_image ) { ?>
+				
+				<img class="about_badge" src="<?php bloginfo('template_directory');?>/images/header_law_guns.png"/>
+			
+			<?php } ?>
 			
 			<h1 class="about_title"><span><?php the_title();?></span></h1><!-- about_title -->
 			
 			<div class="about_intro">
 				
-				<p>The Villarreal & Begum Law Firm dedicates their time and effort towards helping people in San Antonio, Texas find justice for personal negligence encountered while living their normal, everyday lives.</p>
+				<?php the_field( 'about_firm_intro' ); ?>
 				
 			</div><!-- about_intro -->
 			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ornare lacus vel tincidunt. Aenean consectetur tellus sit amet tempus egestas. Nam varius dignissim lobortis. Mauris imperdiet ipsum sed rhoncus dapibus. </p>
-
-			<p>Aenean consectetur tellus sit amet tempus egestas. Nam varius dignissim lobortis. Mauris imperdiet ipsum sed rhoncus dapibus. Mauris ultricies lectus nec tellus aliquet, quis maximus dolor euismod. Duis tristique orci vel auctor dapibus. Pellentesque vitae quam sed lorem blandit interdum a vel nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
-
-			<p><strong>Cras egestas viverra porta. Praesent vel odio ultricies, mollis nisl in, congue ante. Nullam neque mi, condimentum viverra nunc eget, aliquet fermentum risus. Nam nunc mauris.</strong></p>
-				
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula ornare lacus vel tincidunt. Aenean consectetur tellus sit amet tempus egestas. Nam varius dignissim lobortis. Mauris imperdiet ipsum sed rhoncus dapibus. Mauris ultricies lectus nec tellus aliquet, quis maximus dolor euismod. Duis tristique orci vel auctor dapibus. Pellentesque vitae quam sed lorem blandit interdum a vel nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum faucibus mi sed efficitur elementum. In imperdiet leo ut quam pretium, non euismod mauris suscipit. Sed nibh dui, gravida quis massa vel, maximus accumsan mi. In nec maximus augue. </p>
+			<?php the_field( 'about_content' ); ?>
 			
 		</div><!-- about_top -->
 		
