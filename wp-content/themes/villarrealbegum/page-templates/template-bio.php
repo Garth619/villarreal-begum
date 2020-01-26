@@ -35,7 +35,7 @@ get_header(); ?>
 					
 					<?php if ( $attorney_badge_bio ) { ?>
 						
-						<img src="<?php echo $attorney_badge_bio['url']; ?>" alt="<?php echo $attorney_badge_bio['alt']; ?>" />
+						<img class="att_badge" src="<?php echo $attorney_badge_bio['url']; ?>" alt="<?php echo $attorney_badge_bio['alt']; ?>" />
 					
 					<?php } ?>
 				
@@ -121,92 +121,65 @@ get_header(); ?>
 		
 		<div class="att_bio_col">
 			
-			<div class="att_bio_list">
+				<?php if(get_field('accolades_list_column_one')): ?>
+				 
+					<?php while(has_sub_field('accolades_list_column_one')): ?>
+					
+					<div class="att_bio_list">
+				 
+						<span class="att_bio_title"><span><?php the_sub_field( 'title' ); ?></span></span><!-- att_bio_title -->
+						
+						<ul>
+							
+							<?php if(get_sub_field('list_items')): ?>
+							 
+								<?php while(has_sub_field('list_items')): ?>
+							 
+									<li><?php the_sub_field( 'list_item' ); ?></li>
+							    
+								<?php endwhile; ?>
+							 
+							<?php endif; ?>
+							
+						</ul>
+						
+						</div><!-- att_bio_list -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 				
-				<span class="att_bio_title"><span>Bar Admission</span></span><!-- att_bio_title -->
-				
-				<ul>
-					<li>State of Texas, 2003</li>
-					<li>United States District Courts for the Southern Districts of Texas, 2003</li>
-				</ul>
-				
-			</div><!-- att_bio_list -->
-			
-			<div class="att_bio_list">
-				
-				<span class="att_bio_title"><span>Association</span></span><!-- att_bio_title -->
-				
-				<ul>
-					<li>State Bar of Texas</li>
-					<li>American Bar Association</li>
-					<li>Cameron County Bar Association</li>
-					<li>Cameron County Trial Lawyers Association</li>
-					<li>Texas Trial Lawyers Association</li>
-					<li>San Antonio Trial Lawyers Association</li>
-					<li>The American Association of Justice</li>
-					<li>Special Graduate Professor, University of Texas at Brownsville, Adjunct</li>
-					<li>Professor of Undergraduate Studies in Business Law at the University of Texas at Brownsville, Adjunct</li>
-					<li>Board Member of Several Charitable Organizations</li>
-				</ul>
-				
-			</div><!-- att_bio_list -->
-			
-			<div class="att_bio_list">
-				
-				<span class="att_bio_title"><span>Areas of Special Interest</span></span><!-- att_bio_title -->
-				
-				<ul>
-					<li>State Bar of Texas</li>
-					<li>American Bar Association</li>
-					<li>Cameron County Bar Association</li>
-					<li>Cameron County Trial Lawyers Association</li>
-					<li>Texas Trial Lawyers Association</li>
-					<li>San Antonio Trial Lawyers Association</li>
-					<li>The American Association of Justice</li>
-					<li>Special Graduate Professor, University of Texas at Brownsville, Adjunct</li>
-					<li>Professor of Undergraduate Studies in Business Law at the University of Texas at Brownsville, Adjunct</li>
-					<li>Board Member of Several Charitable Organizations</li>
-				</ul>
-				
-			</div><!-- att_bio_list -->
-			
 		</div><!-- att_bio_col -->
 		
 		<div class="att_bio_col">
 			
-			<div class="att_bio_list">
-				
-				<span class="att_bio_title"><span>Areas of Practice</span></span><!-- att_bio_title -->
-				
-				<ul>
-					<li>Personal Injury Claims</li>
-					<li>Corporate Litigation</li>
-					<li>Mediation</li>
-					<li>Arbitration</li>
-					<li>Trial Law: Personal injury and Insurance Bad Faith</li>
-					<li>Pro Bono Law</li>
-				</ul>
-				
-			</div><!-- att_bio_list -->
-			
-			<div class="att_bio_list">
-				
-				<span class="att_bio_title"><span>Education</span></span><!-- att_bio_title -->
-				
-				<ul>
-					<li>State Bar of Texas</li>
-					<li>American Bar Association</li>
-					<li>Cameron County Bar Association</li>
-					<li>Cameron County Trial Lawyers Association</li>
-					<li>Texas Trial Lawyers Association</li>
-					<li>San Antonio Trial Lawyers Association</li>
-					<li>The American Association of Justice</li>
-					<li>Special Graduate Professor, University of Texas at Brownsville, Adjunct</li>
-					<li>Professor of Undergraduate Studies in Business Law at the University of Texas at Brownsville, Adjunct</li>
-					<li>Board Member of Several Charitable Organizations</li>
-				</ul>
-				
-			</div><!-- att_bio_list -->
+			<?php if(get_field('accolades_list_column_two')): ?>
+				 
+					<?php while(has_sub_field('accolades_list_column_two')): ?>
+					
+					<div class="att_bio_list">
+				 
+						<span class="att_bio_title"><span><?php the_sub_field( 'title' ); ?></span></span><!-- att_bio_title -->
+						
+						<ul>
+							
+							<?php if(get_sub_field('list_items')): ?>
+							 
+								<?php while(has_sub_field('list_items')): ?>
+							 
+									<li><?php the_sub_field( 'list_item' ); ?></li>
+							    
+								<?php endwhile; ?>
+							 
+							<?php endif; ?>
+							
+						</ul>
+						
+						</div><!-- att_bio_list -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 			
 		</div><!-- att_bio_col -->
 		
