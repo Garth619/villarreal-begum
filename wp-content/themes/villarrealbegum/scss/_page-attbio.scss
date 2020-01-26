@@ -114,5 +114,58 @@ span.att_bio_position {
 	}
 }
 
+.att_bio_bottom {
+	background:#f1f0f0;
+}
 
+.att_bio_inner {
+	max-width: 1290px;
+	margin:0 auto;
+	padding:170px 0 170px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.att_bio_col {
+	background: pink;
+	flex-basis:40%;
+	
+}
+
+
+.att_bio_list {
+	&:last-of-type {
+		ul {
+			margin-bottom:0;
+		}
+	}
+	span.att_bio_title {
+		font-size: 22px;
+		line-height: 26px;
+		display: block;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		@include deluxe_heavy;
+		span {
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+			display: inline-block;
+			padding: 0 13px;
+			background: url(#{$themePath}images/linebg.svg) repeat-x;
+			background-position: 0 13px;
+			background-size: 1px 16px;
+			padding-bottom:10px;
+		}
+	}
+	ul {
+		list-style: none;
+		padding-left:13px;
+		margin:5px 0 75px 0;
+		li {
+			font-size: 18px;
+			line-height: 32px;
+			@include nunito_reg;
+		}
+	}
+}
 	

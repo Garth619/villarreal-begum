@@ -116,6 +116,105 @@ get_header(); ?>
 	</div><!-- att_bio_slider_wrapper -->
 		
 </div><!-- att_container -->
+
+<div class="att_bio_bottom">
+	
+	<div class="att_bio_inner">
+		
+		<div class="att_bio_col">
+			
+			<div class="att_bio_list">
+				
+				<span class="att_bio_title"><span>Bar Admission</span></span><!-- att_bio_title -->
+				
+				<ul>
+					<li>State of Texas, 2003</li>
+					<li>United States District Courts for the Southern Districts of Texas, 2003</li>
+				</ul>
+				
+			</div><!-- att_bio_list -->
+			
+			<div class="att_bio_list">
+				
+				<span class="att_bio_title"><span>Association</span></span><!-- att_bio_title -->
+				
+				<ul>
+					<li>State Bar of Texas</li>
+					<li>American Bar Association</li>
+					<li>Cameron County Bar Association</li>
+					<li>Cameron County Trial Lawyers Association</li>
+					<li>Texas Trial Lawyers Association</li>
+					<li>San Antonio Trial Lawyers Association</li>
+					<li>The American Association of Justice</li>
+					<li>Special Graduate Professor, University of Texas at Brownsville, Adjunct</li>
+					<li>Professor of Undergraduate Studies in Business Law at the University of Texas at Brownsville, Adjunct</li>
+					<li>Board Member of Several Charitable Organizations</li>
+				</ul>
+				
+			</div><!-- att_bio_list -->
+			
+			<div class="att_bio_list">
+				
+				<span class="att_bio_title"><span>Areas of Special Interest</span></span><!-- att_bio_title -->
+				
+				<ul>
+					<li>State Bar of Texas</li>
+					<li>American Bar Association</li>
+					<li>Cameron County Bar Association</li>
+					<li>Cameron County Trial Lawyers Association</li>
+					<li>Texas Trial Lawyers Association</li>
+					<li>San Antonio Trial Lawyers Association</li>
+					<li>The American Association of Justice</li>
+					<li>Special Graduate Professor, University of Texas at Brownsville, Adjunct</li>
+					<li>Professor of Undergraduate Studies in Business Law at the University of Texas at Brownsville, Adjunct</li>
+					<li>Board Member of Several Charitable Organizations</li>
+				</ul>
+				
+			</div><!-- att_bio_list -->
+			
+		</div><!-- att_bio_col -->
+		
+		<div class="att_bio_col">
+			
+			<div class="att_bio_list">
+				
+				<span class="att_bio_title"><span>Areas of Practice</span></span><!-- att_bio_title -->
+				
+				<ul>
+					<li>Personal Injury Claims</li>
+					<li>Corporate Litigation</li>
+					<li>Mediation</li>
+					<li>Arbitration</li>
+					<li>Trial Law: Personal injury and Insurance Bad Faith</li>
+					<li>Pro Bono Law</li>
+				</ul>
+				
+			</div><!-- att_bio_list -->
+			
+			<div class="att_bio_list">
+				
+				<span class="att_bio_title"><span>Education</span></span><!-- att_bio_title -->
+				
+				<ul>
+					<li>State Bar of Texas</li>
+					<li>American Bar Association</li>
+					<li>Cameron County Bar Association</li>
+					<li>Cameron County Trial Lawyers Association</li>
+					<li>Texas Trial Lawyers Association</li>
+					<li>San Antonio Trial Lawyers Association</li>
+					<li>The American Association of Justice</li>
+					<li>Special Graduate Professor, University of Texas at Brownsville, Adjunct</li>
+					<li>Professor of Undergraduate Studies in Business Law at the University of Texas at Brownsville, Adjunct</li>
+					<li>Board Member of Several Charitable Organizations</li>
+				</ul>
+				
+			</div><!-- att_bio_list -->
+			
+		</div><!-- att_bio_col -->
+		
+	</div><!-- att_bio_inner -->
+	
+</div><!-- att_bio_bottom -->
 	
 </div><!-- internal_main -->
 
