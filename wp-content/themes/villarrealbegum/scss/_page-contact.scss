@@ -1,0 +1,111 @@
+.contact_locations {
+	margin:108px auto -50px;
+	display: flex;
+	max-width: 1100px;
+	justify-content: space-between;
+	.contact_single_location {
+		position: relative;
+		text-align: center;
+		flex-basis:275px;
+		&:nth-of-type(1) {
+			svg {
+				width:51px;
+				height:51px;
+				
+			}
+		}
+		&:nth-of-type(2) {
+			svg {
+				margin-top:-9px;
+				width:61px;
+				height:61px;
+				
+			}
+		}
+		&:nth-of-type(3) {
+			svg {
+				width:54px;
+				height:54px;
+			}
+		}
+		.contact_svg_wrapper {
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+		}
+		svg {
+			position: static;
+			margin:0 auto;
+			display: block;
+			path, circle {
+				fill:$yellowdark;
+			}
+		}
+		span {
+			display: block;
+		}
+		span.contact_office_title {
+			text-transform: uppercase;
+			font-size: 32px;
+			margin-top:75px;
+			color:#000;
+			@include deluxe_extrabold;
+			&:after {
+				content:"";
+				display: block;
+				width:79px;
+				height:10px;
+				background: $yellowdark;
+				margin:29px auto 0;
+			}
+			span {
+				color:$yellowdark;
+				display: inline-block;
+			}
+		}
+		span.contact_address {
+			font-size: 20px;
+			line-height:30px;
+			margin-top:25px;
+			color:#000;
+			@include nunito_reg;
+		}
+		a.contact_phone {
+			color:#000;
+			display: inline-block;
+			text-decoration: none;
+			font-size: 22px;
+			margin-top:24px;
+			@include nunito_extrabold;
+		}
+		a.contact_map_button {
+			width:105px;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			text-transform: uppercase;
+			border:3px solid $yellowdark;
+			border-radius: 45px;
+			font-size: 24px;
+			letter-spacing: 0.1em;
+			color:$yellowdark;
+			margin:22px auto 0;
+			padding:13px 0;
+			transition: all 200ms ease-in-out;
+			@include deluxe_extrabold;
+			&:hover {
+				background: $yellowdark;;
+				color:$black;
+			}
+		}
+		span.contact_appointment {
+			text-transform: uppercase;
+			font-size: 18px;
+			letter-spacing: 0.06em;
+			margin-top:35px;
+			color:$yellowdark;
+			@include deluxe_extrabold;
+		}
+	}
+}
