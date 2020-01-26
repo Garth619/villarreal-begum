@@ -369,10 +369,31 @@ $('.sec_two_slider').slick({
 	arrows:false,
 	responsive: [
     {
-      breakpoint: 740,
+      breakpoint: 1350,
+      settings: {
+      slidesToShow: 4,
+      slidesToScroll: 4,
+     }
+   },
+   {
+      breakpoint: 1150,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+     }
+   },
+   {
+      breakpoint: 940,
       settings: {
       slidesToShow: 2,
       slidesToScroll: 2,
+     }
+   },
+   {
+      breakpoint: 560,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
      }
    }
 	]
