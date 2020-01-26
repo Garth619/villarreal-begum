@@ -118,7 +118,8 @@ body.page-template-template-contact {
 	.footer_inner {
 		display: block;
 		text-align: center;
-		margin:120px auto;
+		margin:120px auto 90px;
+		max-width:1400px;
 	}
 	.footer_left {
 		display: none;
@@ -143,9 +144,18 @@ body.page-template-template-contact {
 				flex-wrap:wrap;
 				justify-content: space-between;
 				li {
-					flex-basis:48%;
+					flex-basis:49%;
+				}
+				li#field_1_6 {
+					flex-basis:100%;
 				}
 			}
+		}
+		.gform_footer {
+			justify-content: center;
+		}
+		input[type="submit"] {
+			margin-top: 18px;
 		}
 	}
 }
