@@ -14,11 +14,11 @@ get_header(); ?>
 			
 			<div class="single_att">
 				
-				<a href="">
+				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
 					
 					<div class="att_img_wrapper">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img.jpg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
 						
 						<div class="att_overlay"></div><!-- att_overlay -->
 						
@@ -34,11 +34,11 @@ get_header(); ?>
 			
 			<div class="single_att">
 				
-				<a href="">
+				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
 					
 					<div class="att_img_wrapper">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img.jpg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
 						
 						<div class="att_overlay"></div><!-- att_overlay -->
 						
@@ -54,11 +54,11 @@ get_header(); ?>
 			
 			<div class="single_att">
 				
-				<a href="">
+				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
 					
 					<div class="att_img_wrapper">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img.jpg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
 						
 						<div class="att_overlay"></div><!-- att_overlay -->
 						
@@ -74,11 +74,11 @@ get_header(); ?>
 			
 			<div class="single_att">
 				
-				<a href="">
+				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
 					
 					<div class="att_img_wrapper">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img.jpg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
 						
 						<div class="att_overlay"></div><!-- att_overlay -->
 						
@@ -94,11 +94,11 @@ get_header(); ?>
 			
 			<div class="single_att">
 				
-				<a href="">
+				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
 					
 					<div class="att_img_wrapper">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img.jpg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
 						
 						<div class="att_overlay"></div><!-- att_overlay -->
 						

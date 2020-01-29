@@ -63,11 +63,21 @@ get_header(); ?>
 			
 			<div class="att_image">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img.jpg"/>
+				<?php $attorney_image = get_field( 'attorney_image' ); ?>
+				
+				<?php if ( $attorney_image ) { ?>
+					
+					<img src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>" />
+				
+				<?php } ?>
 				
 				<div class="att_bio_badge">
 					
-					<img class="att_badge" src="<?php bloginfo('template_directory');?>/images/header_law_guns.png"/>
+					<?php if ( $attorney_badge_bio ) { ?>
+						
+						<img class="att_badge" src="<?php echo $attorney_badge_bio['url']; ?>" alt="<?php echo $attorney_badge_bio['alt']; ?>" />
+					
+					<?php } ?>
 				
 				</div><!-- att_bio_badge -->
 				
@@ -77,13 +87,13 @@ get_header(); ?>
 		
 	</div><!-- att_bio_wrapper -->
 	
+	<?php if(get_field('attorney_slider')): ?>
+	
 	<div class="att_bio_slider_wrapper">
 	
-	<div class="att_bio_slider">
+		<div class="att_bio_slider">
 		
-		<?php if(get_field('attorney_slider')): ?>
-		 
-			<?php while(has_sub_field('attorney_slider')): ?>
+		<?php while(has_sub_field('attorney_slider')): ?>
 		 
 				<div class="att_bio_slide">
 			
@@ -107,13 +117,15 @@ get_header(); ?>
 		    
 			<?php endwhile; ?>
 		 
-		<?php endif; ?>
-		
-	</div><!-- att_bio_slider -->
+		</div><!-- att_bio_slider -->
 	
 	</div><!-- att_bio_slider_wrapper -->
+	
+	<?php endif; ?>
 		
 </div><!-- att_container -->
+
+<?php if(get_field('accolades_list_column_one') || get_field('accolades_list_column_two')): ?>
 
 <div class="att_bio_bottom">
 	
@@ -186,6 +198,8 @@ get_header(); ?>
 	</div><!-- att_bio_inner -->
 	
 </div><!-- att_bio_bottom -->
+
+<?php endif;?>
 	
 </div><!-- internal_main -->
 
