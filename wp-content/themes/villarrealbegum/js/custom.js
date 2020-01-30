@@ -306,29 +306,6 @@ $('.sec_three_slider').slick({
 
 
 
-$('.sec_two_slider').slick({
-  infinite: true,
-  mobileFirst:true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-	arrows:false,
-	//prevArrow:".arrow_left",
-	//nextArrow:".arrow_right",
-	responsive: [
-    {
-      breakpoint: 740,
-      settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2,
-     }
-   },
-   {
-      breakpoint: 1100,
-      settings: "unslick"
-   }
-	]
- });
- 
  
  
  
@@ -400,6 +377,135 @@ $('.sec_two_slider').slick({
    }
 	]
  });
+ 
+ 
+ // progress bars
+ 
+ 
+ // sec two
+ 
+ 	var $slidertwo = $('.sec_two_slider');
+  var $progressBartwo = $('.sec_two_progress');
+  var $progressBarLabeltwo = $('.sec_two_progress_bar');
+  
+  $slidertwo.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+    
+    $progressBartwo
+      .css('background-size', calc + '% 100%')
+      .attr('aria-valuenow', calc );
+    
+    $progressBarLabeltwo.text( calc + '% completed' );
+  });
+  
+ $slidertwo.slick({
+  infinite: true,
+  mobileFirst:true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:true,
+	prevArrow:".sec_two_right_arrow",
+	nextArrow:".sec_two_left_arrow",
+	responsive: [
+    {
+      breakpoint: 740,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+     }
+   },
+   {
+      breakpoint: 1100,
+      settings: "unslick"
+   }
+	]
+ });
+ 
+  
+  var sectwoslidecount = $('.sec_two_slider .slick-slide:not(.slick-cloned)').length;
+  
+  var finalslidecounttwo = ('0' + sectwoslidecount).slice(-2);
+  
+  $('.sec_two_last_slide_number').text(finalslidecounttwo);
+ 
+ // sec six
+
+	var $slider = $('.sec_six_slider');
+  var $progressBar = $('.progress');
+  var $progressBarLabel = $( '.progress_bar' );
+  
+  $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+    
+    $progressBar
+      .css('background-size', calc + '% 100%')
+      .attr('aria-valuenow', calc );
+    
+    $progressBarLabel.text( calc + '% completed' );
+  });
+  
+  $slider.slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+		arrows:true,
+		prevArrow:".sec_six_right_arrow",
+		nextArrow:".sec_six_left_arrow",
+		responsive: [
+    {
+      breakpoint: 1880,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight:true,
+     }
+   }
+	]
+  }); 
+  
+  var secsixslidecount = $('.sec_six_slider .slick-slide:not(.slick-cloned)').length;
+  
+  var finalslidecount = ('0' + secsixslidecount).slice(-2);
+  
+  $('.sec_six_last_slide_number').text(finalslidecount);
+  
+  
+/*
+  $('.sec_six_slider').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+	arrows:false,
+	//prevArrow:".arrow_left",
+	//nextArrow:".arrow_right",
+	responsive: [
+    {
+      breakpoint: 1880,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight:true,
+     }
+   }
+	]
+ });
+
+  
+*/
+
  
  
  
@@ -821,92 +927,7 @@ if($('.internal_banner').length > 0 ){
 	$('.pa_directory_wrapper ul.menu > li > a').wrapInner('<span></span>');
 	
 	
-/*
-	$('.sec_eight_results_list ul li').on('click', function() {
-  	
-  	$('.current').removeClass('current');
-		
-		$(this).addClass('current');
-	
-	}).has('a[href*="' + location.pathname + '"]').addClass('current');
-*/
-
-	var $slider = $('.sec_six_slider');
-  var $progressBar = $('.progress');
-  var $progressBarLabel = $( '.progress_bar' );
-  
-  $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
-    
-    $progressBar
-      .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc );
-    
-    $progressBarLabel.text( calc + '% completed' );
-  });
-  
-  $slider.slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
-		arrows:true,
-		prevArrow:".sec_six_left_arrow",
-		nextArrow:".sec_six_right_arrow",
-		responsive: [
-    {
-      breakpoint: 1880,
-      settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-     }
-   },
-   {
-      breakpoint: 767,
-      settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      adaptiveHeight:true,
-     }
-   }
-	]
-  }); 
-  
-  var secsixslidecount = $('.sec_six_slider .slick-slide:not(.slick-cloned)').length;
-  
-  var finalslidecount = ('0' + secsixslidecount).slice(-2);
-  
-  $('.sec_six_last_slide_number').text(finalslidecount);
-  
-  
-/*
-  $('.sec_six_slider').slick({
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2,
-	arrows:false,
-	//prevArrow:".arrow_left",
-	//nextArrow:".arrow_right",
-	responsive: [
-    {
-      breakpoint: 1880,
-      settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-     }
-   },
-   {
-      breakpoint: 767,
-      settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      adaptiveHeight:true,
-     }
-   }
-	]
- });
-
-  
-*/
-  
+	  
   
 
    

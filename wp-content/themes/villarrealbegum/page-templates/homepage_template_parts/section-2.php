@@ -70,8 +70,40 @@
 	
 	<div class="sec_two_progress_wrapper">
 						
-		
+		<div class="sec_two_progress_inner">
+				
+				<div class="sec_two_arrow_wrapper sec_two_left_arrow_wrapper">
+					
+					<div class="sec_two_arrow sec_two_left_arrow">
 						
-	</div><!-- sec_two_progress_wrapper -->
+						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_right.svg"); ?>
+						
+					</div><!-- sec_two_arrow_wrapper -->
+					
+					<span class="sec_two_slide_number sec_two_first_slide_number">01</span><!-- sec_two_first_slide_number -->
+					
+				</div><!-- sec_two_left_arrow_wrapper -->
+				
+				<div class="sec_two_progress" aria-valuemin="0" aria-valuemax="100">
+					
+					<span class="sec_two_progress_bar"></span>
+  			
+  			</div>
+    		
+    		<div class="sec_two_arrow_wrapper sec_two_right_arrow_wrapper">
+	    		
+	    			<span class="sec_two_slide_number sec_two_last_slide_number"></span><!-- sec_two_last_slide_number -->
+					
+					<div class="sec_two_arrow sec_two_right_arrow">
+						
+						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_left.svg"); ?>
+						
+					</div><!-- sec_two_arrow_wrapper -->
+					
+				</div><!-- sec_two_right_arrow_wrapper -->
+  		
+  		</div><!-- sec_two_progress_wrapper -->
+						
+	</div><!-- sec_two_progress_inner -->
 	
 </section><!-- section_two -->

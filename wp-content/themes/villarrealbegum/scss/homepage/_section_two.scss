@@ -443,6 +443,77 @@
 		 height:70px;
 		 border-top:2px solid #d6d6d7;
 	 }
+	 
+	 
+	.sec_two_progress_inner {
+	 	width:532px;
+	 	display: flex;
+	 	align-items: center;
+	}
+
+
+.sec_two_progress {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin:0 15px;
+  overflow: hidden;
+  background-color: #d9dbdb;
+  background-image: linear-gradient(to right, $yellow, $yellow);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .4s ease-in-out;
+}
+
+
+.sec_two_progress_bar {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.sec_two_arrow_wrapper {
+	display: flex;
+}
+
+
+
+
+.sec_two_arrow {
+	cursor: pointer;
+	svg {
+		position: relative;
+		top:2px;
+		width:11px;
+		height:auto;
+		path {
+			fill: $yellow;
+		}
+	}
+}
+
+
+.sec_two_left_arrow {
+	margin-right:15px;
+}
+
+.sec_two_right_arrow {
+	margin-left:15px;
+}
+
+.sec_two_slide_number {
+	font-size: 17px;
+	line-height: 17px;
+	letter-spacing: 0.06em;
+	color:#c6c7c7;
+	@include deluxe_extrabold;
+}
+
 	
 	
 } /* Media Query */
