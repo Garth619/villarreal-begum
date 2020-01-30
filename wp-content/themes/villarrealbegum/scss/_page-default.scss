@@ -131,7 +131,12 @@ picture.internal_banner_att_two {
 		background: rgba(0,0,0,0.52);
 		border-radius: 45px;
 		padding:12px 22px;
+		transition: all 200ms ease-in-out;
 		@include deluxe_extrabold;
+		&:hover {
+			background: rgba(239,184,50,1);
+			color:$blacklight;
+		}
 	}
 }
 
@@ -156,8 +161,9 @@ picture.internal_banner_att_two {
 	z-index:2;
 	//background: red;
 	margin-right: 67px;
-	 margin-top: -183px;
+	 
 	img {
+		margin-top: -183px;
 		width:245px;
 		display: block;
 		margin-left:auto;

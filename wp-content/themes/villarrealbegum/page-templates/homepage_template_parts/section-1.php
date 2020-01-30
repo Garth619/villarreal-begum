@@ -38,9 +38,9 @@
 					
 					<div class="attorney_names_inner">
 					
-						<a class="attorney_name attorney_name_one" href="">Javier Villarreal</a><!-- attorney_name -->
+						<a class="attorney_name attorney_name_one" href="<?php the_permalink(724);?>">Javier Villarreal</a><!-- attorney_name -->
 					
-						<a class="attorney_name attorney_name_two" href="">Alex Begum</a><!-- attorney_name -->
+						<a class="attorney_name attorney_name_two" href="<?php the_permalink(60);?>">Alex Begum</a><!-- attorney_name -->
 					
 					</div><!-- attorney_names_inner -->
 					

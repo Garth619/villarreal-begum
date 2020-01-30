@@ -6,7 +6,7 @@
 			
 			<span class="cr_title"><span>Case</span> <span>Results</span></span>
 			
-			<a class="view_all_results desktop" href="">View All Results</a><!-- view_all_results -->
+			<a class="view_all_results desktop" href="<?php the_permalink(54);?>">View All Results</a><!-- view_all_results -->
 			
 		</div><!-- sec_eight_left -->
 		
@@ -128,7 +128,7 @@
 		
 	</div><!-- sec_eight_inner -->
 	
-	<a class="view_all_results mobile" href="">View All Results</a><!-- view_all_results -->
+	<a class="view_all_results mobile" href="<?php the_permalink(54);?>">View All Results</a><!-- view_all_results -->
 	
 	<img class="sec_eight_hero" src="<?php bloginfo('template_directory');?>/images/results_bg_desk.jpg"/>
 	

@@ -24,7 +24,7 @@
 					<li><a href="">slip and fall accident</a></li>
 					<li><a href="">wrongful death</a></li>
 					<li><a href="">nursing home abuse</a></li>
-					<li><a href="">view all</a></li>
+					<li><a href="<?php the_permalink(103);?>">view all</a></li>
 				</ul>
 				
 			</div><!-- sec_three_left -->

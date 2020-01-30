@@ -94,7 +94,7 @@
 					
 					<div class="mobile_es_wrapper">
 						
-						<a class="mobile_espanol_button" href="">Ver En Espanol</a><!-- mobile_espanol_button -->
+						<a class="mobile_espanol_button" href="<?php the_permalink(728);?>">Ver En Espanol</a><!-- mobile_espanol_button -->
 						
 					</div><!-- mobile_es_wrapper -->
 					

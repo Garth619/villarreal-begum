@@ -598,6 +598,8 @@ var pgurl = window.location.href;
 		
 		$('.nav_wrapper').addClass('nav_tablet');
 		
+		
+		
 	}
 	
 
@@ -606,6 +608,7 @@ var pgurl = window.location.href;
 		$(this).next('ul.sub-menu').slideToggle(300);
 		
 		$(this).parent().toggleClass('open');
+		
 		
 	}
 	

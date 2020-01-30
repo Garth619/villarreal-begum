@@ -14,7 +14,7 @@
 				
 			</div><!-- star_wrapper -->
 			
-			<a class="reviews_button desktop" href="">View All Testimonials</a><!-- reviews_button -->
+			<a class="reviews_button desktop" href="<?php the_permalink(52);?>">View All Testimonials</a><!-- reviews_button -->
 			
 		</div><!-- sec_six_left -->
 		
@@ -42,7 +42,7 @@
 					
 						<div class="sec_six_name_meta">
 						
-							<span class="name">1 Jillian Lara</span><span class="type">Client</span>
+							<span class="name">Jillian Lara</span><span class="type">Client</span>
 						
 						</div><!-- name_meta -->
 					
@@ -70,7 +70,7 @@
 					
 					<div class="sec_six_name_meta">
 						
-						<span class="name">2 Claudia Chavez</span><span class="type">Client</span>
+						<span class="name">Claudia Chavez</span><span class="type">Client</span>
 						
 					</div><!-- name_meta -->
 					
@@ -98,7 +98,7 @@
 					
 						<div class="sec_six_name_meta">
 						
-							<span class="name">3 Jillian Lara</span><span class="type">Client</span>
+							<span class="name">Jillian Lara</span><span class="type">Client</span>
 						
 						</div><!-- name_meta -->
 					
@@ -126,7 +126,7 @@
 					
 					<div class="sec_six_name_meta">
 						
-						<span class="name">4 Claudia Chavez</span><span class="type">Client</span>
+						<span class="name">Claudia Chavez</span><span class="type">Client</span>
 						
 					</div><!-- name_meta -->
 					
@@ -154,7 +154,7 @@
 					
 						<div class="sec_six_name_meta">
 						
-							<span class="name">5 Jillian Lara</span><span class="type">Client</span>
+							<span class="name">Jillian Lara</span><span class="type">Client</span>
 						
 						</div><!-- name_meta -->
 					
@@ -180,7 +180,7 @@
 					
 					<div class="sec_six_name_meta">
 						
-						<span class="name">6 Claudia Chavez</span><span class="type">Client</span>
+						<span class="name">Claudia Chavez</span><span class="type">Client</span>
 						
 					</div><!-- name_meta -->
 					
@@ -242,7 +242,7 @@
 		
 	</div><!-- sec_six_bottom -->
 	
-	<a class="reviews_button mobile" href="">View All Testimonials</a><!-- reviews_button -->
+	<a class="reviews_button mobile" href="<?php the_permalink(52);?>">View All Testimonials</a><!-- reviews_button -->
 	
 	<img class="sec_six_bg" src="<?php bloginfo('template_directory');?>/images/test_bg_desk.jpg"/>
 	

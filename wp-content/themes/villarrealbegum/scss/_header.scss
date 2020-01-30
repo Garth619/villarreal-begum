@@ -294,6 +294,15 @@ body:not(.page-template-template-home):not(.page-template-default):not(.blog):no
 	header {
 		background: #1f222a;
 	}
+	.nav_wrapper {
+		ul.menu {
+			> li {
+					> ul.sub-menu {
+						 top: 86px;
+					}
+			}
+		}
+	}
 }
 
 
@@ -479,10 +488,29 @@ body.page-template-default, body.blog, body.archive, body.single {
 				li {
 					padding-bottom: 25px;
 				}
+				> li {
+						ul.sub-menu {
+							top: 80px;
+						}
+				}
 			}
 		}
 	}
 	
+	
+body:not(.page-template-template-home):not(.page-template-default):not(.blog):not(.archive):not(.single) {
+	
+	.nav_wrapper {
+		ul.menu {
+			> li {
+					> ul.sub-menu {
+						 top: 80px;
+					}
+			}
+		}
+	}
+}
+
 	
 	
 	

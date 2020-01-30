@@ -38,6 +38,9 @@ span.footer_title {
 	left:101px;
 	color:#000;
 	@include deluxe_extrabold;
+	br {
+		display: none;
+	}
 	span {
 		color:#fff;
 	}
@@ -622,6 +625,23 @@ span.footer_title {
 		}
 	}
 	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 410px) {
+	
+	
+	span.footer_title {
+		br {
+			display: inline-block;
+		}
+		span {
+			display: inline;
+			color:#000;
+		}
+	}
 	
 	
 } /* Media Query */

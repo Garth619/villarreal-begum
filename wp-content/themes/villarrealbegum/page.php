@@ -40,9 +40,9 @@
 					
 					<div class="internal_banner_attorney_names_inner">
 					
-						<a class="internal_banner_attorney_name internal_banner_attorney_name_one" href="">Javier Villarreal</a><!-- attorney_name -->
+						<a class="internal_banner_attorney_name internal_banner_attorney_name_one" href="<?php the_permalink(724);?>">Javier Villarreal</a><!-- attorney_name -->
 					
-						<a class="internal_banner_attorney_name internal_banner_attorney_name_two" href="">Alex Begum</a><!-- attorney_name -->
+						<a class="internal_banner_attorney_name internal_banner_attorney_name_two" href="<?php the_permalink(60);?>">Alex Begum</a><!-- attorney_name -->
 					
 					</div><!-- internal_banner_attorney_names_inner -->
 					
