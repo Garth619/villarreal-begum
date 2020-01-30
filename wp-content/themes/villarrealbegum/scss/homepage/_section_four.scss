@@ -29,23 +29,21 @@
 		@include deluxe_extrabold;
 		span {
 			display: inline-block;
-			padding:0 20px;
-			background: url(#{$themePath}images/linebg.svg) repeat-x;
-			background-position: 0 67px;
-			background-size:1px 17px;
+			position: relative;
+			z-index:1;
+			&:after {
+				content:"";
+				height:17px;
+				width:calc(100% + 40px);
+				display: block;
+				margin-left:-20px;
+				background: $yellow;
+				position: absolute;
+				top:65px;
+				z-index:-1;
+			}
 		}
-	} //https://codepen.io/johndjameson/pen/zKAKQP
-/*
-	span.sec_four_largeheader {
-		font-size: 82px;
-		line-height: 91px;
-		display: inline;
-		background: url(#{$themePath}images/linebg.svg) repeat-x;
-		background-position: 0 67px;
-		background-size:1px 17px;
-		@include deluxe_extrabold;
-	}
-*/
+	} 
 	a.meet_button {
 		text-transform: uppercase;
 		color:$black;
@@ -80,8 +78,10 @@
 			font-size: 70px;
 			line-height: 80px;
 			span {
-				background-position: 0 59px;
-				background-size:1px 13px;
+				&:after {
+					height:13px;
+					top: 58px;
+				}
 			}
 		}
 		a.meet_button {
@@ -109,8 +109,9 @@
 			font-size: 50px;
 			line-height: 66px;
 			span {
-				background-position: 0 43px;
-				background-size:1px 13px;
+				&:after {
+					top: 41px;
+				}
 			}
 		}
 		a.meet_button {
@@ -138,7 +139,9 @@
 			font-size: 42px;
 			line-height: 52px;
 			span {
-				background-position: 0 35px;
+				&:after {
+					top: 36px;
+				}
 			}
 		}
 		a.meet_button {

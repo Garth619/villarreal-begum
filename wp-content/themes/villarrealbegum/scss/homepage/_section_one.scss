@@ -286,7 +286,13 @@ a.consult_button.mobile {
   	}
 	}
 	
-	
+	.sec_one_left {
+		padding: 239px 0 0;
+		a.consult_button {
+			margin-top: 21px;
+		}
+	}
+	    
 	.sec_one_right {
 		width: 657px;
 	}
@@ -328,6 +334,8 @@ a.consult_button.mobile {
 
 
 @media screen and (max-width: 1320px) {
+	
+	
 	
 	
 	.sec_one_left {
