@@ -707,6 +707,29 @@ span.sec_six_description {
 } /* Media Query */
 
 
+@media screen and (max-width: 1066px) {
+	
+	
+	.sec_six_left {
+		padding-top: 81px;
+	}
+	
+	
+	.star_box {
+		margin-left: 26px;
+	}
+	
+	.star_wrapper {
+		span.star_rating {
+    	margin-left: 17px;
+    }
+	}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 860px) {
 	
 	

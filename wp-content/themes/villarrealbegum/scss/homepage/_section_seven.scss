@@ -205,6 +205,14 @@ span.sec_seven_quote {
 } /* Media Query */
 
 
+@media screen and (max-width: 1066px) {
+	
+	.sec_seven_inner {
+		margin: 18px auto 0;
+	}
+	
+} /* Media Query */
+
 @media screen and (max-width: 767px) {
 	
 	#section_seven {
@@ -218,7 +226,7 @@ span.sec_seven_quote {
 	}
 	
 	.sec_seven_inner {
-		margin: 35px auto 0;
+		margin: 5px auto 0;
 	}
 	
 	
