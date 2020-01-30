@@ -42,7 +42,7 @@
 					
 						<div class="sec_six_name_meta">
 						
-							<span class="name">Jillian Lara</span><span class="type">Client</span>
+							<span class="name">1 Jillian Lara</span><span class="type">Client</span>
 						
 						</div><!-- name_meta -->
 					
@@ -70,7 +70,7 @@
 					
 					<div class="sec_six_name_meta">
 						
-						<span class="name">Claudia Chavez</span><span class="type">Client</span>
+						<span class="name">2 Claudia Chavez</span><span class="type">Client</span>
 						
 					</div><!-- name_meta -->
 					
@@ -98,7 +98,7 @@
 					
 						<div class="sec_six_name_meta">
 						
-							<span class="name">Jillian Lara</span><span class="type">Client</span>
+							<span class="name">3 Jillian Lara</span><span class="type">Client</span>
 						
 						</div><!-- name_meta -->
 					
@@ -126,7 +126,7 @@
 					
 					<div class="sec_six_name_meta">
 						
-						<span class="name">Claudia Chavez</span><span class="type">Client</span>
+						<span class="name">4 Claudia Chavez</span><span class="type">Client</span>
 						
 					</div><!-- name_meta -->
 					
@@ -154,7 +154,7 @@
 					
 						<div class="sec_six_name_meta">
 						
-							<span class="name">Jillian Lara</span><span class="type">Client</span>
+							<span class="name">5 Jillian Lara</span><span class="type">Client</span>
 						
 						</div><!-- name_meta -->
 					
@@ -180,7 +180,7 @@
 					
 					<div class="sec_six_name_meta">
 						
-						<span class="name">Claudia Chavez</span><span class="type">Client</span>
+						<span class="name">6 Claudia Chavez</span><span class="type">Client</span>
 						
 					</div><!-- name_meta -->
 					
@@ -206,33 +206,33 @@
 			
 			<div class="sec_six_progress_wrapper">
 				
-				<div class="sec_six_arrow_wrapper">
+				<div class="sec_six_arrow_wrapper sec_six_left_arrow_wrapper">
 					
-					<div class="sec_six_left_arrow">
+					<div class="sec_six_arrow sec_six_left_arrow">
 						
 						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_left.svg"); ?>
 						
 					</div><!-- sec_six_arrow_wrapper -->
 					
-					<span class="first_slide_number">01</span><!-- first_slide_number -->
+					<span class="sec_six_slide_number sec_six_first_slide_number">01</span><!-- sec_six_first_slide_number -->
 					
 				</div><!-- sec_six_left_arrow_wrapper -->
 				
-				<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				<div class="progress" aria-valuemin="0" aria-valuemax="100">
 					
-					<span class="slider__label sr-only"></span>
+					<span class="progress_bar"></span>
   			
   			</div>
     		
-    		<div class="sec_six_right_arrow_wrapper">
+    		<div class="sec_six_arrow_wrapper sec_six_right_arrow_wrapper">
+	    		
+	    			<span class="sec_six_slide_number sec_six_last_slide_number"></span><!-- sec_six_last_slide_number -->
 					
-					<div class="sec_six_arrow_wrapper">
+					<div class="sec_six_arrow sec_six_right_arrow">
 						
 						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_right.svg"); ?>
 						
 					</div><!-- sec_six_arrow_wrapper -->
-					
-					<span class="first_slide_number">01</span><!-- first_slide_number -->
 					
 				</div><!-- sec_six_right_arrow_wrapper -->
   		
@@ -240,8 +240,6 @@
 			
 		</div><!-- sec_six_bottom_inner -->
 		
-		
-  
 	</div><!-- sec_six_bottom -->
 	
 	<a class="reviews_button mobile" href="">View All Testimonials</a><!-- reviews_button -->

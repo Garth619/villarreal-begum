@@ -189,6 +189,7 @@ img.profile_pic {
 	margin-left:auto;
 	margin-right:auto;
 	display: flex;
+	justify-content: space-between;
 	height:100%;
 	padding:0 100px;
 }
@@ -224,26 +225,27 @@ a.reviews_button.mobile {
 }
 
 .sec_six_progress_wrapper {
-	width:100%;
+	width:532px;
 	display: flex;
+	align-items: center;
 }
 
 
 .progress {
   display: block;
   width: 100%;
-  height: 10px;
-  border-radius: 10px;
+  height: 6px;
+  margin:0 15px;
   overflow: hidden;
-  background-color: #f5f5f5;
-  background-image: linear-gradient(to right, black, black);
+  background-color: #d9dbdb;
+  background-image: linear-gradient(to right, $yellow, $yellow);
   background-repeat: no-repeat;
   background-size: 0 100%;
   transition: background-size .4s ease-in-out;
 }
 
 
-.sr-only {
+.progress_bar {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -252,6 +254,43 @@ a.reviews_button.mobile {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+.sec_six_arrow_wrapper {
+	display: flex;
+}
+
+
+
+
+.sec_six_arrow {
+	cursor: pointer;
+	svg {
+		position: relative;
+		top:2px;
+		width:14px;
+		height:23px;
+		path {
+			fill: $yellow;
+		}
+	}
+}
+
+
+.sec_six_left_arrow {
+	margin-right:15px;
+}
+
+.sec_six_right_arrow {
+	margin-left:15px;
+}
+
+.sec_six_slide_number {
+	font-size: 26px;
+	line-height: 26px;
+	letter-spacing: 0.06em;
+	color:#fff;
+	@include deluxe_extrabold;
 }
 
 
