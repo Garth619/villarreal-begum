@@ -206,6 +206,8 @@
 			
 			<div class="sec_six_progress_wrapper">
 				
+				<div class="sec_six_progress_inner">
+				
 				<div class="sec_six_arrow_wrapper sec_six_left_arrow_wrapper">
 					
 					<div class="sec_six_arrow sec_six_left_arrow">
@@ -235,6 +237,8 @@
 					</div><!-- sec_six_arrow_wrapper -->
 					
 				</div><!-- sec_six_right_arrow_wrapper -->
+				
+				</div><!-- sec_six_progress_inner -->
   		
   		</div><!-- sec_six_progress_wrapper -->
 			

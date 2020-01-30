@@ -225,8 +225,13 @@ a.reviews_button.mobile {
 }
 
 .sec_six_progress_wrapper {
-	width:532px;
+	width:513px;
+	
+}
+
+.sec_six_progress_inner {
 	display: flex;
+	height:100%;
 	align-items: center;
 }
 
@@ -335,7 +340,11 @@ a.reviews_button.mobile {
 	
 	.sec_six_bottom_inner {
 		max-width: 1550px;
-		
+	}
+	
+	
+	.sec_six_progress_wrapper {
+		//margin-right:90px;
 	}
 		
 	
@@ -355,7 +364,18 @@ a.reviews_button.mobile {
 	}
 	
 	.sec_six_bottom_inner {
-		padding: 0 51px;
+		padding: 0 100px 0 51px;
+	}
+	
+	
+	.sec_six_progress_wrapper {
+		width:600px;
+	}
+	
+	.sec_six_progress_inner {
+		width:520px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 	
 	
@@ -440,7 +460,7 @@ a.reviews_button.mobile {
 	}
 	
 	.sec_six_bottom_inner {
-		
+		max-width: 1310px;
 	}
 	
 	img.fivestar {
@@ -450,6 +470,7 @@ a.reviews_button.mobile {
 	
 	
 	.star_wrapper {
+		margin-left:0;
 		span.star_rating {
 			font-size: 20px;
 		}
@@ -462,10 +483,46 @@ a.reviews_button.mobile {
 	
 	.sec_six_inner {
 		max-width: 1310px;
-		
+	}
+	
+	.sec_six_bottom_inner {
+		padding: 0 100px;
 	}
 	
 	
+	.sec_six_progress_wrapper {
+		width:520px;
+		margin-right:0;
+	}
+	
+	.sec_six_progress_inner {
+		width:353px;
+	}
+	
+	.sec_six_slide_number {
+		font-size: 17px;
+		line-height: 17px;
+	}
+	
+	.sec_six_arrow {
+		svg {
+			width: 9px;
+			height:14px;
+		}
+	}
+	
+	.sec_six_left_arrow {
+    margin-right: 9px;
+	}
+	
+	.sec_six_right_arrow {
+    margin-left: 9px;
+	}
+	
+	.progress {
+		height:4px;
+		margin: 0 11px;
+	}
 	
 	
 	
@@ -520,6 +577,17 @@ a.reviews_button.mobile {
   
   .sec_six_inner {
 		padding: 0 86px;
+  }
+  
+  
+  
+  .sec_six_progress_wrapper {
+	  width:426px;
+	  margin-right: 30px;
+  }
+  
+  .sec_six_bottom_inner {
+	  padding:0 86px;
   }
 	
 	
@@ -625,6 +693,16 @@ span.sec_six_description {
 	  }
   }
   
+  
+  .sec_six_bottom_inner {
+	  padding:0 45px;
+	  max-width: 960px;
+  }
+  
+  .sec_six_progress_wrapper {
+	  margin-right:0px;
+  }
+  
   	
 } /* Media Query */
 
@@ -633,6 +711,11 @@ span.sec_six_description {
 	
 	
 	.sec_six_right {
+		width:344px;
+	}
+	
+	
+	.sec_six_progress_wrapper {
 		width:344px;
 	}
 	

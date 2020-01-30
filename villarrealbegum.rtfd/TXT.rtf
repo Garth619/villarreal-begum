@@ -5,12 +5,27 @@
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 \
+\f0\fs24 \cf0 $('.test_large_quote').each(function()\{\
+    \
+ var textCount = $(this).text().length;\
+\
+ if(textCount >= 48) \{\
+	 \
+	 $(this).addClass('long_count');\
+	 \
+ \}\
+ \
+\});\
 \
 once over\
 cross browser\
 homepage acfs\
 page speed\
+\
+\
+can i upgrade numbers on the prgoress bar if they come in sets of two?\
+\
+migrate content\
 \
 should mobile headers be 43, lh 42?\
 \
