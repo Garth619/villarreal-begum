@@ -212,7 +212,7 @@
 					
 					<div class="sec_six_arrow sec_six_left_arrow">
 						
-						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_right.svg"); ?>
+						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_left.svg"); ?>
 						
 					</div><!-- sec_six_arrow_wrapper -->
 					
@@ -232,7 +232,7 @@
 					
 					<div class="sec_six_arrow sec_six_right_arrow">
 						
-						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_left.svg"); ?>
+						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_right.svg"); ?>
 						
 					</div><!-- sec_six_arrow_wrapper -->
 					

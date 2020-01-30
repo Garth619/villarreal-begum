@@ -404,8 +404,8 @@ $('.sec_three_slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 	arrows:true,
-	prevArrow:".sec_two_right_arrow",
-	nextArrow:".sec_two_left_arrow",
+	prevArrow:".sec_two_left_arrow",
+	nextArrow:".sec_two_right_arrow",
 	responsive: [
     {
       breakpoint: 740,
@@ -487,8 +487,8 @@ $('.sec_three_slider').slick({
     slidesToShow: 2,
     slidesToScroll: 2,
 		arrows:true,
-		prevArrow:".sec_six_right_arrow",
-		nextArrow:".sec_six_left_arrow",
+		prevArrow:".sec_six_left_arrow",
+		nextArrow:".sec_six_right_arrow",
 		responsive: [
     {
       breakpoint: 1880,

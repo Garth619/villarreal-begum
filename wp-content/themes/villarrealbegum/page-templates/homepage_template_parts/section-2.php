@@ -76,7 +76,7 @@
 					
 					<div class="sec_two_arrow sec_two_left_arrow">
 						
-						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_right.svg"); ?>
+						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_left.svg"); ?>
 						
 					</div><!-- sec_two_arrow_wrapper -->
 					
@@ -96,7 +96,7 @@
 					
 					<div class="sec_two_arrow sec_two_right_arrow">
 						
-						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_left.svg"); ?>
+						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_right.svg"); ?>
 						
 					</div><!-- sec_two_arrow_wrapper -->
 					
