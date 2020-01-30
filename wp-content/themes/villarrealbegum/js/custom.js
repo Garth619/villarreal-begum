@@ -333,6 +333,7 @@ $('.sec_two_slider').slick({
  
  
  
+/*
  $('.sec_six_slider').slick({
   infinite: true,
   slidesToShow: 2,
@@ -358,6 +359,7 @@ $('.sec_two_slider').slick({
    }
 	]
  });
+*/
  
  
  
@@ -828,7 +830,79 @@ if($('.internal_banner').length > 0 ){
 	
 	}).has('a[href*="' + location.pathname + '"]').addClass('current');
 */
-	
+
+var $slider = $('.sec_six_slider');
+  var $progressBar = $('.progress');
+  var $progressBarLabel = $( '.slider__label' );
+  
+  $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+    
+    $progressBar
+      .css('background-size', calc + '% 100%')
+      .attr('aria-valuenow', calc );
+    
+    $progressBarLabel.text( calc + '% completed' );
+  });
+  
+  $slider.slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+		arrows:false,
+		responsive: [
+    {
+      breakpoint: 1880,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight:true,
+     }
+   }
+	]
+  }); 
+  
+  
+  
+  
+  
+/*
+  $('.sec_six_slider').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+	arrows:false,
+	//prevArrow:".arrow_left",
+	//nextArrow:".arrow_right",
+	responsive: [
+    {
+      breakpoint: 1880,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight:true,
+     }
+   }
+	]
+ });
 
   
+*/
+  
+  
+
+   
 }); // document ready

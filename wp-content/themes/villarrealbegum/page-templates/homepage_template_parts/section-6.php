@@ -204,8 +204,44 @@
 				
 			</div><!-- star_wrapper -->
 			
+			<div class="sec_six_progress_wrapper">
+				
+				<div class="sec_six_arrow_wrapper">
+					
+					<div class="sec_six_left_arrow">
+						
+						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_left.svg"); ?>
+						
+					</div><!-- sec_six_arrow_wrapper -->
+					
+					<span class="first_slide_number">01</span><!-- first_slide_number -->
+					
+				</div><!-- sec_six_left_arrow_wrapper -->
+				
+				<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+					
+					<span class="slider__label sr-only"></span>
+  			
+  			</div>
+    		
+    		<div class="sec_six_right_arrow_wrapper">
+					
+					<div class="sec_six_arrow_wrapper">
+						
+						<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_right.svg"); ?>
+						
+					</div><!-- sec_six_arrow_wrapper -->
+					
+					<span class="first_slide_number">01</span><!-- first_slide_number -->
+					
+				</div><!-- sec_six_right_arrow_wrapper -->
+  		
+  		</div><!-- sec_six_progress_wrapper -->
+			
 		</div><!-- sec_six_bottom_inner -->
 		
+		
+  
 	</div><!-- sec_six_bottom -->
 	
 	<a class="reviews_button mobile" href="">View All Testimonials</a><!-- reviews_button -->
