@@ -39,10 +39,19 @@ img.sec_eight_hero {
 		@include deluxe_extrabold;
 		span {
 			display: inline-block;
-			padding: 0 10px;
-			background: url(#{$themePath}images/linebg-lite.svg) repeat-x;
-			background-position: 0 92px;
-			background-size: 1px 22px;
+			position: relative;
+			z-index:1;
+			&:after {
+				content:"";
+				height:22px;
+				width:calc(100% + 32px);
+				display: block;
+				margin-left:-16px;
+				background: $yellow;
+				position: absolute;
+				top:90px;
+				z-index:-1;
+			}
 		}
 	}
 	a.view_all_results {
@@ -362,7 +371,10 @@ $amount: 5;
 			font-size: 94px;
 			line-height: 90px;
 			span {
-				
+				&:after {
+					height:16px;
+					top: 70px;
+				}
 			}
 		}
 	}
@@ -466,8 +478,9 @@ $amount: 5;
     z-index:2;
     span.cr_title {
 	    span {
-		    background-position: 0 69px;
-		    background-size: 1px 16px;
+		    &:after {
+			   	top: 65px;
+		    }
 	    }
     }
    }
@@ -538,6 +551,11 @@ $amount: 5;
 			font-size: 80px;
 			line-height: 90px;
 			text-align: center;
+			span {
+				&:after {
+					top: 49px;
+				}
+			}
 		}
 		a.view_all_results {
 			display: none;
