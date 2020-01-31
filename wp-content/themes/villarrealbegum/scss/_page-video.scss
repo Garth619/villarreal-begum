@@ -181,7 +181,9 @@ span.video_cat_title {
 		font-size: 31px;
 		line-height: 34px;
 		span {
-			
+			&:after {
+				top: 25px;
+			}
 		}
 	}
 	

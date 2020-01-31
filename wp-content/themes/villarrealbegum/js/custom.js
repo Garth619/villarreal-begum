@@ -6,7 +6,9 @@
 
 jQuery(document).ready(function($){
 	
-
+	
+	$('body').addClass('ready');
+	
 	
 	 /* Modernizr - check if browser supports webp for section_one. 
      --------------------------------------------------------------------------------------- */
@@ -345,6 +347,8 @@ $('.sec_three_slider').slick({
   infinite: true,
   slidesToShow: 5,
   slidesToScroll: 5,
+  autoplay: true,
+  autoplaySpeed: 2500,
 	arrows:false,
 	responsive: [
     {
