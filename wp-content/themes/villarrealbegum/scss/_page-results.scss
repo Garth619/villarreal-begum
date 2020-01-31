@@ -12,10 +12,19 @@ h1.deluxe_line_header {
 		text-transform: uppercase;
 		letter-spacing: 0.06em;
 		display: inline-block;
-		padding: 0 13px;
-		background: url(#{$themePath}images/linebg.svg) repeat-x;
-		background-position: 0 44px;
-    background-size: 1px 50px;
+		position: relative;
+		z-index:1;
+		&:after {
+			content:"";
+			height:18px;
+			width:calc(100% + 36px);
+			display: block;
+			margin-left:-20px;
+			background: $yellow;
+			position: absolute;
+			top:57px;
+			z-index:-1;
+		}
 	}
 }
 
@@ -139,14 +148,23 @@ img.trophie {
     margin: 55px 0 0;
     font-size: 56px;
     span {
-	  	background-position: 0 39px;
-			background-size: 1px 18px;
+	  	&:after {
+		  	height:13px;
+		  	top: 41px;
+	  	}
     }
 	}
 	
 	
 	.case_results_wrapper {
    	margin: 65px auto -55px;
+   }
+   
+   .single_results {
+	   span.amount {
+		   font-size: 70px;
+		    margin-top: 27px;
+	   }
    }
 		
 	

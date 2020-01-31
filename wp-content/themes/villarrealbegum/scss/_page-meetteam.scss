@@ -70,10 +70,19 @@
 				text-transform: uppercase;
 				letter-spacing: 0.06em;
 				display: inline-block;
-				padding: 0 13px;
-				background: url(#{$themePath}images/linebg-lite.svg) repeat-x;
-				background-position: 0 31px;
-				background-size: 1px 23px;
+				position: relative;
+				z-index:1;
+				&:after {
+					content:"";
+					height:13px;
+					width:calc(100% + 32px);
+					display: block;
+					margin-left:-18px;
+					background: $yellow;
+					position: absolute;
+					top:35px;
+					z-index:-1;
+				}
 			}
 		}
 		span.single_position {
@@ -118,6 +127,11 @@
 			span.single_att_title {
 				font-size: 42px;
 				margin-top: 30px;
+				span {
+					&:after {
+						top: 33px;
+					}
+				}
 			}
 		}
 	}

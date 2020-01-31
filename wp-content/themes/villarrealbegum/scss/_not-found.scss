@@ -23,15 +23,23 @@ body.error404 {
 		text-transform: uppercase;
 		font-size: 110px;
 		line-height: 110px;
-		//margin:11px 0 0;
 		display: block;
 		@include deluxe_extrabold;
 		span {
 			display: inline-block;
-			padding: 0 40px;
-			background: url(#{$themePath}images/linebg.svg) repeat-x;
-			background-position: 0 85px;
-			background-size: 1px 21px;
+			position: relative;
+			z-index:1;
+			&:after {
+				content:"";
+				height:22px;
+				width:calc(100% + 32px);
+				display: block;
+				margin-left:-16px;
+				background: $yellow;
+				position: absolute;
+				top:83px;
+				z-index:-1;
+			}
 		}
 	}
 	span.page_not_found {
@@ -43,20 +51,20 @@ body.error404 {
 		@include nunito_extrabold;
 	}
 	a {
-		color:$yellowdark;
+		color:$yellow;
 		text-decoration: none;
 		border-bottom: 1px solid transparent;
 		transition: all 200ms ease-in-out;
 		&:hover {
-			border-bottom: 1px solid $yellowdark;
+			border-bottom: 1px solid $yellow;
 		}
 	}
 	span.go_back_button {
 		text-transform: uppercase;
 		font-size: 24px;
 		letter-spacing: 0.1em;
-		color:$yellowdark;
-		border:3px solid $yellowdark;
+		color:$yellow;
+		border:3px solid $yellow;
 		border-radius: 45px;
 		display: inline-block;
 		margin-top:57px;
@@ -65,7 +73,7 @@ body.error404 {
 		cursor: pointer;
 		@include deluxe_extrabold;
 		&:hover {
-			background: $yellowdark;
+			background: $yellow;
 			color:$black;
 		}
 	}
@@ -99,12 +107,21 @@ body.error404 {
 @media screen and (max-width: 1190px) {
 	
 	
+	body.error404 {
+		.single_col_container {
+			padding-top: 174px;
+		}
+	}
+
+	
+	
 	.not_found_wrapper {
     padding: 85px 0 0 0;
     h1.not_found {
 	    span {
-		    background-size: 1px 13px;
-				background-position: 0 81px;
+		    &:after {
+			    top: 79px;
+		    }
 	    }
 	   }
 	}
@@ -113,6 +130,15 @@ body.error404 {
 
 
 @media screen and (max-width: 1066px) {
+	
+	
+	
+	body.error404 {
+		.single_col_container {
+			padding-top: 106px;
+		}
+	}
+	
 	
 	.not_found_wrapper {
     padding: 65px 0 0 0;
@@ -130,6 +156,12 @@ body.error404 {
 		h1.not_found {
 			font-size: 85px;
 			padding: 0 10px;
+			span {
+				&:after {
+					height:18px;
+					top: 72px;
+				}
+			}
 		}
 	}
 	
@@ -138,6 +170,14 @@ body.error404 {
 } /* Media Query */
 
 @media screen and (max-width: 715px) {
+	
+	
+	body.error404 {
+		.single_col_container {
+			padding-top: 121px;
+		}
+	}
+	
 	
 	.not_found_wrapper {
 		padding: 55px 0 0 0;

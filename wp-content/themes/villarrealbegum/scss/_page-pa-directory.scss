@@ -25,10 +25,19 @@
 				a {
 					span {
 						display: inline-block;
-						padding: 0 15px;
-						background: url(#{$themePath}images/linebg.svg) repeat-x;
-						background-position: 0 10px;
-						background-size: 1px 43px;
+						position: relative;
+						z-index:1;
+						&:after {
+							content:"";
+							height:12px;
+							width:calc(100% + 20px);
+							display: block;
+							margin-left:-10px;
+							background: $yellow;
+							position: absolute;
+							top:22px;
+							z-index:-1;
+						}					
 					}
 				}
 		}

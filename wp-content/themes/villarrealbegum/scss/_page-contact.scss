@@ -39,7 +39,7 @@
 			margin:0 auto;
 			display: block;
 			path, circle {
-				fill:$yellowdark;
+				fill:$yellow;
 			}
 		}
 		span {
@@ -56,11 +56,11 @@
 				display: block;
 				width:79px;
 				height:10px;
-				background: $yellowdark;
+				background: $yellow;
 				margin:29px auto 0;
 			}
 			span {
-				color:$yellowdark;
+				color:$yellow;
 				display: inline-block;
 			}
 		}
@@ -85,17 +85,17 @@
 			display: block;
 			text-decoration: none;
 			text-transform: uppercase;
-			border:3px solid $yellowdark;
+			border:3px solid $yellow;
 			border-radius: 45px;
 			font-size: 24px;
 			letter-spacing: 0.1em;
-			color:$yellowdark;
+			color:$yellow;
 			margin:22px auto 0;
 			padding:13px 0;
 			transition: all 200ms ease-in-out;
 			@include deluxe_extrabold;
 			&:hover {
-				background: $yellowdark;;
+				background: $yellow;;
 				color:$black;
 			}
 		}
@@ -104,7 +104,7 @@
 			font-size: 18px;
 			letter-spacing: 0.06em;
 			margin-top:35px;
-			color:$yellowdark;
+			color:$yellow;
 			@include deluxe_extrabold;
 		}
 	}
@@ -244,10 +244,15 @@ body.page-template-template-contact {
 
 
 @media screen and (max-width: 767px) {
-	
+
 	
 	.contact_locations {
 		margin:70px auto 30px;
+		.contact_single_location {
+			span.contact_office_title {
+				font-size: 27px;
+			}
+		}
 	}
 	
 	body.page-template-template-contact {

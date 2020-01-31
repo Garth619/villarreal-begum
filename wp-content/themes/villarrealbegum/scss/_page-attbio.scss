@@ -26,10 +26,19 @@ h1.att_bio_header {
 		text-transform: uppercase;
 		letter-spacing: 0.06em;
 		display: inline-block;
-		padding: 0 20px;
-		background: url(#{$themePath}images/linebg.svg) repeat-x;
-		background-position: 0 73px;
-    background-size: 1px 50px;
+		position: relative;
+		z-index:1;
+		&:after {
+			content:"";
+			height:22px;
+			width:calc(100% + 32px);
+			display: block;
+			margin-left: -19px;
+			background: $yellow;
+			position: absolute;
+			top:88px;
+			z-index:-1;
+		}
 	}
 }
 
@@ -150,17 +159,26 @@ span.att_bio_position {
 			text-transform: uppercase;
 			letter-spacing: 0.06em;
 			display: inline-block;
-			padding: 0 13px;
-			background: url(#{$themePath}images/linebg.svg) repeat-x;
-			background-position: 0 13px;
-			background-size: 1px 16px;
-			padding-bottom:10px;
+			position: relative;
+			z-index:1;
+			margin-left:12px;
+			&:after {
+				content:"";
+				height:15px;
+				width:calc(100% + 20px);
+				display: block;
+				margin-left:-10px;
+				background: $yellow;
+				position: absolute;
+				top: 16px;
+				z-index:-1;
+			}
 		}
 	}
 	ul {
 		list-style: none;
 		padding-left:13px;
-		margin:5px 0 75px 0;
+		margin:19px 0 75px 0;
 		li {
 			font-size: 18px;
 			line-height: 32px;
@@ -213,8 +231,10 @@ span.att_bio_position {
     font-size: 90px;
     line-height: 100px;
     span {
-	  	background-position: 0 65px;
-			background-size: 1px 32px;
+	  	&:after {
+		  	height: 18px;
+		  	top:74px;
+	  	}
     }
   }
 	
@@ -278,10 +298,9 @@ span.att_bio_position {
 			text-transform: uppercase;
 			letter-spacing: 0.06em;
 			display: inline-block;
-			padding: 0 13px;
-			background: url(#{$themePath}images/linebg.svg) repeat-x;
-			background-position: 0 44px;
-			background-size: 1px 50px;
+			&:after {
+				top: 58px;
+			}
 		}
 	}
 	
@@ -362,8 +381,9 @@ span.att_bio_position {
 		line-height: 56px;
 		margin: 50px 0 0;
 		span {
-			background-position: 0 39px;
-			background-size: 1px 18px;
+			&:after {
+				top: 43px;
+			}
 		}
 	}
 	

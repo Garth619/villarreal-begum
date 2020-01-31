@@ -40,7 +40,7 @@ get_header(); ?>
 		
 		<span class="about_bottom_largeheader"><span>we believe in treating all</span> <span>of our clients like family</span></span><!-- about_bottom_largehader -->
 		
-		<a class="meet_button" href="">Meet the Attorneys</a>
+		<a class="meet_button" href="<?php the_permalink();?>/meet-the-team">Meet the Attorneys</a>
 		
 	</div><!-- about_bottom_inner -->
 	
