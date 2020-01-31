@@ -88,8 +88,8 @@
 				<?php get_template_part( 'loop', 'page' ); ?>
 				
 				<blockquote>
-					<p>we believe in treating all of our clients liike family  we believe in treatin ike family  we believe in treatin ike family  we believe in treatinke family  we believe in treating all of our clients like family
-</p>				</blockquote>
+					<p>we believe in treating alllllllllllll of our clients like family</p>
+				</blockquote>
 				
 			</div><!-- inner_content -->
 		

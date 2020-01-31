@@ -979,6 +979,7 @@ if($('.internal_banner').length > 0 ){
 	// yellow line wraps
 	
 	
+
   var divheight = $("blockquote > p").height();
   var lineheight = parseInt($("blockquote").css('line-height'), 10);
   var linenumber = Math.round(divheight / lineheight);
@@ -987,30 +988,36 @@ if($('.internal_banner').length > 0 ){
 	
 	var blockquotestring = $("blockquote > p").text();
 	
-	var textCount = $("blockquote > p").text().length; // 210
+	var textCount = $("blockquote > p").text().length; 
 	
 	console.log('character count '+textCount);
 	
-	var characterperline = Math.round(textCount / linenumber);
+	var characterperline = parseInt(Math.round(textCount / linenumber));
 
-	console.log('characters per line '+characterperline);
+	console.log('characters per line: '+characterperline);
 	
-	console.log(blockquotestring.match(/.{1,30}/g));
+	var chunks = [];
+
+	for (var i = 0, charsLength = blockquotestring.length; i < charsLength; i += characterperline) {
+    chunks.push(blockquotestring.substring(i, i + characterperline));
+	}
+
 	
+	console.log(chunks);
+	
+	$('blockquote > p').empty(); // i dont like this
+	
+	jQuery.each(chunks, function(index, item) {
+    $("<span></span>").text(item).appendTo("blockquote > p");
+	});
 
-/*
-	$('.test_large_quote').each(function(){
-    
- var textCount = $(this).text().length;
+	
+	
+	var words = $.trim($("blockquote > p").text()).split(" ");
+  
+  console.log('total word count: '+words.length);
 
- if(textCount >= 48) {
-	 
-	 $(this).addClass('long_count');
-	 
- }
- 
-});
-*/
+
 
 
    
