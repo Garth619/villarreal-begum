@@ -1083,21 +1083,89 @@ if($('.internal_banner').length > 0 ){
 	
 	// yellow line wraps
 	
-	
-
+	var divheight = $('h1.att_bio_header').height();
+	var lineheight = parseInt($('h1.att_bio_header').css('line-height'), 10);
+	var linenumber = Math.round(divheight / lineheight);
+		
+	console.log('line number '+linenumber);
+		
+	if(linenumber > 1) {
+	  
+	  console.log('line break occurred')
+	  
+	  
+	  var str = $("h1.att_bio_header").text();
+		
+		var dot = str.indexOf('.');
+		
+		if(dot !== -1) {
+			
+			var firstname = str.substring(0, dot + 1);
+			
+			console.log(firstname);
+			
+			var lastname = str.substring(dot + 1);
+			
+			var trimlastname = $.trim(lastname);
+			
+			console.log(trimlastname);
+			
+			var twolineinitial = '<span>'+firstname+'</span><span>'+trimlastname+'</span>';
+			
+			console.log(twolineinitial);
+			
+			$('h1.att_bio_header').html(twolineinitial);
+			
+		}
+		
 /*
-  var divheight = $("blockquote > p").height();
-  var lineheight = parseInt($("blockquote").css('line-height'), 10);
-  var linenumber = Math.round(divheight / lineheight);
-  console.log('line number '+linenumber);
-	
-	
-	var blockquotestring = $("blockquote > p").text();
-	
-	var textCount = $("blockquote > p").text().length; 
-	
-	console.log('character count '+textCount);
+		if(dot !== true) {
+			
+			var space = str.indexOf(' ');
+			
+			var firstname = str.substring(0,space);
+			
+			console.log(firstname);
+			
+			var lastname = str.substring(space);
+			
+			var trimlastname = $.trim(lastname);
+			
+			console.log(trimlastname);
+			
+			var twolineinitial = '<span>'+firstname+'</span><span>'+trimlastname+'</span>';
+			
+			console.log(twolineinitial);
+			
+			$('h1.att_bio_header').html(twolineinitial);
+						
+		}
 */
+		
+	} 
+  
+  
+  
+  
+    
+/*
+  
+  
+	
+	
+	
+*/
+	
+	
+	
+	//https://stackoverflow.com/questions/7081958/splitting-by-white-space-or-multiple-white-spaces
+	
+	//var blockquotestring = $("blockquote > p").text();
+	
+	//var textCount = $("blockquote > p").text().length; 
+	
+	//console.log('character count '+textCount);
+
 	
 	//var characterperline = parseInt(Math.round(textCount / linenumber));
 
