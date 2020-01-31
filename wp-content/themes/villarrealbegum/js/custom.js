@@ -992,29 +992,40 @@ if($('.internal_banner').length > 0 ){
 	
 	console.log('character count '+textCount);
 	
-	var characterperline = parseInt(Math.round(textCount / linenumber));
+	//var characterperline = parseInt(Math.round(textCount / linenumber));
 
-	console.log('characters per line: '+characterperline);
+	//console.log('characters per line: '+characterperline);
 	
 	var chunks = [];
 
-	for (var i = 0, charsLength = blockquotestring.length; i < charsLength; i += characterperline) {
+	for (var i = 0, charsLength = blockquotestring.length; i < charsLength; i += 30) {
     
-    chunks.push(blockquotestring.substring(i, i + characterperline));
+    chunks.push(blockquotestring.substring(i, i + 30));
 	
 	}
 
 	console.log(chunks);
 	
-	$('blockquote > p').empty(); // i dont like this
+	//$('blockquote > p').empty(); // i dont like this
 	
+/*
 	jQuery.each(chunks, function(index, item) {
     $("<span></span>").text(item).appendTo("blockquote > p");
 	});
+*/
 
 	// i need it to tell me how many words can fit on each line
 	
 	// and it cannot exceed the character max per line
+	
+	// but every letter has different width so its impossible
+	
+	
+	// each line can have a word count
+	
+	// trim then wrap each word in element
+	
+	//non-monospace fonts have different character widths
 	
 	
 	var words = $.trim($("blockquote > p").text()).split(" ");
