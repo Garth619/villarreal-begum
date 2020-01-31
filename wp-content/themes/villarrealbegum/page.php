@@ -88,7 +88,7 @@
 				<?php get_template_part( 'loop', 'page' ); ?>
 				
 				<blockquote>
-					<p>we believe in treating alllllllllllll of our clients like family</p>
+					<p>Alexander Begum is a founding shareholder of Villareal & Begum. Born and raised in Texas, Alex continues to practice law in the state where he grew up, with offices in San Antonio, Laredo, and McAllen.</p>
 				</blockquote>
 				
 			</div><!-- inner_content -->

@@ -999,10 +999,11 @@ if($('.internal_banner').length > 0 ){
 	var chunks = [];
 
 	for (var i = 0, charsLength = blockquotestring.length; i < charsLength; i += characterperline) {
+    
     chunks.push(blockquotestring.substring(i, i + characterperline));
+	
 	}
 
-	
 	console.log(chunks);
 	
 	$('blockquote > p').empty(); // i dont like this
@@ -1011,6 +1012,9 @@ if($('.internal_banner').length > 0 ){
     $("<span></span>").text(item).appendTo("blockquote > p");
 	});
 
+	// i need it to tell me how many words can fit on each line
+	
+	// and it cannot exceed the character max per line
 	
 	
 	var words = $.trim($("blockquote > p").text()).split(" ");
