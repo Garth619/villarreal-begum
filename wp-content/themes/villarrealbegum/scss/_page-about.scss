@@ -193,6 +193,7 @@ h1.about_title {
 			span {
 				&:after {
 					top: 45px;
+					height:13px;
 				}
 			}
 		}
@@ -236,10 +237,12 @@ h1.about_title {
 	
 	h1.about_title {
 		font-size: 56px;
-		line-height: 50px;
+		line-height: 56px;
 		span {
 			&:after {
-				top: 39px;
+				top: 42px;
+				height:13px;
+				margin-left:-20px;
 			}
 		}
 	}

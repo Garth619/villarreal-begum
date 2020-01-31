@@ -446,7 +446,7 @@ $('.sec_three_slider').slick({
 		
 	}	
 	
-	if ($(window).width() <= 739) {
+	if ($(window).width() <= 740) {
 			
 		mobileslideNumber();
 		
@@ -461,7 +461,7 @@ $('.sec_three_slider').slick({
 		
 		}	
 		
-		if ($(window).width() <= 739) {
+		if ($(window).width() <= 740) {
 			
 				mobileslideNumber();
 					
@@ -835,12 +835,16 @@ if($('.internal_banner').length > 0 ){
 		
 		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in treating all</span> <span>of our clients like family</span></span>" );
 		
+		$( "span.about_bottom_largeheader" ).replaceWith( "<span class='about_bottom_largeheader'><span>we believe in treating all</span> <span>of our clients like family</span></span>" );
+		
 		}
 	
 	
 	function mobileText() {
 		
 		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in</span> <span>treating all of our</span> <span>clients like family</span>" );
+		
+		$( "span.about_bottom_largeheader" ).replaceWith( "<span class='about_bottom_largeheader'><span>we believe in</span> <span>treating all of our</span> <span>clients like family</span>" );
 		
 	}
 	
@@ -874,6 +878,107 @@ if($('.internal_banner').length > 0 ){
 		}
 		
 	}, 100)); 
+	
+	
+	
+	
+	// resize span tags on about firm title mobile
+	
+	
+	function aboutdesktopText() {
+		
+		$( "h1.about_title" ).replaceWith( "<h1 class='about_title'><span>About Our Firm</span></h1>" );
+		
+		}
+	
+	
+	function aboutmobileText() {
+		
+		$( "h1.about_title" ).replaceWith( "<h1 class='about_title'><span>About</span> <span>Our Firm</span></span></h1>" );
+		
+	}
+	
+	
+	if ($(window).width() > 440) {
+		
+		aboutdesktopText();
+		
+	}
+	
+	
+	if ($(window).width() <= 440) {
+		
+		aboutmobileText();
+		
+	}
+	
+	
+	$(window).resize(_.debounce(function() {
+		
+		if ($(window).width() > 440) {
+			
+				aboutdesktopText();
+		
+		}	
+		
+		if ($(window).width() <= 440) {
+			
+			aboutmobileText();
+					
+		}
+		
+	}, 100)); 
+	
+	
+	
+	
+	// resize span tags on case results page title mobile
+	
+	
+	function crdesktopText() {
+		
+		$( "body.page-template-template-caseresults h1.deluxe_line_header" ).replaceWith( "<h1 class='deluxe_line_header'><span>Case Results</span></h1>" );
+		
+		}
+	
+	
+	function crmobileText() {
+		
+		$( "body.page-template-template-caseresults h1.deluxe_line_header" ).replaceWith( "<h1 class='deluxe_line_header'><span>Case</span> <span>Results</span></span></h1>" );
+		
+	}
+	
+	
+	if ($(window).width() > 440) {
+		
+		crdesktopText();
+		
+	}
+	
+	
+	if ($(window).width() <= 440) {
+		
+		crmobileText();
+		
+	}
+	
+	
+	$(window).resize(_.debounce(function() {
+		
+		if ($(window).width() > 440) {
+			
+				crdesktopText();
+		
+		}	
+		
+		if ($(window).width() <= 440) {
+			
+			crmobileText();
+					
+		}
+		
+	}, 100)); 
+
 	
 	
 	

@@ -16,6 +16,9 @@ internal banners acf\
 maybe anumate yelow lines with one big class\
 \
 \
+all resize content areas need to have acfs pass through\'85.\
+\
+\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 {{\NeXTGraphic Screen Shot 2020-01-30 at 5.48.53 PM.png \width8180 \height8740 \appleattachmentpadding0 \appleembedtype0 \appleaqc
 }¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
@@ -29,14 +32,30 @@ meet the team can never fall to two lines\
 }¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
 \
-\
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 {{\NeXTGraphic Screen Shot 2020-01-30 at 5.51.31 PM.png \width15880 \height11620 \appleattachmentpadding0 \appleembedtype0 \appleaqc
-}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
+hide all titles etc that might be an issue for now\
+\
+\
+I run into issues when a text line break happens dynamically without me knowing, like a block quote growing from different/smaller device widths. Making the yellow lines tuck under the text and also extend past the text with left and right padding works best when the content has a fixed number of lines in place.  This is because each line needs to have span tags in place in order to separate in the yellow lines:\
+\
+code\
+\
+When a text line break happens in a long quote, there isn\'92t a way for me have the span tags reorder to adjust to the new number of lines, they are fixed in place. This is creating something like below:\
+\
+\
+\
+\
+There is an easier approach that sort of works\'85 and thats using background images in css. A small sliver (1px by 17px) repeated can create the same effect. However, there isn\'92t a way to have padding on the sides it looks like this.\
+\
+\
+\
+Then when adding padding only works in the beginning and end of the content (because the text is inline it doesn\'92t have a defined shape/position) \
+\
+\
+\
+So not sure what we should do in the situations of the dynamic content when it comes to the yellow lines   \
+\
 \
 \
 blockquote might not happen\
@@ -108,6 +127,10 @@ att_container\
 about_wrapper\
 outer_container\
 single_col_container\
+\
+\
+\
+\
 \
 \
 \
