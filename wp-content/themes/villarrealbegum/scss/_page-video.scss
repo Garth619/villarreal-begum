@@ -16,10 +16,19 @@ span.video_cat_title {
 		text-transform: uppercase;
 		letter-spacing: 0.06em;
 		display: inline-block;
-		padding: 0 13px;
-		background: url(#{$themePath}images/linebg.svg) repeat-x;
-		background-position: 0 11px;
-		background-size: 1px 50px;
+		position: relative;
+		z-index:1;
+		&:after {
+			content:"";
+			height:13px;
+			width:calc(100% + 20px);
+			display: block;
+			margin-left:-10px;
+			background: $yellow;
+			position: absolute;
+			top:28px;
+			z-index:-1;
+		}
 	}
 }
 

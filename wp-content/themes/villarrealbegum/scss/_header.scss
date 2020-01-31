@@ -117,6 +117,7 @@ a.logo {
 						color:#fff;
 						transition: all 200ms ease-in-out;
 						text-decoration: none;
+						display: block;
 						&:before {
 							content:"";
 							display: block;
@@ -126,6 +127,7 @@ a.logo {
 							background: url(#{$themePath}images/star.svg);
 							background-size:20px 20px;
 							opacity: 0;
+							vertical-align: top;
 							transition: all 200ms ease-in-out;
 					}
 				}
