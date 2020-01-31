@@ -976,8 +976,42 @@ if($('.internal_banner').length > 0 ){
 	$('.pa_directory_wrapper ul.menu > li > a').wrapInner('<span></span>');
 	
 	
-	  
-  
+	// yellow line wraps
+	
+	
+  var divheight = $("blockquote > p").height();
+  var lineheight = parseInt($("blockquote").css('line-height'), 10);
+  var linenumber = Math.round(divheight / lineheight);
+  console.log('line number '+linenumber);
+	
+	
+	var blockquotestring = $("blockquote > p").text();
+	
+	var textCount = $("blockquote > p").text().length; // 210
+	
+	console.log('character count '+textCount);
+	
+	var characterperline = Math.round(textCount / linenumber);
+
+	console.log('characters per line '+characterperline);
+	
+	console.log(blockquotestring.match(/.{1,30}/g));
+	
+
+/*
+	$('.test_large_quote').each(function(){
+    
+ var textCount = $(this).text().length;
+
+ if(textCount >= 48) {
+	 
+	 $(this).addClass('long_count');
+	 
+ }
+ 
+});
+*/
+
 
    
 }); // document ready

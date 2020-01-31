@@ -160,6 +160,31 @@ h1,h2,h3,h4 {
 	 				@include nunito_extrabold;
 	 			}
 		}
+		blockquote {
+			font-size: 70px;
+			line-height: 80px;
+			text-transform: uppercase;
+			@include deluxe_extrabold;
+			p {
+				padding-bottom: 0;
+				span {
+					display: inline-block;
+					position: relative;
+					z-index:1;
+					&:after {
+						content:"";
+						height:14px;
+						width:calc(100% + 32px);
+						display: block;
+						margin-left:-16px;
+						background: $yellow;
+						position: absolute;
+						top:59px;
+						z-index:-1;
+					}
+				}
+			}
+		}
 }
 
 
