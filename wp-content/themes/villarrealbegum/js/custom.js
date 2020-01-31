@@ -1083,6 +1083,7 @@ if($('.internal_banner').length > 0 ){
 	
 	// yellow line wraps
 	
+/*
 	var divheight = $('h1.att_bio_header').height();
 	var lineheight = parseInt($('h1.att_bio_header').css('line-height'), 10);
 	var linenumber = Math.round(divheight / lineheight);
@@ -1118,8 +1119,12 @@ if($('.internal_banner').length > 0 ){
 			
 		}
 		
+	} 
+*/
+		
+
 /*
-		if(dot !== true) {
+		if(dot) {
 			
 			var space = str.indexOf(' ');
 			
@@ -1141,8 +1146,9 @@ if($('.internal_banner').length > 0 ){
 						
 		}
 */
+
 		
-	} 
+
   
   
   

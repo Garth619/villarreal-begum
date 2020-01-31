@@ -646,7 +646,9 @@ $amount: 5;
 			font-size: 60px;
 			line-height: 70px;
 			span {
-				background-position: 0 49px;
+				&:after {
+					top:51px;
+				}
 			}
 		}
 	}
