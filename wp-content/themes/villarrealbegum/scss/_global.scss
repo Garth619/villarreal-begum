@@ -168,6 +168,12 @@ h1,h2,h3,h4 {
 			p {
 				padding-bottom: 0;
 				span {
+					background: url(#{$themePath}images/linebg.svg) repeat-x;
+					background-size:1px 18px;
+					background-position: 0 55px; // can do this with a bg image but i cant add padding around it
+				}
+/*
+				span {
 					display: inline-block;
 					position: relative;
 					z-index:1;
@@ -183,6 +189,8 @@ h1,h2,h3,h4 {
 						z-index:-1;
 					}
 				}
+*/
+
 			}
 		}
 }

@@ -980,6 +980,7 @@ if($('.internal_banner').length > 0 ){
 	
 	
 
+/*
   var divheight = $("blockquote > p").height();
   var lineheight = parseInt($("blockquote").css('line-height'), 10);
   var linenumber = Math.round(divheight / lineheight);
@@ -991,11 +992,13 @@ if($('.internal_banner').length > 0 ){
 	var textCount = $("blockquote > p").text().length; 
 	
 	console.log('character count '+textCount);
+*/
 	
 	//var characterperline = parseInt(Math.round(textCount / linenumber));
 
 	//console.log('characters per line: '+characterperline);
 	
+/*
 	var chunks = [];
 
 	for (var i = 0, charsLength = blockquotestring.length; i < charsLength; i += 30) {
@@ -1005,6 +1008,7 @@ if($('.internal_banner').length > 0 ){
 	}
 
 	console.log(chunks);
+*/
 	
 	//$('blockquote > p').empty(); // i dont like this
 	
@@ -1028,9 +1032,11 @@ if($('.internal_banner').length > 0 ){
 	//non-monospace fonts have different character widths
 	
 	
+/*
 	var words = $.trim($("blockquote > p").text()).split(" ");
   
   console.log('total word count: '+words.length);
+*/
 
 
 
