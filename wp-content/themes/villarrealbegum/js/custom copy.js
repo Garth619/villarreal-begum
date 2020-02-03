@@ -1108,19 +1108,23 @@ if($('.internal_banner').length > 0 ){
 		
 		// If just one line, wrap everything in one set of span tags
 		
+		
 		var str = $("h1.att_bio_header").text();
+			
 		var dot = str.indexOf('.');
-		var space = str.indexOf(' ');
 			
 		if(linenumber > 1) {
 		  
 		  console.log('line break occurred')
 		  
+
+			
+			
 			// If name has middle initial split string after the middle intial period
 			
 			if(dot !== -1) {
 				
-				var firstname = str.substring(0, str.indexOf('.') + 1);
+				var firstname = str.substring(0, dot + 1);
 				
 				//console.log(firstname);
 				
@@ -1140,7 +1144,7 @@ if($('.internal_banner').length > 0 ){
 			
 			if(dot == -1) {
 				
-				
+				var space = str.indexOf(' ');
 				
 				var firstname = str.substring(0,space);
 				
@@ -1165,49 +1169,7 @@ if($('.internal_banner').length > 0 ){
 		
 		if(linenumber == 1) {
 			
-			console.log('back to one line');
 			
-			if(dot !== -1) {
-				
-				var firstname = str.substring(0, str.indexOf('.') + 1);
-				
-				console.log('back to one line with a dot');
-				
-				var lastname = str.substring(dot + 1);
-				
-				var trimlastname = $.trim(lastname);
-				
-				//console.log(trimlastname);
-				
-				var twolineinitial = '<span>'+firstname+' '+trimlastname+'</span>';
-				
-				$('h1.att_bio_header').html(twolineinitial);
-				
-			}
-			
-			if(dot == -1) {
-				
-				console.log('back to one line with no dot');
-			
-				var space = str.indexOf(' ');
-				
-				var firstname = str.substring(0,space);
-				
-				// console.log(firstname);
-				
-				var lastname = str.substring(space);
-				
-				var trimlastname = $.trim(lastname);
-				
-				// console.log(trimlastname);
-				
-				var twolineinitial = '<span>'+firstname+' '+trimlastname+'</span>';
-				
-				console.log(twolineinitial);
-				
-				$('h1.att_bio_header').html(twolineinitial);
-			
-				}
 			
 		}
 	
