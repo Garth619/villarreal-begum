@@ -1,15 +1,1 @@
-<svg id="bgline" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1.05 23.33">
-  <defs>
-    <style>
-      .cls-1-bgline {
-        fill: #e7a910;
-      }
-    </style>
-  </defs>
-  <title>linebg</title>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1-2">
-      <rect class="cls-1-bgline" width="1.05" height="23.33"/>
-    </g>
-  </g>
-</svg>
+<svg viewBox="0 0 1.05 23.33" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h1.05v23.33h-1.05z" fill="#e7a910"/></svg>

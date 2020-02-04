@@ -161,39 +161,28 @@ h1,h2,h3,h4 {
 	 			}
 		}
 		blockquote {
-			font-size: 70px;
-			line-height: 80px;
-			text-transform: uppercase;
-			@include deluxe_extrabold;
-			p {
+			border-top:15px solid $yellow;
+			margin-top:35px;
+			padding-bottom:20px;
+			p.blockquote_description {
+				font-size: 70px;
+				padding-top:30px;
+				line-height: 80px;
+				text-transform: uppercase;
 				padding-bottom: 0;
-				span {
-					background: url(#{$themePath}images/linebg.svg) repeat-x;
-					background-size:1px 18px;
-					background-position: 0 55px; // can do this with a bg image but i cant add padding around it
-				}
-/*
-				span {
-					display: inline-block;
-					position: relative;
-					z-index:1;
-					&:after {
-						content:"";
-						height:14px;
-						width:calc(100% + 32px);
-						display: block;
-						margin-left:-16px;
-						background: $yellow;
-						position: absolute;
-						top:59px;
-						z-index:-1;
-					}
-				}
-*/
-
+				@include deluxe_extrabold;
+			}
+			p.blockquote_name {
+				color:$yellow;
+				text-transform: uppercase;
+				font-size: 24px;
+				line-height: 27px;
+				letter-spacing: 0.06em;
+				padding-top:20px;
+				@include deluxe_heavy;
 			}
 		}
-}
+	}
 
 
 
@@ -238,6 +227,28 @@ h1,h2,h3,h4 {
 } /* Media Query */
 
 
+@media screen and (max-width: 1066px) {
+	
+	.content {
+		blockquote {
+			margin-top:20px;
+			p.blockquote_description {
+				font-size: 50px;
+				line-height: 60px;
+			}
+			p.blockquote_name {
+				font-size: 20px;
+				line-height: 24px;
+				letter-spacing: 0.06em;
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 767px) {
 	
 	
@@ -259,6 +270,17 @@ img.aligncenter {
 			font-size: 46px;
 			line-height: 42px;
 			margin-bottom: 39px;
+		}
+		blockquote {
+			margin-top:10px;
+			padding-bottom:0;
+			p.blockquote_description {
+				font-size: 42px;
+				line-height: 46px;
+			}
+			p.blockquote_name {
+				
+			}
 		}
 	}
 	

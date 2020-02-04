@@ -34,7 +34,7 @@
 									
 									<?php if ( $image ) { ?>
 										
-										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+										<img data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 									
 									<?php } ?>
 						
@@ -87,7 +87,7 @@
 	
 	<?php if ( $section_eight_background_image ) { ?>
 	
-		<img class="sec_eight_hero" src="<?php echo $section_eight_background_image['url']; ?>" alt="<?php echo $section_eight_background_image['alt']; ?>" />
+		<img class="sec_eight_hero" data-src="<?php echo $section_eight_background_image['url']; ?>" alt="<?php echo $section_eight_background_image['alt']; ?>" />
 
 	<?php } ?>
 	

@@ -107,8 +107,8 @@
 		"oA": 0,
 		"oAP": "/images/arrow-down.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -138,8 +138,8 @@
 		"oA": 0,
 		"oAP": "/images/arrow_left.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -159,8 +159,8 @@
 		"oA": 0,
 		"oAP": "/images/arrow_right.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -192,7 +192,7 @@
 		"oAP": "/images/attorney_bio_img.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/attorney_bio_img_alex.jpg": {
@@ -203,8 +203,32 @@
 		"oAP": "/images/attorney_bio_img_alex.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
+		},
+	"/images/attorney_one.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/images/attorney_one.webp",
+		"oF": 0
+		},
+	"/images/attorney_two.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/images/attorney_two.webp",
+		"oF": 0
+		},
+	"/images/badge.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/images/badge.webp",
+		"oF": 0
 		},
 	"/images/blog_img.jpg": {
 		"ft": 16384,
@@ -214,7 +238,7 @@
 		"oAP": "/images/blog_img.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/client_test_claudia.png": {
@@ -239,14 +263,22 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/desktop-background.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/images/desktop-background.webp",
+		"oF": 0
+		},
 	"/images/five.png": {
 		"ft": 32768,
 		"iS": 23092,
 		"oA": 0,
 		"oAP": "/images/five.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -326,8 +358,8 @@
 		"oA": 0,
 		"oAP": "/images/four.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -359,8 +391,8 @@
 		"oA": 0,
 		"oAP": "/images/header_javier_desk.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -370,8 +402,8 @@
 		"oA": 0,
 		"oAP": "/images/header_law_guns.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -411,8 +443,8 @@
 		"oA": 0,
 		"oAP": "/images/one.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -454,8 +486,8 @@
 		"oA": 0,
 		"oAP": "/images/results_tires.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -465,8 +497,8 @@
 		"oA": 0,
 		"oAP": "/images/results_truck.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -547,8 +579,8 @@
 		"oA": 0,
 		"oAP": "/images/three.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -558,8 +590,8 @@
 		"oA": 0,
 		"oAP": "/images/two.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

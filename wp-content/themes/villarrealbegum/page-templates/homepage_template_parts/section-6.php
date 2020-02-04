@@ -8,7 +8,7 @@
 			
 			<div class="star_wrapper mobile">
 				
-				<img class="fivestar" src="<?php bloginfo('template_directory');?>/images/fivestar-3.svg"/>
+				<img class="fivestar" data-src="<?php bloginfo('template_directory');?>/images/fivestar-3.svg" alt="stars rating"/>
 				
 				<span class="star_rating"><?php the_field( 'section_six_google_rating' ); ?></span><!-- star_rating -->
 				
@@ -30,7 +30,7 @@
 					
 							<div class="star_box">
 						
-								<img src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
+								<img data-src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
 						
 							</div><!-- star_box -->
 					
@@ -46,7 +46,7 @@
 									
 									<?php if ( $profile_picture ) { ?>
 									
-										<img class="profile_pic" src="<?php echo $profile_picture['url']; ?>" alt="<?php echo $profile_picture['alt']; ?>" />
+										<img class="profile_pic" data-src="<?php echo $profile_picture['url']; ?>" alt="<?php echo $profile_picture['alt']; ?>" />
 									
 									<?php } ?>
 					
@@ -76,7 +76,7 @@
 			
 			<div class="star_wrapper desktop">
 				
-				<img class="fivestar" src="<?php bloginfo('template_directory');?>/images/fivestar-3.svg"/>
+				<img class="fivestar" data-src="<?php bloginfo('template_directory');?>/images/fivestar-3.svg"/>
 				
 				<span class="star_rating"><?php the_field( 'section_six_google_rating' ); ?></span><!-- star_rating -->
 				
@@ -130,7 +130,7 @@
 	
 	<?php if ( $section_six_background_image ) { ?>
 	
-	<img class="sec_six_bg" src="<?php echo $section_six_background_image['url']; ?>" alt="<?php echo $section_six_background_image['alt']; ?>" />
+	<img class="sec_six_bg" data-src="<?php echo $section_six_background_image['url']; ?>" alt="<?php echo $section_six_background_image['alt']; ?>" />
 	
 	<?php } ?>
 	

@@ -24,24 +24,24 @@
 					
 						<?php $attorney_image_one = get_field( 'attorney_image_one' ); ?>
 						
-						<?php if ( $attorney_image_one ) { ?>
+						<?php $attorney_image_one_webp = get_field( 'attorney_image_one_webp' ); ?>
+
+						<source srcset="<?php echo $attorney_image_one_webp['url']; ?>" type="image/webp">
 						
 						<img src="<?php echo $attorney_image_one['url']; ?>" alt="<?php echo $attorney_image_one['alt']; ?>" />
 						
-						<?php } ?>
-					
 					</picture>
 					
 					<picture class="att_two">
 					
 						<?php $attorney_image_two = get_field( 'attorney_image_two' ); ?>
 						
-						<?php if ( $attorney_image_two ) { ?>
+						<?php $attorney_image_two_webp = get_field( 'attorney_image_two_webp' ); ?>
+
+						<source srcset="<?php echo $attorney_image_two_webp['url']; ?>" type="image/webp">
 						
 						<img src="<?php echo $attorney_image_two['url']; ?>" alt="<?php echo $attorney_image_two['alt']; ?>" />
 						
-						<?php } ?>
-					
 					</picture>
 					
 				</div><!-- attorneys -->
@@ -67,13 +67,17 @@
 	
 	<a class="consult_button mobile" href="#consultation">Free Consultation</a><!-- consult_button -->
 	
-	<?php $section_one_background_image = get_field( 'section_one_background_image' ); ?>
+	<picture>
+		
+		<?php $section_one_background_image = get_field( 'section_one_background_image' ); ?>
+		
+		<?php $section_one_background_image_webp = get_field( 'section_one_background_image_webp' ); ?>
+
+		<source srcset="<?php echo $section_one_background_image_webp['url']; ?>" type="image/webp">
 	
-	<?php if ( $section_one_background_image ) { ?>
+		<img class="hero_img" src="<?php echo $section_one_background_image['url']; ?>" alt="<?php echo $section_one_background_image['alt']; ?>" />
 	
-	<img class="hero_img" src="<?php echo $section_one_background_image['url']; ?>" alt="<?php echo $section_one_background_image['alt']; ?>" />
-	
-	<?php } ?>
+	</picture>
 	
 	</div><!-- sec_one_inner -->
 	
@@ -83,13 +87,17 @@
 		
 		<div id="para_one" class="attorney_badge">
 					
-			<?php $section_one_badge = get_field( 'section_one_badge' ); ?>
+			<picture>
+				
+				<?php $section_one_badge = get_field( 'section_one_badge' ); ?>
+				
+				<?php $section_one_badge_webp = get_field( 'section_one_badge_webp' ); ?>
+
+				<source srcset="<?php echo $section_one_badge_webp['url']; ?>" type="image/webp">
 			
-			<?php if ( $section_one_badge ) { ?>
+				<img src="<?php echo $section_one_badge['url']; ?>" alt="<?php echo $section_one_badge['alt']; ?>" />
 			
-			<img src="<?php echo $section_one_badge['url']; ?>" alt="<?php echo $section_one_badge['alt']; ?>" />
-			
-			<?php } ?>
+			</picture>
 					
 		</div><!-- attorney_badge -->
 		

@@ -11,7 +11,7 @@
 function load_my_styles_scripts() {
   
     
-    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', '', 5, 'all' ); 
+    //wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css', '', 5, 'all' ); 
     
 
     // disables jquery then registers it again to go into footer
@@ -62,7 +62,7 @@ function load_my_styles_scripts() {
     
     }
     
-    // wp_enqueue_script( 'jquery-mygravity', get_template_directory_uri() . '/js/gravityforms-min.js', 'jquery', '', true );
+    wp_enqueue_script( 'jquery-mygravity', get_template_directory_uri() . '/js/gravityforms-min.js', 'jquery', '', true );
     
 
  }
@@ -75,7 +75,7 @@ function load_my_styles_scripts() {
 -------------------------------------------------------------- */
  
  
-/*
+
  function add_defer_attribute($tag, $handle) {
    // add script handles to the array below
    $scripts_to_defer = array('jquery', 'jquery-addon', 'jquery-mygravity');
@@ -90,7 +90,7 @@ function load_my_styles_scripts() {
 
 
 add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
-*/
+
 
 
 
@@ -98,7 +98,7 @@ add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
 -------------------------------------------------------------- */
 
 
-/*
+
  function my_deregister_scripts(){
   
   wp_deregister_script( 'wp-embed' );
@@ -106,7 +106,7 @@ add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
 	}
 
 	add_action( 'wp_footer', 'my_deregister_scripts' );
-*/
+
 
 
 
@@ -114,7 +114,7 @@ add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
 -------------------------------------------------------------- */
 	
 	
-/*
+
 	function deregister_scripts(){
 			
   wp_deregister_script("gform_placeholder");
@@ -126,7 +126,7 @@ add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
 	
 	
 add_action("gform_enqueue_scripts", "deregister_scripts");
-*/
+
 
 
 
@@ -134,7 +134,7 @@ add_action("gform_enqueue_scripts", "deregister_scripts");
 -------------------------------------------------------------- */
  
  
-/*
+
 function internal_css_print() {
    echo '<style>';
    
@@ -145,7 +145,7 @@ function internal_css_print() {
 
 
 add_action( 'wp_head', 'internal_css_print' );
-*/
+
 
  
  
@@ -389,6 +389,27 @@ function wpbeginner_numeric_posts_nav() {
  
 }
 
+
+
+// blockquote shortcode
+
+function pa_blockquote( $pablockquote, $content = null ) { 
+	
+	$pablockquote = shortcode_atts( array(
+       'name' => '',
+   ), $pablockquote );
+	
+	
+	ob_start();?>
+	
+	<blockquote>
+		<p class="blockquote_description"><?php echo $content;?></p>
+		<p class="blockquote_name">- <?php echo $pablockquote['name']; ?></p>
+	</blockquote>
+					
+	<?php return ob_get_clean(); }
+
+add_shortcode( 'pablockquote', 'pa_blockquote' );
 
 
 
