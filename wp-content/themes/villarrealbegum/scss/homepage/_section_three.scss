@@ -70,22 +70,22 @@ h1.sec_three_title {
 			letter-spacing: 0.06em;
 			margin-bottom: 29px;
 			@include deluxe_heavy;
-			&:last-of-type {
-				a {
-					padding-bottom:3px;
-					border-bottom: 5px solid $black;
-					transition: all 200ms ease-in-out;
-					&:hover {
-						border-bottom: 5px solid $yellowdark;
-					}
-				}
-			}
 			a {
 				color:$black;
 				text-decoration: none;
 				transition: all 200ms ease-in-out;
 				&:hover {
 					color:$yellow;
+				}
+			}
+		}
+		li.view_all_pa {
+			a {
+				padding-bottom:3px;
+				border-bottom: 5px solid $black;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					border-bottom: 5px solid $yellowdark;
 				}
 			}
 		}
