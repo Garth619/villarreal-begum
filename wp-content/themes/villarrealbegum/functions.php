@@ -28,14 +28,16 @@ function load_my_styles_scripts() {
 		// Localized PHP Data that needs to be passed onto my custom-min.js file, this grabs the live chat script acf and applies to my lazyload "getScript" function
 
 			
-		$livechat = get_field('live_chat_script','option');
+		$sec_four_desktop_title = get_field('section_four_desktop_title');
+		$sec_four_mobile_title = get_field('section_four_mobile_title');
 		
 		
 		
 			// Localize the script with new data array 
 		
 			$translation_array = array(
-    		'live_chat' => $livechat
+    		'sec_four_desktop_title' => $sec_four_desktop_title,
+    		'sec_four_mobile_title' => $sec_four_mobile_title,
 			);
 
 			wp_localize_script( 'jquery-addon', 'my_data', $translation_array );

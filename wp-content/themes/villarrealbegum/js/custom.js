@@ -846,7 +846,7 @@ if($('.internal_banner').length > 0 ){
 	
 	function desktopText() {
 		
-		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in treating all</span> <span>of our clients like family</span></span>" );
+		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'>"+my_data.sec_four_desktop_title+"</span>" );
 		
 		$( "span.about_bottom_largeheader" ).replaceWith( "<span class='about_bottom_largeheader'><span>we believe in treating all</span> <span>of our clients like family</span></span>" );
 		
@@ -855,9 +855,9 @@ if($('.internal_banner').length > 0 ){
 	
 	function mobileText() {
 		
-		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'><span>we believe in</span> <span>treating all of our</span> <span>clients like family</span>" );
+		$( "span.sec_four_largeheader" ).replaceWith( "<span class='sec_four_largeheader'>"+my_data.sec_four_mobile_title+"</span>" );
 		
-		$( "span.about_bottom_largeheader" ).replaceWith( "<span class='about_bottom_largeheader'><span>we believe in</span> <span>treating all of our</span> <span>clients like family</span>" );
+		$( "span.about_bottom_largeheader" ).replaceWith( "<span class='about_bottom_largeheader'><span>we believe in</span> <span>treating all of our</span> <span>clients like family</span></span>" );
 		
 	}
 	
