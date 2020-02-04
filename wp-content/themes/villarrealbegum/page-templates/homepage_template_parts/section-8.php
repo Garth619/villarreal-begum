@@ -4,9 +4,9 @@
 		
 		<div class="sec_eight_left">
 			
-			<span class="cr_title"><span>Case</span> <span>Results</span></span>
+			<span class="cr_title"><?php the_field( 'section_eight_title' ); ?></span>
 			
-			<a class="view_all_results desktop" href="<?php the_permalink(54);?>">View All Results</a><!-- view_all_results -->
+			<a class="view_all_results desktop" href="<?php the_field( 'section_eight_page_link' ); ?>"><?php the_field( 'section_eight_title' ); ?></a><!-- view_all_results -->
 			
 		</div><!-- sec_eight_left -->
 		
@@ -14,112 +14,65 @@
 				
 				<div class="sec_eight_slider">
 					
-					<div class="sec_eight_slide fadein results-1">
-						
-						<div class="sec_eight_slide_inner">
-						
-							<span class="sec_eight_title">$3.5M</span><!-- sec_eight_title -->
-						
-							<span class="sec_eight_subtitle">Product Defect Claim</span><!-- sec_eight_subtitle -->
-						
-							<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
-						
-						</div><!-- sec_eight_slide_inner -->
-						
-					</div><!-- sec_eight_slide -->
+					<?php if(get_field('section_eight_case_results_slider')): ?>
 					
-					<div class="sec_eight_slide results-2">
+						<?php $counter = 0;?>
+					 
+						<?php while(has_sub_field('section_eight_case_results_slider')): ?>
 						
-						<div class="sec_eight_slide_inner">
+							<?php $counter++; // add one per row ?>
+					 
+							<div class="sec_eight_slide <?php the_sub_field( 'class' ); ?> results-<?php echo $counter;?>">
 						
-						<span class="sec_eight_title">$3M</span><!-- sec_eight_title -->
+								<div class="sec_eight_slide_inner">
 						
-						<span class="sec_eight_subtitle">Commercial Vehicle Crash</span><!-- sec_eight_subtitle -->
+									<span class="sec_eight_title"><?php the_sub_field( 'amount' ); ?></span><!-- sec_eight_title -->
 						
-						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
+									<span class="sec_eight_subtitle"><?php the_sub_field( 'type' ); ?></span><!-- sec_eight_subtitle -->
 						
-						</div>
+									<?php $image = get_sub_field( 'image' ); ?>
+									
+									<?php if ( $image ) { ?>
+										
+										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+									
+									<?php } ?>
 						
-					</div><!-- sec_eight_slide -->
-					
-					<div class="sec_eight_slide results-3">
+								</div><!-- sec_eight_slide_inner -->
 						
-						<div class="sec_eight_slide_inner">
-						
-						<span class="sec_eight_title">$1.8M</span><!-- sec_eight_title -->
-						
-						<span class="sec_eight_subtitle">Commercial Vehicle Crash</span><!-- sec_eight_subtitle -->
-						
-						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
-						
-						</div>
-						
-					</div><!-- sec_eight_slide -->
-					
-					<div class="sec_eight_slide results-4">
-						
-						<div class="sec_eight_slide_inner">
-						
-						<span class="sec_eight_title">$1.5M</span><!-- sec_eight_title -->
-						
-						<span class="sec_eight_subtitle">18 Wheeler Crash</span><!-- sec_eight_subtitle -->
-						
-						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
-						
-						</div>
-						
-					</div><!-- sec_eight_slide -->
-					
-					<div class="sec_eight_slide results-5">
-						
-						<div class="sec_eight_slide_inner">
-						
-						<span class="sec_eight_title">$1M</span><!-- sec_eight_title -->
-						
-						<span class="sec_eight_subtitle">18 Wheeler Crash</span><!-- sec_eight_subtitle -->
-						
-						<img src="<?php bloginfo('template_directory');?>/images/results_truck.png"/>
-						
-						</div>
-						
-					</div><!-- sec_eight_slide -->
+							</div><!-- sec_eight_slide -->
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
 					
 				</div><!-- sec_eight_slider -->
 				
 				<div class="sec_eight_results_list">
 					
 					<ul>
-						<li class="one" data-results="results-1">
-							<a>
-								<span class="result_list_amount">$3.5M</span><!-- result_list_amount -->
-								<span class="result_list_description">product defect claim</span><!-- result_list_description -->
-							</a>
-						</li>
-						<li class="two" data-results="results-2">
-							<a>
-								<span class="result_list_amount">$3M</span><!-- result_list_amount -->
-								<span class="result_list_description">commercial vehicle crash</span><!-- result_list_description -->
-							</a>
-						</li>
-						<li class="three" data-results="results-3">
-							<a>
-								<span class="result_list_amount">$1.8M</span><!-- result_list_amount -->
-								<span class="result_list_description">commercial vehicle crash</span><!-- result_list_description -->
-							</a>
-						</li>
-						<li class="four" data-results="results-4">
-							<a>
-								<span class="result_list_amount">$1.5M</span><!-- result_list_amount -->
-								<span class="result_list_description">18 wheeler crash</span><!-- result_list_description -->
-							</a>
-						</li>
-						<li class="five" data-results="results-5">
-							<a>
-								<span class="result_list_amount">$1M</span><!-- result_list_amount -->
-								<span class="result_list_description">18 wheeler crash</span><!-- result_list_description -->
-							</a>
-						</li>
-						 <div id="line"></div>  
+						
+						<?php if(get_field('section_eight_case_results_slider')): ?>
+							
+							<?php $counter = 0;?>
+						 
+							<?php while(has_sub_field('section_eight_case_results_slider')): ?>
+							
+								<?php $counter++; // add one per row ?>
+						 
+								<li class="<?php the_sub_field( 'class' ); ?>" data-results="results-<?php echo $counter;?>">
+									<a>
+										<span class="result_list_amount"><?php the_sub_field( 'amount' ); ?></span><!-- result_list_amount -->
+										<span class="result_list_description"><?php the_sub_field( 'type' ); ?></span><!-- result_list_description -->
+									</a>
+								</li>
+						    
+							<?php endwhile; ?>
+						 
+						<?php endif; ?>
+						
+						<div id="line"></div>  
+						
 					</ul>
 					
 				</div><!-- sec_eight_results_list -->
@@ -128,8 +81,14 @@
 		
 	</div><!-- sec_eight_inner -->
 	
-	<a class="view_all_results mobile" href="<?php the_permalink(54);?>">View All Results</a><!-- view_all_results -->
+	<a class="view_all_results mobile" href="<?php the_field( 'section_eight_page_link' ); ?>"><?php the_field( 'section_eight_button_verbiage' ); ?></a><!-- view_all_results -->
 	
-	<img class="sec_eight_hero" src="<?php bloginfo('template_directory');?>/images/results_bg_desk.jpg"/>
+	<?php $section_eight_background_image = get_field( 'section_eight_background_image' ); ?>
+	
+	<?php if ( $section_eight_background_image ) { ?>
+	
+		<img class="sec_eight_hero" src="<?php echo $section_eight_background_image['url']; ?>" alt="<?php echo $section_eight_background_image['alt']; ?>" />
+
+	<?php } ?>
 	
 </section><!-- section_eight -->

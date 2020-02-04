@@ -4,17 +4,17 @@
 		
 		<div class="sec_six_left">
 			
-			<span class="sec_six_title">What Our Clients Have to Say</span><!-- sec_six_title -->
+			<span class="sec_six_title"><?php the_field( 'section_six_title' ); ?></span><!-- sec_six_title -->
 			
 			<div class="star_wrapper mobile">
 				
 				<img class="fivestar" src="<?php bloginfo('template_directory');?>/images/fivestar-3.svg"/>
 				
-				<span class="star_rating">4.7 Google Rating</span><!-- star_rating -->
+				<span class="star_rating"><?php the_field( 'section_six_google_rating' ); ?></span><!-- star_rating -->
 				
 			</div><!-- star_wrapper -->
 			
-			<a class="reviews_button desktop" href="<?php the_permalink(52);?>">View All Testimonials</a><!-- reviews_button -->
+			<a class="reviews_button desktop" href="<?php the_field( 'section_six_button_link' ); ?>"><?php the_field( 'section_six_button_verbiage' ); ?></a><!-- reviews_button -->
 			
 		</div><!-- sec_six_left -->
 		
@@ -22,169 +22,47 @@
 			
 			<div class="sec_six_slider">
 				
-				<div class="sec_six_slide">
+				<?php if(get_field('section_six_reviews')): ?>
+				 
+					<?php while(has_sub_field('section_six_reviews')): ?>
+				 
+						<div class="sec_six_slide">
 					
-					<div class="star_box">
+							<div class="star_box">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
+								<img src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
 						
-					</div><!-- star_box -->
+							</div><!-- star_box -->
 					
-					<span class="sec_six_slide_title">I had a very bad accident.</span><!-- sec_six_slide_title -->
+							<span class="sec_six_slide_title"><?php the_sub_field( 'quote' ); ?></span><!-- sec_six_slide_title -->
 					
-					<div class="black_bar"></div><!-- black_bar -->
+							<div class="black_bar"></div><!-- black_bar -->
 					
-					<span class="sec_six_description">This firm helped me get back on my feet, took care of my doctors appointments and paid me out a deserved settlement.</span><!-- sec_six_description -->
+								<span class="sec_six_description"><?php the_sub_field( 'description' ); ?></span><!-- sec_six_description -->
 					
-					<div class="profile_wrapper">
+								<div class="profile_wrapper">
+									
+									<?php $profile_picture = get_sub_field( 'profile_picture' ); ?>
+									
+									<?php if ( $profile_picture ) { ?>
+									
+										<img class="profile_pic" src="<?php echo $profile_picture['url']; ?>" alt="<?php echo $profile_picture['alt']; ?>" />
+									
+									<?php } ?>
 					
-						<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/client_test_jillian.png"/>
-					
-						<div class="sec_six_name_meta">
+									<div class="sec_six_name_meta">
 						
-							<span class="name">Jillian Lara</span><span class="type">Client</span>
+									<span class="name"><?php the_sub_field( 'name' ); ?></span><span class="type"><?php the_sub_field( 'client' ); ?></span>
 						
-						</div><!-- name_meta -->
+								</div><!-- name_meta -->
 					
-					</div><!-- profile_wrapper -->
+							</div><!-- profile_wrapper -->
 					
-				</div><!-- sec_six_slide -->
-				
-				<div class="sec_six_slide">
-					
-					<div class="star_box">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
-						
-					</div><!-- star_box -->
-					
-					<span class="sec_six_slide_title">Customer service at this law firm is excellent.</span><!-- sec_six_slide_title -->
-					
-					<div class="black_bar"></div><!-- black_bar -->
-					
-					<span class="sec_six_description">I would definitely refer this law firm to any one of my family members and friends.  Marie Rodriguez answered all my questions with no hesitation, she didn’t take days to call me back and she was friendly, professional and courteous. She made me feel like family and that she cared. This firm is a five star.</span><!-- sec_six_description -->
-					
-					<div class="profile_wrapper">
-					
-					<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/client_test_claudia.png"/>
-					
-					<div class="sec_six_name_meta">
-						
-						<span class="name">Claudia Chavez</span><span class="type">Client</span>
-						
-					</div><!-- name_meta -->
-					
-					</div><!-- profile_wrapper -->
-					
-				</div><!-- sec_six_slide -->
-				
-				<div class="sec_six_slide">
-					
-					<div class="star_box">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
-						
-					</div><!-- star_box -->
-					
-					<span class="sec_six_slide_title">I had a very bad accident.</span><!-- sec_six_slide_title -->
-					
-					<div class="black_bar"></div><!-- black_bar -->
-					
-					<span class="sec_six_description">This firm helped me get back on my feet, took care of my doctors appointments and paid me out a deserved settlement.</span><!-- sec_six_description -->
-					
-					<div class="profile_wrapper">
-					
-						<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/client_test_jillian.png"/>
-					
-						<div class="sec_six_name_meta">
-						
-							<span class="name">Jillian Lara</span><span class="type">Client</span>
-						
-						</div><!-- name_meta -->
-					
-					</div><!-- profile_wrapper -->
-					
-				</div><!-- sec_six_slide -->
-				
-				<div class="sec_six_slide">
-					
-					<div class="star_box">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
-						
-					</div><!-- star_box -->
-					
-					<span class="sec_six_slide_title">Customer service at this law firm is excellent.</span><!-- sec_six_slide_title -->
-					
-					<div class="black_bar"></div><!-- black_bar -->
-					
-					<span class="sec_six_description">I would definitely refer this law firm to any one of my family members and friends.  Marie Rodriguez answered all my questions with no hesitation, she didn’t take days to call me back and she was friendly, professional and courteous. She made me feel like family and that she cared. This firm is a five star.</span><!-- sec_six_description -->
-					
-					<div class="profile_wrapper">
-					
-					<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/client_test_claudia.png"/>
-					
-					<div class="sec_six_name_meta">
-						
-						<span class="name">Claudia Chavez</span><span class="type">Client</span>
-						
-					</div><!-- name_meta -->
-					
-					</div><!-- profile_wrapper -->
-					
-				</div><!-- sec_six_slide -->
-				
-				<div class="sec_six_slide">
-					
-					<div class="star_box">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
-						
-					</div><!-- star_box -->
-					
-					<span class="sec_six_slide_title">I had a very bad accident.</span><!-- sec_six_slide_title -->
-					
-					<div class="black_bar"></div><!-- black_bar -->
-					
-					<span class="sec_six_description">This firm helped me get back on my feet, took care of my doctors appointments and paid me out a deserved settlement.</span><!-- sec_six_description -->
-					
-					<div class="profile_wrapper">
-					
-						<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/client_test_jillian.png"/>
-					
-						<div class="sec_six_name_meta">
-						
-							<span class="name">Jillian Lara</span><span class="type">Client</span>
-						
-						</div><!-- name_meta -->
-					
-					</div><!-- profile_wrapper -->
-					
-				</div><!-- sec_six_slide -->
-				
-				<div class="sec_six_slide">
-					
-					<div class="star_box">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
-						
-					</div><!-- star_box -->
-					
-					<span class="sec_six_slide_title">Customer service at this law firm is excellent.</span><!-- sec_six_slide_title -->
-					
-					<div class="black_bar"></div><!-- black_bar -->
-					
-					<span class="sec_six_description">I would definitely refer this law firm to any one of my family members and friends.  Marie Rodriguez answered all my questions with no hesitation, she didn’t take days to call me back and she was friendly, professional and courteous. She made me feel like family and that she cared. This firm is a five star.</span><!-- sec_six_description -->
-					
-					<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/client_test_claudia.png"/>
-					
-					<div class="sec_six_name_meta">
-						
-						<span class="name">Claudia Chavez</span><span class="type">Client</span>
-						
-					</div><!-- name_meta -->
-					
-				</div><!-- sec_six_slide -->		
+						</div><!-- sec_six_slide -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>		
 				
 			</div><!-- sec_six_slider -->
 			
@@ -200,7 +78,7 @@
 				
 				<img class="fivestar" src="<?php bloginfo('template_directory');?>/images/fivestar-3.svg"/>
 				
-				<span class="star_rating">4.7 Google Rating</span><!-- star_rating -->
+				<span class="star_rating"><?php the_field( 'section_six_google_rating' ); ?></span><!-- star_rating -->
 				
 			</div><!-- star_wrapper -->
 			
@@ -246,8 +124,14 @@
 		
 	</div><!-- sec_six_bottom -->
 	
-	<a class="reviews_button mobile" href="<?php the_permalink(52);?>">View All Testimonials</a><!-- reviews_button -->
+	<a class="reviews_button mobile" href="<?php the_field( 'section_six_button_link' ); ?>"><?php the_field( 'section_six_button_verbiage' ); ?></a><!-- reviews_button -->
 	
-	<img class="sec_six_bg" src="<?php bloginfo('template_directory');?>/images/test_bg_desk.jpg"/>
+	<?php $section_six_background_image = get_field( 'section_six_background_image' ); ?>
+	
+	<?php if ( $section_six_background_image ) { ?>
+	
+	<img class="sec_six_bg" src="<?php echo $section_six_background_image['url']; ?>" alt="<?php echo $section_six_background_image['alt']; ?>" />
+	
+	<?php } ?>
 	
 </section><!-- section_six -->

@@ -8,47 +8,41 @@
 			
 			<div class="footer_locations">
 				
-				<div class="single_location">
+				<?php if(get_field('locations','option')): ?>
+				 
+					<?php while(has_sub_field('locations','option')): ?>
+				 
+						<div class="single_location">
+							
+							<?php $footer_svg = get_sub_field('svg');?>
 					
-					<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/footer_icon_1.svg"); ?>
+							<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/".$footer_svg.""); ?>
 					
-					<span class="office_title">San Antonio Office</span><!-- office_title -->
+							<span class="office_title"><?php the_sub_field( 'location_title','option'); ?></span><!-- office_title -->
 					
-					<span class="address">5826 Frontage Rd #101<br/> San Antonio, TX 78201</span><!-- address -->
+							<span class="address"><?php the_sub_field( 'address','option'); ?></span><!-- address -->
+							
+							<a class="footer_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone', 'option')); ?>"><?php the_sub_field( 'phone','option'); ?></a><!-- footer_phone -->
+							
+							<?php if(get_sub_field('map_or_appointment') == 'Map Button') { ?>
 					
-					<a class="footer_phone" href="tel:8445294867">(844) 529-4867</a><!-- footer_phone -->
+							<a class="map_button" href="<?php the_sub_field( 'map_link' ); ?>" target="_blank" rel="noopener">Map</a><!-- map_button -->
+							
+							<?php } ?>
+							
+							<?php if(get_sub_field('map_or_appointment') == 'Appointment Only Verbiage') { ?>
+							
+								<span class="appointment"><?php the_sub_field( 'appointment_verbiage','option'); ?></span><!-- appointment -->
+							
+							<?php } ?>
 					
-					<a class="map_button" href="https://www.google.com/maps/place/5826+Frontage+Rd+%23101,+San+Antonio,+TX+78201/data=!4m2!3m1!1s0x865c5e4c30ba262b:0x2a9320db5d6d9fc4?sa=X&ved=2ahUKEwipyJ22uqrnAhVYnp4KHfAXDp8Q8gEwAHoECAsQAQ" target="_blank" rel="noopener">Map</a><!-- map_button -->
-					
-				</div><!-- single_location -->
+						</div><!-- single_location -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 				
-				<div class="single_location">
-					
-					<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/footer_icon_2.svg"); ?>
-					
-					<span class="office_title">laredo Office *</span><!-- office_title -->
-					
-					<span class="address">104 E Calton Rd, Suite 109<br/> Laredo, TX 78041</span><!-- address -->
-					
-					<a class="footer_phone" href="9565685954">(956) 568-5954</a><!-- footer_phone -->
-					
-					<span class="appointment">*By Appointment Only</span><!-- appointment -->
-					
-				</div><!-- single_location -->
 				
-				<div class="single_location">
-					
-					<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/footer_icon_3.svg"); ?>
-					
-					<span class="office_title">McAllen Office *</span><!-- office_title -->
-					
-					<span class="address">4425 N. McColl Rd<br/> McAllen, TX 78504</span><!-- address -->
-					
-					<a class="footer_phone" href="9562222222">(956) 222-2222</a><!-- footer_phone -->
-					
-					<span class="appointment">*By Appointment Only</span><!-- appointment -->
-					
-				</div><!-- single_location -->
 				
 			</div><!-- footer_locations -->
 			
