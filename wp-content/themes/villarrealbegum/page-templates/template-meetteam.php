@@ -12,105 +12,50 @@ get_header(); ?>
 	
 		<div class="meet_the_team_wrapper">
 			
-			<div class="single_att">
-				
-				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
-					
-					<div class="att_img_wrapper">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
-						
-						<div class="att_overlay"></div><!-- att_overlay -->
-						
-					</div><!-- att_img_wrapper -->
-					
-					<span class="single_att_title yellowline"><span>Alex Begum</span></span><!-- single_att_title -->
-					
-					<span class="single_position">Attorney</span><!-- single_position -->
-					
-				</a>
-				
-			</div><!-- single_att -->
+		<?php $meet_the_team = get_field( 'meet_the_team' ); ?>
+		
+		<?php if ( $meet_the_team ): ?>
 			
-			<div class="single_att">
+			<?php foreach ( $meet_the_team as $post ):  ?>
 				
-				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
+				<?php setup_postdata ( $post ); ?>
 					
-					<div class="att_img_wrapper">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
-						
-						<div class="att_overlay"></div><!-- att_overlay -->
-						
-					</div><!-- att_img_wrapper -->
-					
-					<span class="single_att_title"><span>Alex Begum</span></span><!-- single_att_title -->
-					
-					<span class="single_position">Attorney</span><!-- single_position -->
-					
-				</a>
+					<div class="single_att">
 				
-			</div><!-- single_att -->
+						<a href="<?php the_permalink();?>">
+					
+							<div class="att_img_wrapper">
+						
+								<?php $attorney_image = get_field( 'attorney_image' ); ?>
+								
+								<?php if ( $attorney_image ) : ?>
+					
+									<img src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>" />
+					
+									<?php else: ?>
+					
+									<img src="<?php bloginfo('template_directory');?>/images/placeholder.jpg" alt="placeholder"/>
+				
+								<?php endif; ?>
+
+						
+							<div class="att_overlay"></div><!-- att_overlay -->
+						
+						</div><!-- att_img_wrapper -->
+					
+						<span class="single_att_title yellowline"><span><?php the_title();?></span></span><!-- single_att_title -->
+					
+						<span class="single_position"><?php the_field( 'attorney_position' ); ?></span><!-- single_position -->
+					
+					</a>
+				
+					</div><!-- single_att -->
+				
+				<?php endforeach; ?>
 			
-			<div class="single_att">
-				
-				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
-					
-					<div class="att_img_wrapper">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
-						
-						<div class="att_overlay"></div><!-- att_overlay -->
-						
-					</div><!-- att_img_wrapper -->
-					
-					<span class="single_att_title"><span>Alex Begum</span></span><!-- single_att_title -->
-					
-					<span class="single_position">Attorney</span><!-- single_position -->
-					
-				</a>
-				
-			</div><!-- single_att -->
-			
-			<div class="single_att">
-				
-				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
-					
-					<div class="att_img_wrapper">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
-						
-						<div class="att_overlay"></div><!-- att_overlay -->
-						
-					</div><!-- att_img_wrapper -->
-					
-					<span class="single_att_title"><span>Alex Begum</span></span><!-- single_att_title -->
-					
-					<span class="single_position">Attorney</span><!-- single_position -->
-					
-				</a>
-				
-			</div><!-- single_att -->
-			
-			<div class="single_att">
-				
-				<a href="<?php bloginfo('url');?>/meet-the-team/alex-begum">
-					
-					<div class="att_img_wrapper">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/attorney_bio_img_alex.jpg"/>
-						
-						<div class="att_overlay"></div><!-- att_overlay -->
-						
-					</div><!-- att_img_wrapper -->
-					
-					<span class="single_att_title"><span>Alex Begum</span></span><!-- single_att_title -->
-					
-					<span class="single_position">Attorney</span><!-- single_position -->
-					
-				</a>
-				
-			</div><!-- single_att -->
+			<?php wp_reset_postdata(); ?>
+		
+		<?php endif; ?>
 			
 		</div><!-- meet_the_team_wrapper -->
 		

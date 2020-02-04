@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div class="single_col_container">
 	
-		<h1 class="deluxe_line_header"><span><?php the_title();?></span></h1><!-- deluxe_reg_header -->
+		<h1 class="deluxe_line_header yellowline"><span><?php the_title();?></span></h1><!-- deluxe_reg_header -->
 	
 		<div class="case_results_wrapper">
 			

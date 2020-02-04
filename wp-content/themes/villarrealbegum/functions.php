@@ -31,6 +31,9 @@ function load_my_styles_scripts() {
 		$sec_four_desktop_title = get_field('section_four_desktop_title');
 		$sec_four_mobile_title = get_field('section_four_mobile_title');
 		
+		$about_firm_desktop_title = get_field('about_firm_desktop_title');
+		$about_firm_mobile_title = get_field('about_firm_mobile_title');
+		
 		
 		
 			// Localize the script with new data array 
@@ -38,6 +41,8 @@ function load_my_styles_scripts() {
 			$translation_array = array(
     		'sec_four_desktop_title' => $sec_four_desktop_title,
     		'sec_four_mobile_title' => $sec_four_mobile_title,
+    		'about_firm_desktop_title' => $about_firm_desktop_title,
+    		'about_firm_mobile_title' => $about_firm_mobile_title,
 			);
 
 			wp_localize_script( 'jquery-addon', 'my_data', $translation_array );

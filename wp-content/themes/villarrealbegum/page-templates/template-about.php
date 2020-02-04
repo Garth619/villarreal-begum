@@ -36,11 +36,11 @@ get_header(); ?>
 	
 	<div class="about_bottom_inner">
 		
-		<span class="about_bottom_subheader">Villarreal & Begum</span><!-- about_bottom_subheader -->
+		<span class="about_bottom_subheader"><?php the_field( 'about_firm_subtitle' ); ?></span><!-- about_bottom_subheader -->
 		
-		<span class="about_bottom_largeheader"><span>we believe in treating all</span> <span>of our clients like family</span></span><!-- about_bottom_largehader -->
+		<span class="about_bottom_largeheader"><?php the_field( 'about_firm_desktop_title' ); ?></span><!-- about_bottom_largehader -->
 		
-		<a class="meet_button" href="<?php the_permalink();?>/meet-the-team">Meet the Attorneys</a>
+		<a class="meet_button" href="<?php the_field( 'about_firm_button_link' ); ?>"><?php the_field( 'about_firm_button_verbiage' ); ?></a>
 		
 	</div><!-- about_bottom_inner -->
 	

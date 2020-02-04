@@ -23,11 +23,15 @@ get_header(); ?>
 				
 				<?php $attorney_image = get_field( 'attorney_image' ); ?>
 				
-				<?php if ( $attorney_image ) { ?>
+				<?php if ( $attorney_image ) : ?>
 					
 					<img src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>" />
+					
+					<?php else: ?>
+					
+					<img src="<?php bloginfo('template_directory');?>/images/placeholder.jpg" alt="placeholder"/>
 				
-				<?php } ?>
+				<?php endif; ?>
 				
 				<div class="att_bio_badge">
 					
@@ -65,11 +69,16 @@ get_header(); ?>
 				
 				<?php $attorney_image = get_field( 'attorney_image' ); ?>
 				
-				<?php if ( $attorney_image ) { ?>
+				<?php if ( $attorney_image ) : ?>
 					
 					<img src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>" />
+					
+					<?php else: ?>
+					
+					<img src="<?php bloginfo('template_directory');?>/images/placeholder.jpg" alt="placeholder"/>
 				
-				<?php } ?>
+				<?php endif; ?>
+
 				
 				<div class="att_bio_badge">
 					
