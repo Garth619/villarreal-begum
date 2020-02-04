@@ -70,10 +70,20 @@
 		<div class="copyright_inner">
 			
 			<ul>
-				<li>Copyright &copy; <?php echo date("Y"); ?> - villarreal and begum law firm</li>
-				<li><a href="<?php bloginfo('url');?>/disclaimer">disclaimer</a></li>
-				<li><a href="<?php bloginfo('url');?>/sitemap">sitemap</a></li>
-				<li><a href="<?php bloginfo('url');?>/google">google+</a></li>
+				<li>Copyright &copy; <?php echo date("Y"); ?> <?php the_field( 'copyright','option'); ?></li>
+				
+				<?php if(get_field('disclaimer','option')) { ?>
+					
+					<li><a href="<?php the_field('disclaimer','option');?>">disclaimer</a></li>
+				
+				<?php } ?>
+				
+				<?php if(get_field('privacy_policy','option')) { ?>
+					
+					<li><a href="<?php the_field('privacy_policy','option');?>">Privacy Policy</a></li>
+				
+				<?php } ?>
+				
 			</ul>
 			
 			<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
