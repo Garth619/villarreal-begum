@@ -130,6 +130,9 @@
 }
 
 
+//.slick-slide { will-change: transform; }
+
+
 @media screen and (max-width: 1760px) {
 	
 	
@@ -359,21 +362,44 @@
 	
 	.sec_two_slide {
 		svg {
-			width:131px;
-			height:129px;
-			top: 49px; // slick is resetting after loop.....
+			opacity: 0;
+			transition: opacity 350ms linear;
 		}
 		.sec_two_slide_inner {
 			margin: 117px 0 0 0;
 			span.sec_two_slide_title {
 				font-size: 30px;
+				opacity: 0;
+				transition: opacity 350ms linear;
 			}
 			span.sec_two_description {
 				font-size: 14px;
 				line-height: 23px;
+				opacity: 0;
+				transition: opacity 350ms linear;
 			}
 		}
 	} 
+	
+	
+	.slick-active {
+		.sec_two_slide {
+			svg {
+				opacity: 1;
+				transition-delay: 500ms;
+			}
+		}
+		.sec_two_slide_inner {
+			span.sec_two_slide_title {
+				opacity: 1;
+				transition-delay: 500ms;
+			}
+			span.sec_two_description {
+				opacity: 1;
+				transition-delay: 500ms;
+			}
+		}
+	}
 	
 	
 	.sec_two_slide.one {

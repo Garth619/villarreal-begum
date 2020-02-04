@@ -87,11 +87,11 @@
 				
 				<?php get_template_part( 'loop', 'page' ); ?>
 				
-<!--
+
 				<blockquote>
 					<p><span>we believe in treating all of our clients like family</span></p>
 				</blockquote>
--->
+
 				
 			</div><!-- inner_content -->
 		

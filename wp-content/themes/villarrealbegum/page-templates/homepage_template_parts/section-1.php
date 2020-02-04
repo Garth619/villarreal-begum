@@ -6,9 +6,9 @@
 		
 		<div id="para_four" class="sec_one_left">
 			
-			<span class="sec_one_subheader">texas personal injury lawyers</span><!-- sec_one_subheader -->
+			<span class="sec_one_subheader"><?php the_field( 'section_one_subtitle' ); ?></span><!-- sec_one_subheader -->
 			
-			<span class="sec_one_largeheader"><span>if we don’t win,</span> we don’t get paid.</span><!-- sec_one_largeheader -->
+			<span class="sec_one_largeheader"><?php the_field( 'section_one_large_header' ); ?></span><!-- sec_one_largeheader -->
 			
 			<a class="consult_button desktop" href="#consultation">Free Consultation</a><!-- consult_button -->
 			
@@ -22,13 +22,25 @@
 					
 					<picture class="att_one">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/header_javier_desk.png"/>
+						<?php $attorney_image_one = get_field( 'attorney_image_one' ); ?>
+						
+						<?php if ( $attorney_image_one ) { ?>
+						
+						<img src="<?php echo $attorney_image_one['url']; ?>" alt="<?php echo $attorney_image_one['alt']; ?>" />
+						
+						<?php } ?>
 					
 					</picture>
 					
 					<picture class="att_two">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/header_alex_desk.png"/>
+						<?php $attorney_image_two = get_field( 'attorney_image_two' ); ?>
+						
+						<?php if ( $attorney_image_two ) { ?>
+						
+						<img src="<?php echo $attorney_image_two['url']; ?>" alt="<?php echo $attorney_image_two['alt']; ?>" />
+						
+						<?php } ?>
 					
 					</picture>
 					
@@ -38,9 +50,10 @@
 					
 					<div class="attorney_names_inner">
 					
-						<a class="attorney_name attorney_name_one" href="<?php the_permalink(724);?>">Javier Villarreal</a><!-- attorney_name -->
+						<a class="attorney_name attorney_name_one" href="<?php the_field( 'attorney_one_page_link' ); ?>"><?php the_field( 'attorney_one_title' ); ?></a><!-- attorney_name -->
 					
-						<a class="attorney_name attorney_name_two" href="<?php the_permalink(60);?>">Alex Begum</a><!-- attorney_name -->
+						<a class="attorney_name attorney_name_two" href="<?php the_field( 'attorney_two_page_link' ); ?>">
+<?php the_field( 'attorney_two_title' ); ?></a><!-- attorney_name -->
 					
 					</div><!-- attorney_names_inner -->
 					
@@ -54,7 +67,13 @@
 	
 	<a class="consult_button mobile" href="#consultation">Free Consultation</a><!-- consult_button -->
 	
-	<img class="hero_img" src="<?php bloginfo('template_directory');?>/images/header_bg_desk.jpg"/>
+	<?php $section_one_background_image = get_field( 'section_one_background_image' ); ?>
+	
+	<?php if ( $section_one_background_image ) { ?>
+	
+	<img class="hero_img" src="<?php echo $section_one_background_image['url']; ?>" alt="<?php echo $section_one_background_image['alt']; ?>" />
+	
+	<?php } ?>
 	
 	</div><!-- sec_one_inner -->
 	
@@ -64,7 +83,13 @@
 		
 		<div id="para_one" class="attorney_badge">
 					
-			<img src="<?php bloginfo('template_directory');?>/images/header_law_guns.png"/>
+			<?php $section_one_badge = get_field( 'section_one_badge' ); ?>
+			
+			<?php if ( $section_one_badge ) { ?>
+			
+			<img src="<?php echo $section_one_badge['url']; ?>" alt="<?php echo $section_one_badge['alt']; ?>" />
+			
+			<?php } ?>
 					
 		</div><!-- attorney_badge -->
 		

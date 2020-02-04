@@ -84,7 +84,7 @@
 					
 				</div><!-- sec_two_left_arrow_wrapper -->
 				
-				<div class="sec_two_progress" aria-valuemin="0" aria-valuemax="100">
+				<div class="sec_two_progress" aria-valuemin="0" aria-valuemax="100" style="background-size: 50% 100%;">
 					
 					<span class="sec_two_progress_bar"></span>
   			

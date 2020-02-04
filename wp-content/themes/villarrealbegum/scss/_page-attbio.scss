@@ -198,6 +198,33 @@ span.att_bio_position {
 }
 
 
+
+
+
+
+.att_bio_slider_wrapper {
+		display: flex;
+		width:100%;
+		align-items: center;
+	}
+	
+	.att_bio_button {
+		display: block;
+		width:15px;
+		height:24px;
+		svg {
+			path {
+				fill:$yellow;
+			}
+		}
+	}
+	
+	.att_bio_slider {
+		width:calc(100% - 30px);
+		padding:0 35px;
+	}
+
+
 @media screen and (max-width: 1660px) {
 	
 	
@@ -319,6 +346,16 @@ span.att_bio_position {
 	.att_container {
 		padding-top:174px;
 	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1150px) {
+	
+	
+	
 	
 	
 	

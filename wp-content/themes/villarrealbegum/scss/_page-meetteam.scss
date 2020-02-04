@@ -63,6 +63,7 @@
 		span.single_att_title {
 			text-transform: uppercase;
 			font-size: 46px;
+			line-height: 50px;
 			color:$blacklight;
 			margin-top:44px;
 			@include deluxe_extrabold;
@@ -154,6 +155,17 @@
 	.single_att {
 		margin-bottom: 45px;
 	}
+	
+	.single_att {
+		a {
+			span.single_position {
+				margin-top: 11px;
+			}
+		}
+	}
+	
+	
+	    
 	
 	
 } /* Media Query */

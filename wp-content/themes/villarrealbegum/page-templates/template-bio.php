@@ -13,7 +13,7 @@ get_header(); ?>
 		
 		<div class="att_bio_left">
 			
-			<h1 class="att_bio_header"><span><?php the_title();?></span></h1><!-- att_bio_header -->
+			<h1 class="att_bio_header yellowline"><span><?php the_title();?></span></h1><!-- att_bio_header -->
 			
 			<span class="att_bio_position"><?php the_field( 'attorney_position' ); ?></span><!-- att_bio_position -->
 			
@@ -90,6 +90,12 @@ get_header(); ?>
 	<?php if(get_field('attorney_slider')): ?>
 	
 	<div class="att_bio_slider_wrapper">
+		
+		<div class="att_bio_button att_bio_button_left">
+			
+			<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_left.svg"); ?>
+			
+		</div><!-- att_bio_button -->
 	
 		<div class="att_bio_slider">
 		
@@ -118,6 +124,12 @@ get_header(); ?>
 			<?php endwhile; ?>
 		 
 		</div><!-- att_bio_slider -->
+		
+		<div class="att_bio_button att_bio_button_right">
+			
+			<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/arrow_right.svg"); ?>
+			
+		</div><!-- att_bio_button -->
 	
 	</div><!-- att_bio_slider_wrapper -->
 	

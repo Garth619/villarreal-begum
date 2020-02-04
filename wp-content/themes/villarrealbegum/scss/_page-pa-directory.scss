@@ -135,6 +135,18 @@
 	
 } /* Media Query */
 
+
+@media screen and (max-width: 1066px) {
+	
+	body.page-template-template-padirectory {
+		.single_col_container {
+			padding-left:56px;
+			padding-right:56px;
+		}
+	}
+	
+} /* Media Query */
+
 @media screen and (max-width: 930px) {
 	
 	
@@ -251,6 +263,16 @@
 	}
 }
 	
+	
+	
+body.page-template-template-padirectory {
+		.single_col_container {
+			padding-left:30px;
+			padding-right:30px;
+		}
+	}
+
+
 	
 } /* Media Query */
 

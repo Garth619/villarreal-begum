@@ -24,7 +24,7 @@ get_header(); ?>
 						
 					</div><!-- att_img_wrapper -->
 					
-					<span class="single_att_title"><span>Alex Begum</span></span><!-- single_att_title -->
+					<span class="single_att_title yellowline"><span>Alex Begum</span></span><!-- single_att_title -->
 					
 					<span class="single_position">Attorney</span><!-- single_position -->
 					

@@ -88,13 +88,16 @@
 					
 					<span class="consult_title">Free Consultation</span><!-- consult_title -->
 					
-					<a class="phone phone_one" href="tel:8445294867"><span>(844) Law-Guns</span></a>
+					<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_main_phone', 'option')); ?>
 					
-					<a class="phone phone_two" href="tel:8445294867">(844) 529-4867</a>
+					<a class="phone phone_one" href="tel:	<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_law_phone', 'option')); ?>"><span><?php the_field( 'firm_law_phone','option'); ?></span></a>
+					
+					<a class="phone phone_two" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_law_phone', 'option')); ?>"><?php the_field( 'firm_phone','option'); ?></a>
 					
 					<div class="mobile_es_wrapper">
 						
-						<a class="mobile_espanol_button" href="<?php the_permalink(728);?>">Ver En Espanol</a><!-- mobile_espanol_button -->
+						<a class="mobile_espanol_button" href="
+<?php the_field( 'mobile_espanol_page_link','option'); ?>"><?php the_field( 'mobile_espanol_button_verbaige','option'); ?></a><!-- mobile_espanol_button -->
 						
 					</div><!-- mobile_es_wrapper -->
 					

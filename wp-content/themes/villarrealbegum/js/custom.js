@@ -347,9 +347,10 @@ $('.sec_three_slider').slick({
   infinite: true,
   slidesToShow: 5,
   slidesToScroll: 5,
-  autoplay: true,
-  autoplaySpeed: 2500,
-	arrows:false,
+  arrows:true,
+  autoplay: false,
+  prevArrow:".att_bio_button_left",
+  nextArrow:".att_bio_button_right",
 	responsive: [
     {
       breakpoint: 1350,
@@ -393,11 +394,23 @@ $('.sec_three_slider').slick({
   var $progressBarLabeltwo = $('.sec_two_progress_bar');
   
   $slidertwo.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+    var calc = ( (nextSlide) / (slick.slideCount) ) * 100 + 50;
+    
+/*
+    2/3
+    
+    50 
+    
+    100
+*/
+    
+    console.log(nextSlide);
+    
+    console.log(slick.slideCount);
     
     $progressBartwo
       .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc );
+      //.attr('aria-valuenow', calc );
     
     $progressBarLabeltwo.text( calc + '% completed' );
   });
@@ -1074,249 +1087,102 @@ if($('.internal_banner').length > 0 ){
   });
 	
 	
-		
 	// pa cat titles 
 	
 	
 	$('.pa_directory_wrapper ul.menu > li > a').wrapInner('<span></span>');
 	
-	
+	// in order for design to work with css each line needs to be wrapped in span tags, but sometimes long titles drop to two lines. This will rewrap lines based on line break count
 	
 	function yellowlineCheck() {
 		
-		// yellow line wraps
+		// yellow line class
 		
-		// ccount how many lines there are by divding height/ line height
+		var lineclass = $('.yellowline');
 		
-		var divheight = $('h1.att_bio_header').height();
-		var lineheight = parseInt($('h1.att_bio_header').css('line-height'), 10);
+		// count how many line breaks there are by divding height/line height
+		
+		var divheight = lineclass.height();
+		var lineheight = parseInt(lineclass.css('line-height'), 10);
 		var linenumber = Math.round(divheight / lineheight);
-			
-		console.log('line number '+linenumber);
+		var str = lineclass.text();
 		
-		// wrap lines with span tags for later
+		// start by searching for middle initial period as first conditional
 		
-/*
-		function spanWrap() {
-			
-			var twolineinitial = '<span>'+firstname+'</span> <span>'+trimlastname+'</span>';
-				
-			$('h1.att_bio_header').html(twolineinitial);
-			
-		}
-*/
-		
-		// If just one line, wrap everything in one set of span tags
-		
-		var str = $("h1.att_bio_header").text();
 		var dot = str.indexOf('.');
-		var space = str.indexOf(' ');
-			
-		if(linenumber > 1) {
-		  
-		  console.log('line break occurred')
-		  
-			// If name has middle initial split string after the middle intial period
-			
-			if(dot !== -1) {
-				
-				var firstname = str.substring(0, str.indexOf('.') + 1);
-				
-				//console.log(firstname);
-				
-				var lastname = str.substring(dot + 1);
-				
-				var trimlastname = $.trim(lastname);
-				
-				//console.log(trimlastname);
-				
-				var twolineinitial = '<span>'+firstname+'</span> <span>'+trimlastname+'</span>';
-				
-				$('h1.att_bio_header').html(twolineinitial);
-				
-			}
-			
-			// If no middle initial period then split the space between first and last name
-			
-			if(dot == -1) {
-				
-				
-				
-				var firstname = str.substring(0,space);
-				
-				// console.log(firstname);
-				
-				var lastname = str.substring(space);
-				
-				var trimlastname = $.trim(lastname);
-				
-				// console.log(trimlastname);
-				
-				var twolineinitial = '<span>'+firstname+'</span> <span>'+trimlastname+'</span>';
-				
-				// console.log(twolineinitial);
-				
-				$('h1.att_bio_header').html(twolineinitial);
-							
-			}
-
-	
-		} 
 		
-		if(linenumber == 1) {
+		// If middle initial exists fire wrapLines() with '.' parameter
+		
+		if(dot !== -1) {
+				
+			var searchcharacter = str.indexOf('.') + 1;
+				
+			wrapLines(searchcharacter);
+				
+		}
+		
+		// If middle initial does not exists, then search for space in between first and last name fire wrapLines() with ' ' parameter
 			
-			console.log('back to one line');
+		if(dot == -1) {
+				
+			var searchcharacter = str.indexOf(' ');
+				
+			wrapLines(searchcharacter);
+							
+		}
 			
-			if(dot !== -1) {
+		// wrapLines function
+			
+		function wrapLines(searchcharacter) {
+			
+			// first name with middle initial or can be just first name substring
+			
+			var firstname = str.substring(0, searchcharacter);
+			
+			// last name substring
 				
-				var firstname = str.substring(0, str.indexOf('.') + 1);
+			var lastname = str.substring(searchcharacter);
+			
+			// trim white spaces away from last name
 				
-				console.log('back to one line with a dot');
+			var trimlastname = $.trim(lastname);
+			
+			// if the title is on two lines wrap in two span tags
+			
+			if(linenumber > 1) {
 				
-				var lastname = str.substring(dot + 1);
-				
-				var trimlastname = $.trim(lastname);
-				
-				//console.log(trimlastname);
-				
-				var twolineinitial = '<span>'+firstname+' '+trimlastname+'</span>';
-				
-				$('h1.att_bio_header').html(twolineinitial);
+				var twolineinitial = '<span>'+firstname+'</span> <span>'+trimlastname+'</span>';
 				
 			}
 			
-			if(dot == -1) {
-				
-				console.log('back to one line with no dot');
+			// if the title is on one line wrap in one span tag
 			
-				var space = str.indexOf(' ');
-				
-				var firstname = str.substring(0,space);
-				
-				// console.log(firstname);
-				
-				var lastname = str.substring(space);
-				
-				var trimlastname = $.trim(lastname);
-				
-				// console.log(trimlastname);
+			if(linenumber == 1) {
 				
 				var twolineinitial = '<span>'+firstname+' '+trimlastname+'</span>';
 				
-				console.log(twolineinitial);
-				
-				$('h1.att_bio_header').html(twolineinitial);
+			}
 			
-				}
+			// rebuild the structure of the title
+			
+			lineclass.html(twolineinitial);
 			
 		}
-	
+		
 	}
+	
+	// fire whole function
 	
 	yellowlineCheck();
 	
-
-	//var previousHeight = $("h1.att_bio_header").height();
-
+	// fire the function in real time by detecting a change in the line break when resizing window with a timeout set
 	
-		$(window).resize(_.debounce(function() {
+
+	$(window).resize(_.debounce(function() {
 			
-			// doubles up bc the spans are already there, need to clear or override
+		yellowlineCheck();
 			
-			yellowlineCheck();
-			
-			//var newHeight = $("h1.att_bio_header").height();
-	
-
-			//if(previousHeight < newHeight){
-        //console.log("I'm bigger");
-    	//}
-    	
-    	//if(previousHeight > newHeight){
-        //console.log("I'm smaller");
-    	//}
-    	//if(previousHeight == newHeight){
-        //console.log("I'm the same");
-    	//}
-		
-		
-
-/*
-			if(100 < newHeight){
-        console.log("Fire two lines");
-    	}
-    	
-    	if(238 > newHeight){
-        console.log("Fire one line");
-    	}
-*/
+	}, 100)); 
 
 
-    	
-    	//console.log(previousHeight);
-    	//console.log(newHeight);
-
-   }, 200)); 
-
-
-
-
-	
-	//https://stackoverflow.com/questions/7081958/splitting-by-white-space-or-multiple-white-spaces
-	
-	//var blockquotestring = $("blockquote > p").text();
-	
-	//var textCount = $("blockquote > p").text().length; 
-	
-	//console.log('character count '+textCount);
-
-	
-	//var characterperline = parseInt(Math.round(textCount / linenumber));
-
-	//console.log('characters per line: '+characterperline);
-	
-/*
-	var chunks = [];
-
-	for (var i = 0, charsLength = blockquotestring.length; i < charsLength; i += 30) {
-    
-    chunks.push(blockquotestring.substring(i, i + 30));
-	
-	}
-
-	console.log(chunks);
-*/
-	
-	//$('blockquote > p').empty(); // i dont like this
-	
-/*
-	jQuery.each(chunks, function(index, item) {
-    $("<span></span>").text(item).appendTo("blockquote > p");
-	});
-*/
-
-	// i need it to tell me how many words can fit on each line
-	
-	// and it cannot exceed the character max per line
-	
-	// but every letter has different width so its impossible
-	
-	
-	// each line can have a word count
-	
-	// trim then wrap each word in element
-	
-	//non-monospace fonts have different character widths
-	
-	
-/*
-	var words = $.trim($("blockquote > p").text()).split(" ");
-  
-  console.log('total word count: '+words.length);
-*/
-
-
-
-
-   
 }); // document ready
