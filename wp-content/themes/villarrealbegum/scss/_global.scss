@@ -87,6 +87,8 @@ h1,h2,h3,h4 {
 		
 		@include deluxe_extrabold;
 	}
+
+
 	a {
 		color:$yellowdark;
 		text-decoration: none;
@@ -96,8 +98,14 @@ h1,h2,h3,h4 {
 			border-bottom: 1px solid $yellowdark;
 		}
 	}
+
 	p {
 		padding-bottom:30px;
+		b {
+			font-size: 22px;
+			line-height: 26px;
+			@include nunito_extrabold;
+		}
 	}
 	p.paragraph_quote {
 		padding-top:4px;
@@ -192,6 +200,12 @@ h1,h2,h3,h4 {
 	.content {
 		font-size: 18px;
 		line-height: 30px;
+		p {
+			b {
+				font-size: 20px;
+				line-height: 22px;
+			}
+		}
 		strong {
 			font-size: 20px;
 			line-height: 34px;
@@ -212,10 +226,16 @@ h1,h2,h3,h4 {
 	.content {
 		font-size: 16px;
 		line-height: 28px;
+		p {
+			b {
+				font-size: 18px;
+				line-height: 20px;
+			}
+		}
 		strong {
 			font-size: 18px;
 			line-height: 32px;
-			//margin-bottom: -33px;
+			margin: 8px 0 18px;
 			&:before {
 				margin: 29px 0 18px;
 			}
@@ -241,6 +261,12 @@ h1,h2,h3,h4 {
 				line-height: 24px;
 				letter-spacing: 0.06em;
 			}
+		}
+		strong {
+			&:before {
+				margin-top:4px;
+			}
+			
 		}
 	}
 	

@@ -86,14 +86,6 @@
 				<h1 class="page_header"><?php the_title();?></h1>
 				
 				<?php get_template_part( 'loop', 'page' ); ?>
-				
-
-
-				<blockquote>
-					<p class="blockquote_description">we believe in treating all of our clients like family</p>
-					<p class="blockquote_name">- villarreal & BeGUM</p>
-				</blockquote>
-
 
 				
 			</div><!-- inner_content -->

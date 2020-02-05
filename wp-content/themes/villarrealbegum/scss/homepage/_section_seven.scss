@@ -1,7 +1,7 @@
 
 
 #section_seven {
-	padding:123px 0 115px;
+	padding: 123px 0 150px;
 	position: relative;
 	border-top:1px solid grey;
 }
@@ -9,17 +9,17 @@
 span.sec_seven_title {
 	display: block;
 	text-align: center;
-	max-width:660px;
+	max-width: 960px;
 	margin:0 auto;
-	font-size: 113px;
+	font-size: 90px;
 	color:$black;
-	line-height: 100px;
+	line-height: 92px;
 	text-transform: uppercase;
 	@include deluxe_extrabold;
 }
 
 .sec_seven_inner {
-	margin:71px auto 0;
+	margin: 160px auto 0;
 	display: flex;
 }
 
@@ -27,6 +27,21 @@ span.sec_seven_title {
 	max-width: 1195px;
 	padding-left:19.5%;
 	padding-right:200px;
+	
+}
+
+.sec_seven_left.content {
+	 a {
+		
+		color:$black;
+		text-decoration: none;
+		border-bottom:2px solid $yellow;
+		transition: all 200ms ease-in-out;
+		@include nunito_extrabold;
+		&:hover {
+			color:$yellow;
+		}
+	}
 }
 
 .sec_seven_right {
@@ -37,7 +52,7 @@ span.sec_seven_title {
 
 .sec_seven_box {
 	width:100%;
-	margin-top:235px;
+	margin-top: 115px;
 	background: $offwhiteone;
 }
 
@@ -150,15 +165,15 @@ span.sec_seven_quote {
 	span.sec_seven_title {
 		font-size: 90px;
 		line-height: 86px;
-		max-width: 640px;
+    max-width: 735px;
 	}
 	
 	.sec_seven_inner {
-		margin: 37px auto 0;
+		margin: 107px auto 0;
 	}
 	
 	.sec_seven_box {
-		margin-top: 252px;
+		margin-top: 122px;
 	}
 	
 	.sec_seven_box_inner {
@@ -186,19 +201,20 @@ span.sec_seven_quote {
 	
 	
 	#section_seven {
-		padding: 107px 105px 185px;
+		padding: 107px 105px 85px;
 	}
 	
 	span.sec_seven_title {
 		font-size: 60px;
 		line-height: 56px;
-		max-width: 424px;
+		max-width: 641px;
 	}
 	
 	.sec_seven_inner {
 		display: block;
 		padding-left:0px;
 		padding-right:0px;
+		margin: 80px auto 0;
 	}
 	
 	.sec_seven_right {
@@ -221,7 +237,7 @@ span.sec_seven_quote {
 @media screen and (max-width: 1066px) {
 	
 	.sec_seven_inner {
-		margin: 18px auto 0;
+	
 	}
 	
 } /* Media Query */
@@ -229,17 +245,17 @@ span.sec_seven_quote {
 @media screen and (max-width: 767px) {
 	
 	#section_seven {
-		padding: 99px 30px 70px;
+		padding: 59px 30px 70px;
 	}
 	
 	span.sec_seven_title {
 		font-size: 43px;
 		line-height: 42px;
-		max-width: 304px;
+		max-width: 485px;
 	}
 	
 	.sec_seven_inner {
-		margin: 5px auto 0;
+		margin: 35px auto 0;
 	}
 	
 	
