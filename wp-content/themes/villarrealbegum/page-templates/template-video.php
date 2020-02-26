@@ -23,16 +23,30 @@ get_header(); ?>
 						<div class="video_wrapper">
 					 
 						<?php while(has_sub_field('video')): ?>
+						
+							
 					 
 							<div class="single_video">
+								
+								<a href="https://www.youtube.com/embed/<?php the_sub_field( 'wistia_id' ); ?>" data-lity>
+									
+										<?php $img_thumb = get_sub_field( 'img_thumb' ); ?>
+										
+										<?php if ( $img_thumb ) { ?>
+											
+											<img class="video_thumb" src="<?php echo $img_thumb['url']; ?>" alt="<?php echo $img_thumb['alt']; ?>" />
+										
+										<?php } ?>
 					
-								<div class="mywistia wistia_embed wistia_async_<?php the_sub_field( 'wistia_id' ); ?> popover=true popoverContent=thumbnail"></div><!-- mywistia -->
+<!-- 								<div class="mywistia"></div> --><!-- mywistia -->
 				
 									<div class="play_wrapper">
 						
 										<div class="play_button"></div><!-- play_button -->
 						
 									</div><!-- play_wrapper -->
+									
+								</a>
 				
 							</div><!-- single_video -->
 					    

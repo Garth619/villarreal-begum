@@ -90,7 +90,7 @@
 	
 	
 	.internal_banner_left {
-		span.internal_banner_largeheader {
+		.internal_banner_largeheader {
 			transform: translateY(-20px);
 			opacity: 0;
 			transition: opacity 500ms linear, transform 1500ms cubic-bezier(.17,.66,.34,.98);
@@ -129,7 +129,7 @@
 	
 	body.ready {
 		.internal_banner_left {
-			span.internal_banner_largeheader {
+			.internal_banner_largeheader {
 				transform: translateY(0px);
 				opacity: 1;
 				transition-delay:550ms

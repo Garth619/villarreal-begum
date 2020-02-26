@@ -10,9 +10,37 @@
 		
 		<div id="para_four" class="internal_banner_left">
 			
-			<span class="internal_banner_largeheader"><span>if we don’t win,</span> we don’t get paid.</span><!-- sec_one_largeheader -->
+			<?php if(get_field('make_banner_an_h1') == "Yes") : ?>
+				
+				<?php if(get_field('internal_banner_verbiage')) : ?>
 			
-			<a class="internal_banner_consult_button desktop" href="#consultation">Free Consultation</a><!-- consult_button -->
+					<h1 class="internal_banner_largeheader"><?php the_field( 'internal_banner_verbiage'); ?></h1>
+				
+				<?php else:?>
+			
+					<h1 class="internal_banner_largeheader"><?php the_field( 'global_internal_banner_verbiage','option'); ?></h1>
+			
+				<?php endif ?>
+				
+				<?php else: ?>
+				
+				<?php if(get_field('internal_banner_verbiage')) : ?>
+			
+					<span class="internal_banner_largeheader"><?php the_field( 'internal_banner_verbiage'); ?></span>
+				
+				<?php else:?>
+			
+					<span class="internal_banner_largeheader"><?php the_field( 'global_internal_banner_verbiage','option'); ?></span>
+			
+				<?php endif ?>
+			
+			<?php endif;?>
+			
+			<?php if(!get_field('turn_request_button_off')) : ?>
+				
+				<a class="internal_banner_consult_button desktop" href="#consultation">Free Consultation</a><!-- consult_button -->
+			
+			<?php endif; ?>
 			
 		</div><!-- internal_banner_left -->
 		
@@ -40,9 +68,9 @@
 					
 					<div class="internal_banner_attorney_names_inner">
 					
-						<a class="internal_banner_attorney_name internal_banner_attorney_name_one" href="<?php the_permalink(724);?>">Javier Villarreal</a><!-- attorney_name -->
+						<a class="internal_banner_attorney_name internal_banner_attorney_name_one" href="<?php the_field( 'attorney_one_page_link', 10); ?>">Javier Villarreal</a><!-- attorney_name -->
 					
-						<a class="internal_banner_attorney_name internal_banner_attorney_name_two" href="<?php the_permalink(60);?>">Alex Begum</a><!-- attorney_name -->
+						<a class="internal_banner_attorney_name internal_banner_attorney_name_two" href="<?php the_field( 'attorney_two_page_link', 10); ?>">Alex Begum</a><!-- attorney_name -->
 					
 					</div><!-- internal_banner_attorney_names_inner -->
 					
@@ -83,7 +111,15 @@
 			
 			<div class="inner_content content">
 				
-				<h1 class="page_header"><?php the_title();?></h1>
+				<?php if(get_field('make_banner_an_h1') == "Yes") : ?>
+				
+					<h2 class="page_header"><?php the_title();?></h2>
+					
+					<?php else:?>
+				
+					<h1 class="page_header"><?php the_title();?></h1>
+				
+				<?php endif;?>
 				
 				<?php get_template_part( 'loop', 'page' ); ?>
 

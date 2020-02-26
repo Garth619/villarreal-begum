@@ -58,15 +58,19 @@
 			}
 		}
 		span {
-			display: block;
+			
 		}
 		span.single_att_title {
 			text-transform: uppercase;
 			font-size: 46px;
 			line-height: 50px;
+			display: inline-block;
 			color:$blacklight;
 			margin-top:44px;
+			padding:0 20px;
+			border-bottom: 13px solid $yellow;
 			@include deluxe_extrabold;
+/*
 			span {
 				text-transform: uppercase;
 				letter-spacing: 0.06em;
@@ -85,11 +89,13 @@
 					z-index:-1;
 				}
 			}
+*/
 		}
 		span.single_position {
 			text-transform: uppercase;
 			color:$blacklight;
 			font-size: 17px;
+			display: block;
 			line-height: 24px;
 			letter-spacing: 0.1em;
 			margin-top:27px;
@@ -128,11 +134,13 @@
 			span.single_att_title {
 				font-size: 42px;
 				margin-top: 30px;
+/*
 				span {
 					&:after {
 						top: 33px;
 					}
 				}
+*/
 			}
 		}
 	}

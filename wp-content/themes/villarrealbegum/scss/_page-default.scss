@@ -34,10 +34,14 @@
 			text-transform: uppercase;
 			@include deluxe_extrabold;
 	}
-	span.internal_banner_largeheader {
+	.internal_banner_largeheader {
 		font-size: 76px;
 		line-height: 70px;
 		max-width: 540px;
+		display: block;
+		color:#fff;
+		text-transform: uppercase;
+		@include deluxe_extrabold;
 		span {
 			color:$yellow;
 		}

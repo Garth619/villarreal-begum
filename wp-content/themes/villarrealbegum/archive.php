@@ -10,8 +10,33 @@
 		
 		<div id="para_four" class="internal_banner_left">
 			
-			<span class="internal_banner_largeheader"><span>if we don’t win,</span> we don’t get paid.</span><!-- sec_one_largeheader -->
 			
+			<?php if ( have_posts() )the_post();?>
+
+			<span class="internal_banner_largeheader">
+				
+				<?php if ( is_day() ) : ?>
+					
+					<?php echo get_the_date(); ?>
+				
+				<?php elseif ( is_month() ) : ?>
+					
+					<?php echo get_the_date( _x( 'F Y', 'monthly archives date format') ); ?>
+				
+				<?php elseif ( is_year() ) : ?>
+					
+					<?php echo get_the_date( _x( 'Y', 'yearly archives date format') ); ?>
+				
+				<?php else : ?>
+					
+				<?php _e( 'Blog Archives', 'twentyten' ); ?>
+			
+				<?php endif; ?>
+			
+			</span>
+		
+			<?php rewind_posts(); ?>
+						
 			<a class="internal_banner_consult_button desktop" href="#consultation">Free Consultation</a><!-- consult_button -->
 			
 		</div><!-- internal_banner_left -->
@@ -40,9 +65,10 @@
 					
 					<div class="internal_banner_attorney_names_inner">
 					
-						<a class="internal_banner_attorney_name internal_banner_attorney_name_one" href="">Javier Villarreal</a><!-- attorney_name -->
+						<a class="internal_banner_attorney_name internal_banner_attorney_name_one" href="<?php the_field( 'attorney_one_page_link', 10); ?>">Javier Villarreal</a><!-- attorney_name -->
 					
-						<a class="internal_banner_attorney_name internal_banner_attorney_name_two" href="">Alex Begum</a><!-- attorney_name -->
+						<a class="internal_banner_attorney_name internal_banner_attorney_name_two" href="<?php the_field( 'attorney_two_page_link', 10); ?>">Alex Begum</a><!-- attorney_name -->
+
 					
 					</div><!-- internal_banner_attorney_names_inner -->
 					

@@ -30,7 +30,7 @@
 					
 						<span class="contact_address"><?php the_sub_field( 'address','option'); ?></span><!-- address -->
 					
-						<a class="contact_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone', 'option')); ?>"><?php the_sub_field( 'phone','option'); ?></a><!-- footer_phone -->
+						<a class="contact_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_sub_field('phone', 'option')); ?>"><?php the_sub_field( 'phone','option'); ?></a><!-- footer_phone -->
 						
 						<?php if(get_sub_field('map_or_appointment') == 'Map Button') { ?>
 						

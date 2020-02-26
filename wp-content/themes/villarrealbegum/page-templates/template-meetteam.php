@@ -43,7 +43,7 @@ get_header(); ?>
 						
 						</div><!-- att_img_wrapper -->
 					
-						<span class="single_att_title yellowline"><span><?php the_title();?></span></span><!-- single_att_title -->
+						<span class="single_att_title"><span><?php the_title();?></span></span><!-- single_att_title -->
 					
 						<span class="single_position"><?php the_field( 'attorney_position' ); ?></span><!-- single_position -->
 					

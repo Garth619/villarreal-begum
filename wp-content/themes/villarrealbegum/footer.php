@@ -22,7 +22,7 @@
 					
 							<span class="address"><?php the_sub_field( 'address','option'); ?></span><!-- address -->
 							
-							<a class="footer_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone', 'option')); ?>"><?php the_sub_field( 'phone','option'); ?></a><!-- footer_phone -->
+							<a class="footer_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_sub_field('phone', 'option')); ?>"><?php the_sub_field( 'phone','option'); ?></a><!-- footer_phone -->
 							
 							<?php if(get_sub_field('map_or_appointment') == 'Map Button') { ?>
 					
@@ -85,6 +85,22 @@
 				<?php } ?>
 				
 			</ul>
+			
+			<div class="social_media">
+				
+				<a class="" href="<?php the_field( 'facebook','option'); ?>" target="_blank" rel="noopener">
+					
+					<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/social_fb.svg"); ?>
+					
+				</a>
+				
+				<a class="" href="<?php the_field( 'twitter','option'); ?>" target="_blank" rel="noopener">
+					
+					<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/social_twitter.svg"); ?>
+					
+				</a>
+				
+			</div><!-- social_media -->
 			
 			<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 				
