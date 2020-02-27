@@ -28,11 +28,15 @@
 				 
 						<div class="sec_six_slide">
 					
-							<div class="star_box">
+							<div class="single_star_wrapper">
 						
-								<img data-src="<?php bloginfo('template_directory');?>/images/star-white.svg"/>
+								<img data-src="<?php bloginfo('template_directory');?>/images/test_star.svg"/>
+								<img data-src="<?php bloginfo('template_directory');?>/images/test_star.svg"/>
+								<img data-src="<?php bloginfo('template_directory');?>/images/test_star.svg"/>
+								<img data-src="<?php bloginfo('template_directory');?>/images/test_star.svg"/>
+								<img data-src="<?php bloginfo('template_directory');?>/images/test_star.svg"/>
 						
-							</div><!-- star_box -->
+							</div><!-- single_star_wrapper -->
 					
 							<span class="sec_six_slide_title"><?php the_sub_field( 'quote' ); ?></span><!-- sec_six_slide_title -->
 					

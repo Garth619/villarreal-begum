@@ -593,6 +593,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/test_star.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/test_star.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/images/three.png": {
 		"ft": 32768,
 		"iS": 4596,
