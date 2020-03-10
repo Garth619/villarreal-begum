@@ -9,7 +9,7 @@ footer {
 
 .footer_inner {
 	max-width: 1795px;
-	margin:0 auto 136px;
+	margin: 0 auto 62px;
 	display: flex;
 	padding:0 94px 0 101px;
 	position: relative;
@@ -48,11 +48,15 @@ span.footer_title {
 
 
 .footer_locations {
-	margin:370px 0 0 0;
+	margin: 311px 0 0 70px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	max-width: 565px;
 	.single_location {
 		position: relative;
+		flex-basis: 50%;
+		margin-bottom:43px;
 		&:nth-of-type(2) {
 			svg {
 				width:53px;
@@ -76,7 +80,7 @@ span.footer_title {
 		span.office_title {
 			text-transform: uppercase;
 			font-size: 24px;
-			margin-top:78px;
+			//margin-top:78px;
 			color:#000;
 			@include deluxe_extrabold;
 			&:after {
@@ -85,13 +89,18 @@ span.footer_title {
 				width:79px;
 				height:10px;
 				background: #000;
-				margin:20px 0 0 0;
+				margin: 14px 0 0 0;
+			}
+			span {
+				color:#fff;
+				display: inline-block;
+				margin-left:4px;
 			}
 		}
 		span.address {
-			font-size: 20px;
-			line-height:30px;
-			margin-top:25px;
+			font-size: 18px;
+			line-height:26px;
+			margin-top: 16px;
 			color:#000;
 			@include nunito_reg;
 		}
@@ -99,23 +108,23 @@ span.footer_title {
 			color:#000;
 			display: inline-block;
 			text-decoration: none;
-			font-size: 22px;
-			margin-top:24px;
+			font-size: 20px;
+			margin-top: 21px;
 			@include nunito_extrabold;
 		}
 		a.map_button {
-			width:105px;
+			width:77px;
 			text-align: center;
 			display: block;
 			text-decoration: none;
 			text-transform: uppercase;
 			border:3px solid #fff;
 			border-radius: 45px;
-			font-size: 24px;
+			font-size: 18px;
 			letter-spacing: 0.1em;
 			color:#fff;
-			margin-top:22px;
-			padding:13px 0;
+			margin-top: 13px;
+			padding:9px 0;
 			transition: all 200ms ease-in-out;
 			@include deluxe_extrabold;
 			&:hover {
@@ -126,10 +135,10 @@ span.footer_title {
 		}
 		span.appointment {
 			text-transform: uppercase;
-			font-size: 18px;
+			font-size: 15px;
 			letter-spacing: 0.06em;
-			margin-top:35px;
-			color:#000;
+			margin-top: 21px;
+			color:#fff;
 			@include deluxe_extrabold;
 		}
 	}
@@ -342,14 +351,15 @@ span.footer_title {
 	
 	
 	.footer_locations {
-		margin: 200px 0 0 0;
+		margin: 220px 0 0 50px;
 		max-width: 585px;
 		.single_location {
+			margin-bottom: 52px;
 			span.office_title {
 				font-size: 20px;
-				margin-top: 66px;
+				//margin-top: 66px;
 				&:after {
-					margin: 25px 0 0 0;
+					margin: 17px 0 0 0;
 				}
 			}
 			span.address {
@@ -364,6 +374,7 @@ span.footer_title {
 				font-size: 18px;
 				padding: 9px 0;
 				width:77px;
+				margin-top: 19px;
 			}
 			span.appointment {
 				font-size: 14px;
@@ -447,7 +458,30 @@ span.footer_title {
 	
 } /* Media Query */
 
-
+@media screen and (max-width: 1250px) {
+	
+	
+	.footer_locations {
+		margin: 222px 0 0 45px;
+		max-width: 500px;
+	}
+	
+	.footer_inner {
+		margin: 0px auto 49px;
+	}
+	
+	
+	.footer_locations {
+		.single_location {
+			span.office_title {
+				font-size: 22px;
+			}
+		}
+	}
+	    
+	
+	
+} /* Media Query */
 
 @media screen and (max-width: 1150px) {
 	
@@ -465,16 +499,18 @@ span.footer_title {
 	
 	.footer_left {
 		order:2;
-		margin-top: 91px;
+		margin-top: 88px;
 		flex-basis: 100%;
 	}
 	
 	.footer_locations {
-		margin: 0 0 0 0;
-		max-width: 100%;
+		margin: 0 0 0 10%;
+		max-width: 670px;
 		.single_location {
+			flex-basis: 40%;
+			margin-bottom: 46px;
 			span.office_title {
-				margin-top: 61px;
+				margin-top: 0px;
 			}
 		}
 	}
@@ -538,13 +574,31 @@ span.footer_title {
 			margin-bottom: 35px;
 		}
 		
+	
 		
+		.footer_inner {
+			margin: 0 auto 24px;
+		}
 		
 			
 } /* Media Query */
 
 
-
+@media screen and (max-width: 890px) {
+	
+	
+	
+	
+	.footer_locations {
+		margin: 0 0 0 45px;
+		max-width: 590px;
+		.single_location {
+			flex-basis: 47%;
+		}
+	}
+	
+	
+} /* Media Query */
 
 @media screen and (max-width: 767px) {
 	
@@ -583,7 +637,7 @@ span.footer_title {
 	
 	
 	.footer_left {
-		margin-top: 69px;
+		margin-top: 82px;
 	}
 	
 	.footer_right {
@@ -594,9 +648,11 @@ span.footer_title {
 	
 	.footer_locations {
 		display: block;
+		margin:0;
 		max-width:100%;
 		.single_location {
 			text-align: center;
+			margin-bottom: 0;
 			svg {
 				position: static;
 			}
@@ -625,7 +681,7 @@ span.footer_title {
 					height:auto;
 				}
 			}
-			&:nth-of-type(2), &:nth-of-type(3) {
+			&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
 				display: none;
 			}
 		}

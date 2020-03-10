@@ -74,7 +74,7 @@ a.logo {
 			position: relative;
 			> a {
 				 position: relative;
-				 cursor: pointer;
+				 //cursor: pointer;
 				 &:after {
 					 content:"";
 					 display: inline-block;
@@ -165,7 +165,7 @@ a.logo {
 
 nav.nav_wrapper.nav_desktop {
 	ul.menu {
-		> li#menu-item-623 {
+		> li.espanol-menu-item {
 			margin-top:15px;
 			font-size: 16px;
 			letter-spacing: 0.1em;
@@ -453,7 +453,7 @@ body.page-template-default, body.blog, body.archive, body.single {
 	
 	.nav_wrapper.nav_desktop {
 		ul.menu {
-			> li#menu-item-623 {
+			> li.espanol-menu-item {
 				margin-left:19px;
 			}
 		}

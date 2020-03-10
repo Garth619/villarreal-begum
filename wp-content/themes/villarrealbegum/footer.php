@@ -13,8 +13,6 @@
 					<?php while(has_sub_field('locations','option')): ?>
 				 
 						<div class="single_location">
-							
-							<?php $footer_svg = get_sub_field('svg');?>
 					
 							<?php echo file_get_contents("wp-content/themes/villarrealbegum/images/".$footer_svg.""); ?>
 					
